@@ -1,0 +1,7 @@
+{
+  "title": "Intranet",
+  "description": "Internal regulations, information, and company resources",
+  "root": true,
+  "icon": "Building2",
+  "pages": ["index", "getting-started"]
+}

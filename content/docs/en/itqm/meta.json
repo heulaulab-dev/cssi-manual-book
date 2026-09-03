@@ -1,0 +1,7 @@
+{
+  "title": "ITQM",
+  "description": "IT quality management and development request workflows",
+  "root": true,
+  "icon": "CircleGauge",
+  "pages": ["index", "getting-started"]
+}

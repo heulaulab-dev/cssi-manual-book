@@ -1,0 +1,7 @@
+{
+  "title": "Flowra",
+  "description": "Account opening and financial workflow automation",
+  "root": true,
+  "icon": "Workflow",
+  "pages": ["index", "getting-started"]
+}

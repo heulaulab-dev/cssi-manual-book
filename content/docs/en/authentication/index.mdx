@@ -1,0 +1,65 @@
+---
+title: Overview
+description: Authentication for the CSSI application ecosystem.
+---
+
+# Authentication
+
+Authentication provides a shared sign-in experience for the CSSI application ecosystem. Users authenticate before entering Portal and accessing the applications available to them.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: CSSI sign-in page showing Employee ID and password fields.
+
+{/* SCREENSHOT:
+Page: Authentication Overview
+Capture: CSSI sign-in page with Employee ID and password fields
+Suggested filename: authentication-sign-in.png
+*/}
+
+## Authentication flows
+
+<Cards>
+  <Card
+    title="Sign In"
+    description="Use your Employee ID and password to enter CSSI."
+    href="/docs/authentication/sign-in"
+  />
+  <Card
+    title="First-Time Password Change"
+    description="Replace the default password before continuing to CSSI."
+    href="/docs/authentication/first-time-password"
+  />
+  <Card
+    title="Forgot Password"
+    description="Verify your identity using an email OTP and create a new password."
+    href="/docs/authentication/forgot-password"
+  />
+</Cards>
+
+## How authentication works
+
+**Returning user:**
+
+```
+Sign in → Portal
+```
+
+**First-time user:**
+
+```
+Sign in with default password
+→ Change password
+→ Sign in again
+→ Portal
+```
+
+**Forgot password:**
+
+```
+Forgot Password
+→ Email OTP
+→ Set new password
+→ Sign in again
+→ Portal
+```

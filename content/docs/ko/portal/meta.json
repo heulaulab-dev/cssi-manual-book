@@ -1,0 +1,6 @@
+{
+  "title": "Portal",
+  "description": "Central access, authentication, announcements, and shared services",
+  "icon": "LayoutDashboard",
+  "root": true
+}

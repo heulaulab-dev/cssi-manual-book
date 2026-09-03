@@ -1,0 +1,6 @@
+{
+  "title": "Authentication",
+  "description": "Sign-in, password, and identity verification for CSSI",
+  "icon": "ShieldCheck",
+  "pages": ["index", "sign-in", "first-time-password", "forgot-password"]
+}

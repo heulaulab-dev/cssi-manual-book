@@ -1,0 +1,458 @@
+@import "tailwindcss";
+
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
+:root {
+  /* --------------------------------------------------
+   * Layout
+   * -------------------------------------------------- */
+
+  --fd-layout-width: 1480px;
+
+  /* --------------------------------------------------
+   * Application design tokens
+   * -------------------------------------------------- */
+
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+
+  --primary: 222 47% 11%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 20% 97%;
+  --secondary-foreground: 222 47% 11%;
+
+  --muted: 210 20% 98%;
+  --muted-foreground: 215 16% 47%;
+
+  /*
+   * Yellow is intentionally restrained.
+   *
+   * Do not use solid yellow for large surfaces.
+   * It should behave as an interaction / selection signal.
+   */
+  --accent: 45 93% 47%;
+  --accent-foreground: 222 47% 11%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 214 20% 90%;
+  --input: 214 20% 90%;
+
+  --ring: 45 93% 47%;
+
+  --radius: 0.5rem;
+
+  /* --------------------------------------------------
+   * Fumadocs tokens
+   * -------------------------------------------------- */
+
+  --color-fd-background: hsl(var(--background));
+  --color-fd-foreground: hsl(var(--foreground));
+
+  --color-fd-muted: hsl(var(--muted));
+  --color-fd-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-fd-popover: hsl(var(--popover));
+  --color-fd-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-fd-card: hsl(var(--card));
+  --color-fd-card-foreground: hsl(var(--card-foreground));
+
+  --color-fd-border: hsl(var(--border));
+
+  --color-fd-primary: hsl(var(--primary));
+  --color-fd-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-fd-secondary: hsl(var(--secondary));
+  --color-fd-secondary-foreground: hsl(var(--secondary-foreground));
+
+  /*
+   * Fumadocs uses accent heavily for active and hover states.
+   * Keep this translucent instead of full brand yellow.
+   */
+  --color-fd-accent: hsl(var(--accent) / 0.14);
+  --color-fd-accent-foreground: hsl(var(--foreground));
+
+  --color-fd-ring: hsl(var(--ring));
+}
+
+.dark {
+  /* --------------------------------------------------
+   * Application design tokens
+   * -------------------------------------------------- */
+
+  --background: 222 47% 6%;
+  --foreground: 210 20% 96%;
+
+  --card: 222 35% 8%;
+  --card-foreground: 210 20% 96%;
+
+  --popover: 222 35% 8%;
+  --popover-foreground: 210 20% 96%;
+
+  --primary: 210 20% 96%;
+  --primary-foreground: 222 47% 8%;
+
+  --secondary: 217 25% 12%;
+  --secondary-foreground: 210 20% 96%;
+
+  --muted: 217 25% 11%;
+  --muted-foreground: 215 15% 65%;
+
+  --accent: 45 93% 52%;
+  --accent-foreground: 222 47% 8%;
+
+  --destructive: 0 63% 48%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 217 20% 18%;
+  --input: 217 20% 18%;
+
+  --ring: 45 93% 52%;
+
+  /* --------------------------------------------------
+   * Fumadocs tokens
+   * -------------------------------------------------- */
+
+  --color-fd-background: hsl(var(--background));
+  --color-fd-foreground: hsl(var(--foreground));
+
+  --color-fd-muted: hsl(var(--muted));
+  --color-fd-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-fd-popover: hsl(var(--popover));
+  --color-fd-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-fd-card: hsl(var(--card));
+  --color-fd-card-foreground: hsl(var(--card-foreground));
+
+  --color-fd-border: hsl(var(--border));
+
+  --color-fd-primary: hsl(var(--primary));
+  --color-fd-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-fd-secondary: hsl(var(--secondary));
+  --color-fd-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-fd-accent: hsl(var(--accent) / 0.16);
+  --color-fd-accent-foreground: hsl(var(--foreground));
+
+  --color-fd-ring: hsl(var(--ring));
+}
+
+/* --------------------------------------------------
+ * Tailwind semantic tokens
+ * -------------------------------------------------- */
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* --------------------------------------------------
+ * Base
+ * -------------------------------------------------- */
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  min-height: 100%;
+  background: hsl(var(--background));
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+
+  font-feature-settings:
+    "rlig" 1,
+    "calt" 1;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.22);
+  color: hsl(var(--foreground));
+}
+
+/* --------------------------------------------------
+ * Documentation typography
+ * -------------------------------------------------- */
+
+.prose {
+  color: hsl(var(--foreground));
+
+  /*
+   * Docs should be readable without feeling like a blog.
+   */
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.prose h1 {
+  margin-bottom: 1rem;
+
+  color: hsl(var(--foreground));
+
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.prose h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.875rem;
+
+  color: hsl(var(--foreground));
+
+  font-size: 1.5rem;
+  font-weight: 625;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+
+  color: hsl(var(--foreground));
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: hsl(var(--foreground));
+  font-weight: 600;
+}
+
+.prose p {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+
+  color: hsl(var(--foreground) / 0.9);
+}
+
+.prose strong {
+  color: hsl(var(--foreground));
+  font-weight: 600;
+}
+
+.prose a {
+  color: hsl(var(--foreground));
+
+  font-weight: 500;
+  text-decoration-color: hsl(var(--accent));
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.prose hr {
+  border-color: hsl(var(--border));
+}
+
+.prose blockquote {
+  border-left-color: hsl(var(--accent));
+
+  color: hsl(var(--muted-foreground));
+
+  font-style: normal;
+}
+
+/* --------------------------------------------------
+ * Lists
+ * -------------------------------------------------- */
+
+.prose ul,
+.prose ol {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose li::marker {
+  color: hsl(var(--muted-foreground));
+}
+
+/* --------------------------------------------------
+ * Inline code
+ * -------------------------------------------------- */
+
+.prose :not(pre) > code {
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.375rem;
+
+  background: hsl(var(--muted));
+
+  padding: 0.125rem 0.35rem;
+
+  color: hsl(var(--foreground));
+
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.prose :not(pre) > code::before,
+.prose :not(pre) > code::after {
+  content: none;
+}
+
+/* --------------------------------------------------
+ * Code blocks
+ * -------------------------------------------------- */
+
+.prose pre {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+
+  background: hsl(var(--muted) / 0.65);
+
+  box-shadow: none;
+}
+
+.dark .prose pre {
+  background: hsl(222 35% 7%);
+}
+
+/* --------------------------------------------------
+ * Tables
+ * -------------------------------------------------- */
+
+.prose table {
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+
+  overflow: hidden;
+
+  font-size: 0.875rem;
+}
+
+.prose thead {
+  background: hsl(var(--muted));
+}
+
+.prose th {
+  padding: 0.625rem 0.75rem;
+
+  color: hsl(var(--foreground));
+
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.prose td {
+  padding: 0.625rem 0.75rem;
+
+  border-top: 1px solid hsl(var(--border));
+
+  color: hsl(var(--foreground) / 0.88);
+
+  vertical-align: top;
+}
+
+/* --------------------------------------------------
+ * Images
+ * -------------------------------------------------- */
+
+.prose img {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+}
+
+/* --------------------------------------------------
+ * Scrollbar
+ * -------------------------------------------------- */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+
+  background: hsl(var(--muted-foreground) / 0.3);
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.45);
+  background-clip: padding-box;
+}

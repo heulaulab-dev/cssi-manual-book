@@ -1,0 +1,7 @@
+{
+  "title": "Daily Operation",
+  "description": "Operational checklist, approval, and reporting workspace",
+  "root": true,
+  "icon": "ClipboardCheck",
+  "pages": ["index", "getting-started"]
+}

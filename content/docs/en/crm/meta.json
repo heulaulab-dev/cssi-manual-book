@@ -1,0 +1,7 @@
+{
+  "title": "CRM",
+  "description": "Customer, account, sales, and trading-related workspace",
+  "root": true,
+  "icon": "Users",
+  "pages": ["index", "getting-started"]
+}
