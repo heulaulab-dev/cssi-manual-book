@@ -26,7 +26,7 @@ const appLabels = [
 ] as const;
 
 const appDescriptions = [
-  "Central access, authentication, announcements, and shared services",
+  "Central access and cross-application dashboard for CSSI",
   "Customer, account, sales, and relationship management",
   "Digital account opening and onboarding workflows",
   "IT operational checklists, approvals, and daily reporting",
@@ -53,9 +53,12 @@ const localizedPageSlugs: Record<(typeof i18n.languages)[number], string[]> = {
     "itqm",
     "itqm/getting-started",
     "portal",
+    "portal/account-settings",
+    "portal/admin-panel",
     "portal/dashboard",
     "portal/getting-started",
     "portal/navigating-applications",
+    "portal/notifications",
   ],
   id: [
     "",

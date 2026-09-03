@@ -1,6 +1,15 @@
 {
   "title": "Portal",
-  "description": "Central access, authentication, announcements, and shared services",
+  "description": "Central access and cross-application dashboard for CSSI",
+  "root": true,
   "icon": "LayoutDashboard",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "navigating-applications",
+    "account-settings",
+    "notifications",
+    "admin-panel"
+  ]
 }

@@ -5,11 +5,11 @@ description: Understand the Portal dashboard and its widgets.
 
 # Dashboard
 
-The Portal dashboard gives you a consolidated view of information from across CSSI applications. The widgets shown can vary depending on your division.
+The Portal Dashboard gives you a consolidated view of information from across CSSI applications. The widgets shown can vary depending on your division and permissions.
 
 > **Screenshot placeholder**
 >
-> Add screenshot: Full Portal dashboard showing all major widget areas.
+> Add screenshot: Full Portal Dashboard showing all major widget areas.
 
 {/* SCREENSHOT:
 Page: Portal Dashboard
@@ -18,16 +18,22 @@ Filename suggestion: portal-dashboard-overview.png
 Purpose: Show the complete dashboard layout
 */}
 
+## Dashboard greeting
+
+When you first load the Dashboard, you'll see a personalized greeting such as "Good morning, John" based on the current time of day. The greeting appears at the top of the page. A **Refresh** button is available in the top-right corner to reload the widget data.
+
 ## Intranet Announcements
 
-The Intranet Announcements widget highlights internal and managerial information so you can see important updates without leaving Portal.
+The Intranet Announcements widget appears at the top of the Dashboard and highlights internal and managerial information so you can see important updates without leaving Portal.
 
-- This is a summary view
-- Detailed announcement content belongs to Intranet
+- This is a summary view — only the most recent announcements are shown
+- Each announcement displays its title, a brief excerpt, date, and badges for **New** or **Urgent** items
+- Click on an announcement to read the full content within Portal
+- Use the **View all intranet announcements** link at the bottom to open the complete list in Intranet
 
 > **Screenshot placeholder**
 >
-> Add screenshot: Intranet Announcements widget showing announcement entries.
+> Add screenshot: Intranet Announcements widget showing announcement entries with New/Urgent badges.
 
 {/* SCREENSHOT:
 Page: Portal Dashboard
@@ -38,15 +44,24 @@ Purpose: Show how announcements appear in Portal
 
 ## Development
 
-The Development widget gives you a quick view of development requests and their current status.
+The Development widget gives you a quick view of IT development requests and their current status.
+
+- You can filter by status using the category tabs at the top of the widget
+- Each entry shows the request subject, a brief description, status badge, and the requester's name
+- Click on a request to view more details in ITQM
 
 Visible status categories:
 
-- In Progress
-- Pending Approval
-- Pending Assignment
-- Pending IT Accept
-- Pending Verification
+| Status | Description |
+|---|---|
+| In Progress | Work is actively being performed |
+| Pending Approval | Awaiting approval from the requestor or business unit |
+| Pending Assignment | Waiting for an IT developer to be assigned |
+| Pending IT Accept | Awaiting IT acceptance after completion |
+| Pending Verification | Waiting for verification by the requestor |
+| Revision | Changes are being made based on feedback |
+| Draft | Still being prepared, not yet submitted |
+| Done | Completed and closed |
 
 > **Screenshot placeholder**
 >
@@ -67,12 +82,9 @@ Purpose: Show how development activity appears in Portal
 
 The Daily Checklists widget gives users a quick view of operational checklist activity relevant to their division.
 
-Visible status categories:
-
-- All
-- Pending
-- Approved
-- Rejected
+- Each entry shows the task name, part/team name, number of checked items, status badge, and who submitted it
+- Use the category tabs to filter by status: **All**, **Pending**, **Approved**, or **Rejected**
+- Click on a checklist entry to view details and take action in Daily Operation
 
 > **Screenshot placeholder**
 >
@@ -92,28 +104,24 @@ Purpose: Show how checklist activity appears in Portal
 
 ## Stock
 
-The Stock widget provides a market summary directly on the Portal dashboard.
+The Stock widget provides a market summary directly on the Portal Dashboard.
 
-{/* TODO:
-Confirm:
-
-- how the displayed stock is selected
-- whether users can change stock
-- data ownership/source
-- who can see this widget
- */}
+- Use the search box at the top of the widget to find and select a stock by name or code
+- The widget displays the current price, price change, and a chart showing price history
+- Use the time range selector to view different periods (e.g., 1D, 5D, 1M, 3M, 1Y)
+- Click **Open stocks** to view the full stock management interface in CRM
 
 Visible elements:
 
-- Stock identifier/name
-- Current price
-- Price movement
-- Selectable time range
-- Chart/price history
+- Stock identifier and name (selected via search)
+- Current price in Indonesian Rupiah
+- Price change (absolute and percentage) with color-coded indicator (green for positive, red for negative)
+- Price chart with interactive tooltip showing date and price
+- Time range selector
 
 > **Screenshot placeholder**
 >
-> Add screenshot: Stock widget showing price, movement, chart, and time-range options.
+> Add screenshot: Stock widget showing search, price, chart, and time-range options.
 
 {/* SCREENSHOT:
 Page: Portal Dashboard
@@ -124,31 +132,55 @@ Purpose: Show how stock information appears in Portal
 
 ## Rankings
 
-The Rankings widget provides a summarized ranking view directly from the Portal dashboard.
+The Rankings widget provides a summarized ranking view of portfolio and trading performance.
 
-{/* TODO:
-Confirm:
+- Toggle between **P/L Rank** and **Trading Rank** using the selector in the widget header
+- **P/L Rank** shows the top 5 stocks ranked by profit and loss performance
+- **Trading Rank** shows the top 5 stocks ranked by trading activity
 
-- what is being ranked
-- who appears in the ranking
-- available ranking modes
-- visibility rules
- */}
+### P/L Rank columns
+
+| Column | Description |
+|---|---|
+| Rank | Position in the ranking |
+| Stock | Stock code and name |
+| Avg price | Average transaction price |
+| Close price | Latest closing price |
+| Daily P/L amount | Profit or loss for the day |
+| Stock value | Total market value |
+| Total balance | Account balance |
+| P/L rate | Percentage return (color-coded) |
+
+### Trading Rank columns
+
+| Column | Description |
+|---|---|
+| Rank | Position in the ranking |
+| Stock | Stock code and name |
+| Open price | Opening price for the period |
+| Close price | Closing price for the period |
+| Change price | Absolute price change |
+| Total lot | Number of shares traded |
+| Total value | Total traded value |
+| Total volume | Trading volume |
+| Change rate % | Percentage change (color-coded) |
+
+Click **View all P/L rankings** or **View all trading rankings** to open the full rankings page in CRM.
 
 > **Screenshot placeholder**
 >
-> Add screenshot: Rankings widget showing ranking results and ranking selector.
+> Add screenshot: Rankings widget showing both P/L and Trading rank tables.
 
 {/* SCREENSHOT:
 Page: Portal Dashboard
-Capture: Rankings widget showing ranking content and selector
+Capture: Rankings widget showing ranking content and mode selector
 Filename suggestion: portal-rankings-widget.png
 Purpose: Show how rankings appear in Portal
 */}
 
 ## Applications
 
-The Applications section gives you quick access to other CSSI applications.
+The Applications section at the bottom of the Dashboard gives you quick access to other CSSI applications. Each card shows the application name, a brief description, and an **Open** button.
 
 <Cards>
   <Card
@@ -162,7 +194,7 @@ The Applications section gives you quick access to other CSSI applications.
     href="/docs/intranet"
   />
   <Card
-    title="Flowra"
+    title="FLOWRA"
     description="Financial workflow automation."
     href="/docs/flowra"
   />
@@ -180,7 +212,7 @@ The Applications section gives you quick access to other CSSI applications.
 
 > **Screenshot placeholder**
 >
-> Add screenshot: Applications section showing available CSSI application shortcuts.
+> Add screenshot: Applications section showing available CSSI application cards.
 
 {/* SCREENSHOT:
 Page: Portal Dashboard
@@ -190,5 +222,6 @@ Purpose: Show the application shortcuts available in Portal
 */}
 
 <Callout type="info">
-  The applications available to you may depend on your access.
+  The applications available to you may depend on your access and role. If an
+  application does not appear, please contact your administrator.
 </Callout>

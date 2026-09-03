@@ -3,5 +3,13 @@
   "description": "Central access and cross-application dashboard for CSSI",
   "root": true,
   "icon": "LayoutDashboard",
-  "pages": ["index", "getting-started", "dashboard", "navigating-applications"]
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "navigating-applications",
+    "account-settings",
+    "notifications",
+    "admin-panel"
+  ]
 }
