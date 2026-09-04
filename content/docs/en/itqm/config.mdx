@@ -1,0 +1,160 @@
+---
+title: Configuration
+description: Manage request types and system types used in development requests.
+---
+
+# Configuration
+
+The Configuration section lets authorized users manage the request types and system types that appear in development request forms. These configurations determine the available options when creating or editing requests.
+
+<Callout type="warning">
+  Configuration management is restricted to authorized users only. If you do
+  not see this section in the sidebar, you do not have permission to access it.
+</Callout>
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Configuration page showing the available configuration sections.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Configuration page with Request Type and System Type sections
+Filename suggestion: itqm-config-overview.png
+Purpose: Show the configuration management workspace
+*/}
+
+## Request Types
+
+Request Types define the categories available when creating a development request. Examples include Feature Request, Bug Fix, System Improvement, or Data Change.
+
+### Request Type table
+
+The table displays all configured request types. Each row shows:
+
+| Column | Description |
+|---|---|
+| Name | The request type name |
+| Description | A brief description of the type |
+| Status | Whether the type is active or disabled |
+| Actions | Available actions for the type |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Request Type table with representative entries.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Request Type table showing all columns
+Filename suggestion: itqm-config-request-types.png
+Purpose: Show the list of configured request types
+*/}
+
+### Adding a new request type
+
+1. Click the **Add** button in the Request Type section
+2. Enter the **Name** for the new type
+3. Optionally enter a **Description**
+4. Click **Save** to create the type
+
+### Editing a request type
+
+1. Click **Edit** on the request type row
+2. Modify the name or description
+3. Click **Save** to apply changes
+
+### Enabling and disabling request types
+
+To hide a request type from the request form without deleting it:
+
+1. Click **Enable** or **Disable** on the request type row
+2. Disabled types are not available when creating new requests
+3. Existing requests using the type are not affected
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Request Type actions showing Edit, Enable/Disable options.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Request Type actions visible on a row
+Filename suggestion: itqm-config-request-type-actions.png
+Purpose: Show available actions for request types
+*/}
+
+---
+
+## System Types
+
+System Types define the target systems or applications available when creating a development request. Examples include CRM, FLOWRA, Intranet, or Daily Operation.
+
+### System Type table
+
+The table displays all configured system types. Each row shows:
+
+| Column | Description |
+|---|---|
+| Name | The system type name |
+| Description | A brief description of the system |
+| Status | Whether the type is active or disabled |
+| Actions | Available actions for the type |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: System Type table with representative entries.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: System Type table showing all columns
+Filename suggestion: itqm-config-system-types.png
+Purpose: Show the list of configured system types
+*/}
+
+### Adding a new system type
+
+1. Click the **Add** button in the System Type section
+2. Enter the **Name** for the new system
+3. Optionally enter a **Description**
+4. Click **Save** to create the type
+
+### Editing a system type
+
+1. Click **Edit** on the system type row
+2. Modify the name or description
+3. Click **Save** to apply changes
+
+### Enabling and disabling system types
+
+To hide a system type from the request form without deleting it:
+
+1. Click **Enable** or **Disable** on the system type row
+2. Disabled types are not available when creating new requests
+3. Existing requests using the type are not affected
+
+> **Screenshot placeholder**
+>
+> Add screenshot: System Type actions showing Edit, Enable/Disable options.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: System Type actions visible on a row
+Filename suggestion: itqm-config-system-type-actions.png
+Purpose: Show available actions for system types
+*/}
+
+## How configurations affect requests
+
+When a user creates or edits a development request, the **Type** and **System** dropdowns show only the currently enabled request types and system types. This ensures that:
+
+- Only approved categories are available for selection
+- Deprecated types can be disabled without affecting existing requests
+- New types can be added as the organization's needs evolve
+
+<Callout type="info">
+  Changes to request types and system types take effect immediately for new
+  requests. Existing requests are not affected by enabling or disabling types.
+</Callout>
+
+## Start here
+
+- [Development Requests](./development-requests) — Use configured types in request forms
+- [Dashboard](./dashboard) — View your overview on the dashboard

@@ -1,0 +1,297 @@
+---
+title: Development Requests
+description: Submit, accept, approve, and track development requests through the full workflow.
+---
+
+# Development Requests
+
+Development Requests manage the complete lifecycle of IT development work — from initial submission through approval, assignment, and tracking. The workflow is divided into three main views based on your role: **Develop Request** (submitter), **Develop Accept** (IT approver), and **Develop Approve** (division approver).
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Development Requests section showing the request table.
+
+{/* SCREENSHOT:
+Page: Development Requests
+Capture: Main request table view with representative entries
+Filename suggestion: itqm-develop-request-table.png
+Purpose: Show the development request list view
+*/}
+
+## Request workflow overview
+
+A development request moves through these stages:
+
+1. **Draft** — Created but not yet submitted
+2. **Pending Approval** — Submitted and awaiting division approval
+3. **Revision** — Sent back for changes
+4. **Pending IT Accept** — Approved and awaiting IT acceptance
+5. **Pending Assignment** — Accepted, waiting for a developer to be assigned
+6. **In Progress** — Work is actively being performed
+7. **Pending Verification** — Completed, awaiting requestor verification
+8. **Done** — Verified and closed
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Visual workflow diagram showing request stages.
+
+{/* SCREENSHOT:
+Page: Development Requests
+Capture: Workflow stages visual representation
+Filename suggestion: itqm-request-workflow.png
+Purpose: Show the request lifecycle stages
+*/}
+
+---
+
+## Develop Request
+
+The **Develop Request** view is where submitters create, manage, and track their development requests.
+
+### Request table
+
+The table displays all requests you have submitted or are involved in. Each row shows:
+
+| Column | Description |
+|---|---|
+| Subject | The request title |
+| Type | The category of request (e.g., Feature, Bug Fix) |
+| System | The target system or application |
+| Status | Current workflow status |
+| Submitted | Date and time the request was submitted |
+| Actions | Available actions for the request |
+
+Use the column headers to sort and the search bar to filter requests.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Develop Request table with column headers and entries.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: Request table showing columns and representative data
+Filename suggestion: itqm-develop-request-list.png
+Purpose: Show the request list with all columns visible
+*/}
+
+### Creating a new request
+
+To submit a new development request:
+
+1. Click the **New Request** button in the top-right corner of the Develop Request page
+2. Fill in the required fields in the dialog:
+   - **Subject** — A clear title for your request
+   - **Requirement** — A detailed description of what you need
+   - **Type** — Select the request category from the dropdown
+   - **System** — Select the target system from the dropdown
+   - **Attachment** — Optionally attach supporting files
+3. Click **Submit** to send the request for approval
+
+> **Screenshot placeholder**
+>
+> Add screenshot: New Request dialog showing all fields.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: New Request dialog with all form fields visible
+Filename suggestion: itqm-new-request-dialog.png
+Purpose: Show how to create a new development request
+*/}
+
+<Callout type="info">
+  After submission, the request moves to **Pending Approval** status and the
+  division approver is notified.
+</Callout>
+
+### Editing and resubmitting
+
+When a request is sent back for **Revision**, you can edit and resubmit it:
+
+1. Open the request from the table
+2. Click **Edit** to modify the subject, requirement, type, system, or attachment
+3. Review your changes and click **Resubmit** to send it back into the workflow
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Request in Revision status with Edit/Resubmit buttons.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: Request detail showing revision status and edit options
+Filename suggestion: itqm-request-revision.png
+Purpose: Show how to edit a request in revision status
+*/}
+
+---
+
+## Develop Accept
+
+The **Develop Accept** view is used by IT approvers to review incoming requests and assign development work.
+
+### Accept table
+
+The table displays requests that are ready for IT acceptance. Each row shows:
+
+| Column | Description |
+|---|---|
+| Subject | The request title |
+| Type | The category of request |
+| System | The target system |
+| Requester | Who submitted the request |
+| Div Approver | The division approver who approved it |
+| Approved | Date of division approval |
+| Status | Current workflow status |
+| Actions | Available actions for the request |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Develop Accept table with representative entries.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Accept table showing columns and request entries
+Filename suggestion: itqm-develop-accept-list.png
+Purpose: Show the IT acceptance queue
+*/}
+
+### Accepting a request
+
+To accept a request:
+
+1. Click **Accept** on the request row
+2. The Assignment Panel opens where you can select the developer and due date
+3. Select the **PIC** (Person in Charge) from the dropdown
+4. Set a **Due Date** for the work
+5. Click **Assign** to confirm
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Assignment Panel with PIC selection and due date fields.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Assignment Panel showing PIC dropdown and due date picker
+Filename suggestion: itqm-assignment-panel.png
+Purpose: Show how to assign work to a developer
+*/}
+
+### Rejecting a request
+
+To reject a request:
+
+1. Click **Reject** on the request row
+2. The Rejection Dialog opens
+3. Enter a reason for the rejection
+4. Click **Submit** to send the request back to the requester
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Rejection Dialog with reason field.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Rejection Dialog with reason input
+Filename suggestion: itqm-rejection-dialog.png
+Purpose: Show how to reject a request with a reason
+*/}
+
+---
+
+## Develop Approve
+
+The **Develop Approve** view is used by division approvers to review and approve or reject requests.
+
+### Approve table
+
+The table displays requests awaiting division approval. Each row shows:
+
+| Column | Description |
+|---|---|
+| Subject | The request title |
+| Type | The category of request |
+| System | The target system |
+| Requester | Who submitted the request |
+| Submitted | Date and time the request was submitted |
+| Status | Current workflow status |
+| Actions | Available actions for the request |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Develop Approve table with representative entries.
+
+{/* SCREENSHOT:
+Page: Develop Approve
+Capture: Approve table showing columns and request entries
+Filename suggestion: itqm-develop-approve-list.png
+Purpose: Show the approval queue
+*/}
+
+### Approving a request
+
+To approve a request:
+
+1. Click **Approve** on the request row
+2. The request moves to **Pending IT Accept** status
+3. The IT approver is notified to review and assign the work
+
+### Rejecting a request
+
+To reject a request:
+
+1. Click **Reject** on the request row
+2. The Rejection Dialog opens
+3. Enter a reason for the rejection
+4. Click **Submit** to send the request back to the requester in **Revision** status
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Rejection Dialog in the approve view.
+
+{/* SCREENSHOT:
+Page: Develop Approve
+Capture: Rejection Dialog with reason input
+Filename suggestion: itqm-approve-rejection.png
+Purpose: Show how to reject a request during approval
+*/}
+
+---
+
+## Request detail view
+
+Clicking on any request in the table opens its full detail view, which shows:
+
+- Subject, requirement, and type information
+- System and attachment details
+- Current status and workflow history
+- Assigned PIC and due date (if assigned)
+- Action buttons relevant to the current status
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full request detail view showing all information.
+
+{/* SCREENSHOT:
+Page: Request Detail
+Capture: Complete request detail with all metadata and action buttons
+Filename suggestion: itqm-request-detail.png
+Purpose: Show the full detail view of a development request
+*/}
+
+## Status reference
+
+| Status | Description |
+|---|---|
+| Draft | Created but not yet submitted |
+| Pending Approval | Submitted and awaiting division approval |
+| Revision | Sent back for changes by an approver |
+| Pending IT Accept | Approved and awaiting IT acceptance |
+| Pending Assignment | Accepted, waiting for a developer to be assigned |
+| In Progress | Work is actively being performed |
+| Pending Verification | Completed, awaiting requestor verification |
+| Done | Verified and closed |
+
+## Start here
+
+- [Done Report](./done-report) — View and verify completed requests
+- [Issues](./issues) — Create and manage issues
+- [Dashboard](./dashboard) — See your request summary on the dashboard

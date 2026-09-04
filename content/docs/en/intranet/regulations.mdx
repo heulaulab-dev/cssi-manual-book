@@ -1,0 +1,169 @@
+---
+title: Regulations
+description: Browse and manage Compliance, HRD, and Legal regulatory documents.
+---
+
+# Regulations
+
+The Regulations section organizes company regulatory documents into three categories: **Compliance**, **HRD**, and **Legal**. Each category has its own list of documents with versions, subsections, and attachments.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Regulations page showing the Compliance category with document list.
+
+{/* SCREENSHOT:
+Page: Regulations — Compliance
+Capture: Full regulations page showing the Compliance category with document entries
+Filename suggestion: intranet-regulations-compliance.png
+Purpose: Show the regulations list layout
+*/}
+
+## Categories
+
+Regulations are organized into three categories, accessible from the sidebar under **Regulation**:
+
+| Category | Description |
+|---|---|
+| **Compliance** | Regulatory compliance documents and policies |
+| **HRD** | Human resource department regulations and guidelines |
+| **Legal** | Legal and regulatory documents |
+
+Click on a category in the sidebar to view its document list.
+
+## Browsing regulations
+
+Each category page displays regulations in a sortable table. Each entry shows:
+
+- **Title** — The regulation document name (click to view details)
+- **Division** — The organizational division the regulation belongs to
+- **Urgent** — A red **Urgent** badge if the regulation is marked urgent
+- **Effective Period** — The date range when the regulation is in effect
+- **Updated** — When the regulation was last updated
+- **Actions** — Buttons to View, Edit, or Delete
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Regulations table with columns visible and an Urgent badge displayed.
+
+{/* SCREENSHOT:
+Page: Regulations — Compliance
+Capture: Table showing regulation rows with badges and action buttons
+Filename suggestion: intranet-regulations-table.png
+Purpose: Show the table layout and column structure
+*/}
+
+## Searching and filtering regulations
+
+Use the search bar at the top of the table to find regulations by title. The search applies as you type or when you press Enter.
+
+For more refined filtering, use the advanced filter options:
+
+- **Division** — Filter by organizational division
+- **Urgent** — Filter by urgency level (Urgent, Normal)
+
+Click **Reset** to clear all filters and return to the default view.
+
+## Viewing regulation details
+
+Click on a regulation title in the table to open the detail view. The detail page shows:
+
+- **Regulation content** — The full text of the regulation document
+- **Record details** — Division, category, urgency, effective period, visible-to roles, last updated, and created by
+- **Attachments** — Any files attached to the regulation (with View and Download buttons)
+- **Activity** — Creation and update timestamps
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Regulation detail page showing content, record details, and attachments.
+
+{/* SCREENSHOT:
+Page: Regulation Detail
+Capture: Full regulation detail page with content, sidebar details, attachments, and activity
+Filename suggestion: intranet-regulation-detail.png
+Purpose: Show the complete regulation detail layout
+*/}
+
+## Attachments
+
+Regulations can include file attachments. In the detail view, the Attachments section lists all attached files with:
+
+- **File name** — The original name of the uploaded file
+- **File type and size** — The file format and size information
+- **View** — Opens the file preview in a new tab
+- **Download** — Downloads the file to your device
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Attachments section showing attached files with View and Download buttons.
+
+{/* SCREENSHOT:
+Page: Regulation Detail
+Capture: Attachments card showing file entries with action buttons
+Filename suggestion: intranet-regulation-attachments.png
+Purpose: Show the attachments interface
+*/}
+
+## Creating a new regulation
+
+If you have permission, a **New Regulation** button appears at the top right of the table.
+
+1. Click **New Regulation** to open the creation dialog
+2. Fill in the required fields:
+   - **Title** — The regulation document name
+   - **Content** — The full regulation text
+   - **Category** — Select the category (Compliance, HRD, or Legal)
+   - **Division** — Select the organizational division
+   - **Urgent** — Toggle if this is an urgent regulation
+   - **Start Date** — When the regulation becomes effective (optional)
+   - **End Date** — When the regulation expires (optional)
+   - **Visible To** — Select specific roles that should see this regulation (optional)
+   - **Attachments** — Upload files to attach to the regulation (optional)
+3. Click **Save** to create the regulation
+
+> **Screenshot placeholder**
+>
+> Add screenshot: New Regulation dialog with form fields visible.
+
+{/* SCREENSHOT:
+Page: Regulations
+Capture: New Regulation dialog showing all form fields
+Filename suggestion: intranet-regulation-create.png
+Purpose: Show the regulation creation form
+*/}
+
+## Editing a regulation
+
+1. Click the **Edit** button on any regulation row in the table (or on the detail page)
+2. The edit dialog opens with the current regulation data pre-filled
+3. Make your changes
+4. Click **Save** to apply the updates
+
+## Deleting a regulation
+
+1. Click the **Delete** button on a regulation row (or on the detail page)
+2. A confirmation dialog appears asking "Are you sure you want to delete this regulation?"
+3. Click **Delete** to confirm, or **Cancel** to abort
+
+<Callout type="warning">
+  Deleting a regulation cannot be undone.
+</Callout>
+
+## Effective periods
+
+Regulations can have defined effective periods:
+
+- **Start Date** — The date the regulation becomes active
+- **End Date** — The date the regulation expires
+- If both are set, the effective period is displayed as a date range
+- If only a start date is set, it shows "From [date]"
+- If only an end date is set, it shows "Until [date]"
+
+## Regulation divisions
+
+Divisions are organizational units that regulations are assigned to. Each regulation belongs to one division. Divisions can be managed through the Admin panel if you have the appropriate permissions.
+
+## Permission requirements
+
+- **Viewing regulations** requires the Regulation module read permission
+- **Creating, editing, and deleting** regulations requires the Regulation module create, update, and delete permissions respectively
+- If you don't have the required permissions, the **New Regulation** button and action buttons will not be visible

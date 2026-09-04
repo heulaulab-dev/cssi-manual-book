@@ -1,0 +1,236 @@
+---
+title: Admin Panel
+description: Administrative tools for managing users, roles, permissions, audit logs, and system announcements.
+---
+
+# Admin Panel
+
+The Admin Panel provides administrative tools for managing users, roles, permissions, audit logs, system announcements, and regulation divisions. Access to the Admin Panel is restricted to users with administrative roles.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Admin Dashboard showing overview cards and quick actions.
+
+{/* SCREENSHOT:
+Page: Admin Dashboard
+Capture: Full admin dashboard with overview cards, quick actions, and recent activity
+Filename suggestion: intranet-admin-dashboard.png
+Purpose: Show the admin dashboard layout
+*/}
+
+## Accessing the Admin Panel
+
+The Admin Panel is accessible from the sidebar when you have administrative permissions. Navigate to **Administration** in the sidebar to access the admin workspace.
+
+If you don't have administrative access, the Administration section will not appear in your sidebar.
+
+## Admin Dashboard
+
+The Admin Dashboard provides an operational overview of your system:
+
+### User overview
+
+Shows summary metrics for user accounts:
+
+- **Total** — All user accounts in the system
+- **Active** — Currently active user accounts (with a green indicator)
+- **Inactive** — Inactive user accounts
+
+### Activity overview
+
+Shows the number of audit events recorded in the last 24 hours, giving you a quick view of recent administrative activity.
+
+### Quick actions
+
+Common administrative tasks available as buttons:
+
+- **Create User** — Open the Users page to add a new user
+- **Roles & Permissions** — Open the Roles page to manage role assignments
+- **New Announcement** — Open the System Announcements page to create a new announcement
+- **View Audit Logs** — Open the Audit Logs page to review activity
+
+### Recent activity
+
+A feed of the most recent administrative actions, showing:
+
+- The action performed
+- The entity type (User, Role, Permission, Login, Announcement)
+- Who performed the action
+- When it occurred (with relative time display)
+
+Click **View all** to open the full Audit Logs page.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Admin Dashboard showing the Recent Activity section with action entries.
+
+{/* SCREENSHOT:
+Page: Admin Dashboard
+Capture: Recent Activity section showing action entries
+Filename suggestion: intranet-admin-recent-activity.png
+Purpose: Show the recent activity feed
+*/}
+
+## Users
+
+The Users page lets you manage user accounts in the system.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Users management page showing the user table.
+
+{/* SCREENSHOT:
+Page: Admin — Users
+Capture: Full users management page with user table and filters
+Filename suggestion: intranet-admin-users.png
+Purpose: Show the users management interface
+*/}
+
+### Viewing users
+
+The user table displays all user accounts with relevant information. Use the search bar and filters to find specific users.
+
+### Creating a new user
+
+1. Navigate to **Administration** > **Users**
+2. Click the button to create a new user
+3. Fill in the required user information
+4. Save the new user account
+
+### Managing user accounts
+
+From the Users page, you can:
+
+- View user details
+- Edit user information
+- Activate or deactivate user accounts
+- Assign roles to users
+
+## Roles
+
+The Roles page lets you manage role definitions and their associated permissions.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Roles management page showing role list and permissions.
+
+{/* SCREENSHOT:
+Page: Admin — Roles
+Capture: Roles management page with role entries
+Filename suggestion: intranet-admin-roles.png
+Purpose: Show the roles management interface
+*/}
+
+### Viewing roles
+
+The roles table displays all defined roles with their names and descriptions.
+
+### Managing roles
+
+From the Roles page, you can:
+
+- View role details and assigned permissions
+- Edit role names and descriptions
+- Assign or remove permissions from roles
+- Create new roles
+
+### Understanding permissions
+
+Each role has a set of module permissions that determine what actions users with that role can perform. Permissions are organized by module and include actions like Create, Read, Update, Delete, Approve, Reject, Export, Import, and Print.
+
+## Audit Logs
+
+The Audit Logs page provides a comprehensive record of all administrative actions performed in the system.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Audit Logs page showing log entries with timestamps and actions.
+
+{/* SCREENSHOT:
+Page: Admin — Audit Logs
+Capture: Audit logs table with log entries showing actions, users, and timestamps
+Filename suggestion: intranet-admin-audit-logs.png
+Purpose: Show the audit logs interface
+*/}
+
+### Viewing audit logs
+
+The audit log table displays all recorded actions with:
+
+- **Action** — The type of action performed
+- **Entity** — The type of entity affected (User, Role, Permission, etc.)
+- **User** — Who performed the action
+- **Timestamp** — When the action occurred
+
+### Filtering audit logs
+
+Use the search bar and filters to find specific audit entries. You can filter by action type, entity type, user, and date range.
+
+## System Announcements
+
+The System Announcements page lets you manage announcements that are displayed across the system.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: System Announcements management page.
+
+{/* SCREENSHOT:
+Page: Admin — System Announcements
+Capture: System announcements management page with announcement list
+Filename suggestion: intranet-admin-announcements.png
+Purpose: Show the system announcements management interface
+*/}
+
+### Managing system announcements
+
+From this page, you can:
+
+- View all system announcements
+- Create new system announcements
+- Edit existing announcements
+- Delete announcements
+
+System announcements differ from intranet announcements in that they are managed at the system level and may be displayed across multiple applications.
+
+## Divisions
+
+The Divisions page lets you manage organizational divisions that are used to categorize regulations and other content.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Divisions management page showing division list.
+
+{/* SCREENSHOT:
+Page: Admin — Divisions
+Capture: Divisions management page with division entries
+Filename suggestion: intranet-admin-divisions.png
+Purpose: Show the divisions management interface
+*/}
+
+<Callout type="info">
+  The Divisions page is only visible to system administrators.
+</Callout>
+
+### Managing divisions
+
+From this page, you can:
+
+- View all organizational divisions
+- Create new divisions
+- Edit division names and codes
+- Activate or deactivate divisions
+
+Divisions are used when creating regulations to assign them to specific organizational units.
+
+## Permission requirements
+
+Access to the Admin Panel and its sections requires appropriate administrative permissions:
+
+- **Admin Dashboard** — Requires an administrative role
+- **Users** — Requires user management permissions
+- **Roles** — Requires role management permissions
+- **Audit Logs** — Requires audit log read permissions
+- **System Announcements** — Requires system announcement management permissions
+- **Divisions** — Requires system administrator access
+
+If you don't have the required permissions, the corresponding sections will not be accessible.

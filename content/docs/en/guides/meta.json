@@ -1,0 +1,10 @@
+{
+  "title": "Shared Guides",
+  "pages": [
+    "account-settings",
+    "notifications",
+    "app-navigation",
+    "admin-panel",
+    "common-ui-patterns"
+  ]
+}

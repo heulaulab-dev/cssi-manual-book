@@ -1,0 +1,141 @@
+---
+title: Announcements
+description: Browse and manage intranet announcements.
+---
+
+# Announcements
+
+The Announcements section lets you create, view, edit, and manage internal company announcements. Announcements can be scheduled with start and end dates, marked as urgent, and targeted to specific roles.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Announcements management page showing the table with filters and entries.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: Full announcements table with filters, search, and announcement entries
+Filename suggestion: intranet-announcements-list.png
+Purpose: Show the announcements management interface
+*/}
+
+## Viewing announcements
+
+From the Dashboard, the Intranet Announcements widget shows the most recent announcements. Click on any announcement to view its full content.
+
+From the sidebar, navigate to **Intranet** > **Announcements** to open the full management page. This page displays all announcements in a sortable table.
+
+Each announcement entry shows:
+
+- **Title** — The announcement headline (click to view details)
+- **Urgent** — A red **Urgent** badge if the announcement is marked urgent
+- **Publication** — Current publication state (Active, Inactive, Upcoming, or Expired)
+- **Start Date** — When the announcement begins publishing
+- **End Date** — When the announcement stops publishing
+- **Created** — When the announcement was created
+- **Actions** — Buttons to Edit or Delete
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Announcements table with columns visible and an Urgent badge displayed.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: Table showing announcement rows with badges and action buttons
+Filename suggestion: intranet-announcements-table.png
+Purpose: Show the table layout and column structure
+*/}
+
+## Searching and filtering announcements
+
+Use the search bar at the top of the table to find announcements by title. The search applies as you type or when you press Enter.
+
+For more refined filtering, use the advanced filter options:
+
+- **Status** — Filter by publication state (Active, Inactive, Upcoming, Expired)
+- **Urgent** — Filter by urgency level (Urgent, Normal)
+
+Click **Reset** to clear all filters and return to the default view.
+
+## Creating a new announcement
+
+If you have permission, a **New Announcement** button appears at the top of the page.
+
+1. Click **New Announcement** to open the creation dialog
+2. Fill in the required fields:
+   - **Title** — The announcement headline
+   - **Content** — The full announcement text
+   - **Urgent** — Toggle if this is an urgent announcement
+   - **Start Date** — When the announcement should begin publishing (optional)
+   - **End Date** — When the announcement should stop publishing (optional)
+   - **Visible To** — Select specific roles that should see this announcement (optional — if left empty, everyone can see it)
+3. Click **Save** to create the announcement
+
+> **Screenshot placeholder**
+>
+> Add screenshot: New Announcement dialog with form fields visible.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: New Announcement dialog showing all form fields
+Filename suggestion: intranet-announcement-create.png
+Purpose: Show the announcement creation form
+*/}
+
+## Editing an announcement
+
+1. Click the **Edit** button on any announcement row in the table
+2. The edit dialog opens with the current announcement data pre-filled
+3. Make your changes
+4. Click **Save** to apply the updates
+
+## Viewing announcement details
+
+Click on an announcement title in the table to open the detail view. The detail page shows:
+
+- **Announcement content** — The full text of the announcement
+- **Record details** — Urgency, publication state, publishing period, last updated, created by, and visible-to roles
+- **Activity** — Creation and update timestamps
+
+From the detail view, you can:
+
+- Click **Edit** to modify the announcement
+- Click **Delete** to remove the announcement (with confirmation)
+- Click **Back to Management** to return to the list
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Announcement detail page showing content, record details, and activity.
+
+{/* SCREENSHOT:
+Page: Announcement Detail
+Capture: Full announcement detail page with content, sidebar details, and activity
+Filename suggestion: intranet-announcement-detail.png
+Purpose: Show the complete announcement detail layout
+*/}
+
+## Deleting an announcement
+
+1. Click the **Delete** button on an announcement row (or on the detail page)
+2. A confirmation dialog appears asking "Are you sure you want to delete this announcement?"
+3. Click **Delete** to confirm, or **Cancel** to abort
+
+<Callout type="warning">
+  Deleting an announcement cannot be undone.
+</Callout>
+
+## Publication states
+
+Announcements have publication states that determine their visibility:
+
+| State | Description |
+|---|---|
+| **Active** | Currently published and visible to users |
+| **Upcoming** | Scheduled to start publishing in the future |
+| **Expired** | Past its end date, no longer visible |
+| **Inactive** | Manually deactivated, not visible to users |
+
+## Permission requirements
+
+- **Viewing announcements** requires the Announcements module read permission
+- **Creating, editing, and deleting** announcements requires the Announcements module create, update, and delete permissions respectively
+- If you don't have the required permissions, the **New Announcement** button and action buttons will not be visible

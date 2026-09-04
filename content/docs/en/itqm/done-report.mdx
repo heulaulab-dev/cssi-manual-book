@@ -1,0 +1,135 @@
+---
+title: Done Report
+description: View completed development requests, verify work, and manage registration status.
+---
+
+# Done Report
+
+The Done Report provides a centralized view of completed development requests. It lets you verify that work has been delivered as expected and manage registration status.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Done Report page showing the request table.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Full Done Report table with representative entries
+Filename suggestion: itqm-done-report.png
+Purpose: Show the completed requests view
+*/}
+
+## Done Report table
+
+The table displays all development requests that have been marked as done. Each row shows:
+
+| Column | Description |
+|---|---|
+| Subject | The request title |
+| Type | The category of request |
+| System | The target system |
+| Requester | Who submitted the request |
+| PICs | Assigned developer(s) |
+| Due | The due date for the work |
+| Status | Current status |
+| Overdue | Whether the request was completed past its due date |
+| Registered | Whether the request has been registered |
+| Actions | Available actions for the request |
+
+Use the column headers to sort and the search bar to filter entries.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Done Report table with column headers and all data visible.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Table showing all columns including Overdue and Registered
+Filename suggestion: itqm-done-report-columns.png
+Purpose: Show all available columns in the done report
+*/}
+
+## Actions
+
+Depending on your role and the request status, you may see these actions:
+
+### Mark Done
+
+When a request is in **In Progress** or **Pending Verification** status, you can mark it as done:
+
+1. Click **Mark Done** on the request row
+2. The request moves to **Done** status
+3. The requestor is notified to verify the completion
+
+### Verify
+
+When a request is in **Pending Verification** status, the requestor can verify the completion:
+
+1. Click **Verify** on the request row
+2. The request is confirmed as completed and closed
+3. The request moves to **Done** status permanently
+
+### Override Done
+
+For requests that need to be manually moved to Done status outside the normal workflow:
+
+1. Click **Override Done** on the request row
+2. The request is force-closed without requiring verification
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Done Report showing action buttons (Mark Done, Verify, Override Done).
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Action buttons visible on request rows
+Filename suggestion: itqm-done-report-actions.png
+Purpose: Show the available actions for completed requests
+*/}
+
+### Toggle Register
+
+The **Toggle Register** action lets you mark or unmark a request as registered:
+
+1. Click **Toggle Register** on the request row
+2. The registration status updates accordingly
+
+Registration is used to track whether a completed request has been formally registered in the system.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Toggle Register action in the Done Report.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Toggle Register action and registration status
+Filename suggestion: itqm-done-report-register.png
+Purpose: Show how to manage registration status
+*/}
+
+## Overdue indicator
+
+The **Overdue** column shows whether a request was completed after its due date. This helps identify delivery delays and track on-time completion rates.
+
+- Overdue requests are visually highlighted
+- The dashboard also shows overdue information in the Upcoming Due Dates widget
+
+## Request detail
+
+Click on any request in the Done Report to open its full detail view, which shows the complete history including who worked on it, when it was completed, and any verification notes.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Request detail from the Done Report showing completion history.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Request detail view showing completion information
+Filename suggestion: itqm-done-report-detail.png
+Purpose: Show the full detail of a completed request
+*/}
+
+## Start here
+
+- [Development Requests](./development-requests) — Submit and track active requests
+- [Dashboard](./dashboard) — View your completed work summary on the dashboard
+- [Issues](./issues) — Create and manage issues

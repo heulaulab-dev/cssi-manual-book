@@ -1,0 +1,141 @@
+---
+title: Common UI Patterns
+description: Shared interface patterns, error states, and loading behaviors across CSSI applications.
+---
+
+# Common UI Patterns
+
+All CSSI applications share consistent interface patterns. This guide covers the common elements you will encounter across the system.
+
+## Loading states
+
+When an application is loading data, you will see:
+
+- **Skeleton placeholders** — Gray animated placeholders that show the approximate layout of content before it loads
+- **Spinners** — A rotating indicator shown while a specific action is in progress (such as saving or submitting)
+
+These patterns ensure you always know the system is working, even when data has not yet appeared.
+
+## Error states
+
+When something goes wrong, CSSI applications display a consistent error pattern:
+
+- **Error alert** — A red banner with a message describing what failed
+- **Retry button** — Click **Retry** to attempt the operation again
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Error state showing alert banner with Retry button.
+
+{/* SCREENSHOT:
+Page: Error State
+Capture: Error alert with retry button
+Filename suggestion: shared-error-state.png
+Purpose: Show the standard error handling pattern
+*/}
+
+## Empty states
+
+When a page or section has no data to display, you will see an empty state with:
+
+- An icon representing the content type
+- A title explaining that no data is available
+- An optional description with suggestions (such as "Try a different filter")
+- An optional action button to create or add new items
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Empty state with icon, title, and description.
+
+{/* SCREENSHOT:
+Page: Empty State
+Capture: Empty state showing icon, title, and description
+Filename suggestion: shared-empty-state.png
+Purpose: Show the standard empty state pattern
+*/}
+
+## 404 Not Found
+
+If you navigate to a page that does not exist, you will see a friendly 404 page:
+
+- **Heading** — "(404) Looks like the page you're looking for got lost somewhere."
+- **Subtext** — "But hey — in KB Valbury, even the unexpected detours lead somewhere."
+- **Back to Dashboard** button — Returns you to the application dashboard
+
+> **Screenshot placeholder**
+>
+> Add screenshot: 404 page with friendly message and back button.
+
+{/* SCREENSHOT:
+Page: 404 Not Found
+Capture: 404 page with KB Valbury branding
+Filename suggestion: shared-404-page.png
+Purpose: Show the standard 404 page
+*/}
+
+## Toast notifications
+
+Toast notifications appear in the top-right corner of the screen to confirm actions or report results:
+
+| Type | Appearance | When it appears |
+|---|---|---|
+| **Success** | Green background | An operation completed successfully |
+| **Error** | Red background | An operation failed |
+| **Info** | Blue background | Informational message |
+| **Warning** | Yellow background | Caution or attention needed |
+
+Toast notifications disappear automatically after a few seconds.
+
+## Tables and data lists
+
+Data is displayed in tables with the following common features:
+
+- **Search** — Type in the search box to filter rows by text
+- **Filters** — Use dropdown selectors to narrow results by status, type, date range, or other criteria
+- **Sort** — Click column headers to sort data in ascending or descending order
+- **Pagination** — Use **Previous** and **Next** buttons to navigate between pages of results
+- **Empty search** — If no results match your filters, an empty state message appears
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Data table with search, filters, and pagination visible.
+
+{/* SCREENSHOT:
+Page: Data Table
+Capture: Table with search input, filter dropdowns, and pagination
+Filename suggestion: shared-data-table.png
+Purpose: Show the standard table pattern
+*/}
+
+## Confirmation dialogs
+
+When you perform a destructive action (such as deleting data), a confirmation dialog appears with:
+
+- A clear title explaining what will happen
+- A description of the consequences
+- **Cancel** button to abort
+- **Confirm** button (often red/destructive) to proceed
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Confirmation dialog with cancel and confirm buttons.
+
+{/* SCREENSHOT:
+Page: Confirmation Dialog
+Capture: Delete confirmation dialog
+Filename suggestion: shared-confirmation-dialog.png
+Purpose: Show the standard confirmation pattern
+*/}
+
+## Permission-based visibility
+
+Some features, navigation items, and buttons are only visible if you have the required permissions. If you cannot see a feature that you expect:
+
+1. Check with your administrator to confirm your role and permissions
+2. Some features may require a specific role or division assignment
+3. The Admin Panel shows which permissions are assigned to each role
+
+<Callout type="info">
+  These patterns are consistent across all CSSI applications. Once you learn
+  them in one application, they work the same way everywhere.
+</Callout>

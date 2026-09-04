@@ -1,0 +1,196 @@
+---
+title: IT Config
+description: Configure tasks, parts, and checklist items for the IT Division.
+---
+
+# IT Config
+
+The IT Config page allows authorized users to manage the checklist configuration for the IT Division. You can create, rename, and delete tasks, parts, and checklist items that appear on the Today's Checklist page.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full IT Config page showing the summary strip, search bar, and task sections.
+
+{/* SCREENSHOT:
+Page: IT Config
+Capture: Complete configuration view with summary, search, expand/collapse controls, and task hierarchy
+Suggested filename: daily-operation-it-config.png
+Purpose: Show the IT Config workspace
+*/}
+
+## Summary strip
+
+The summary strip at the top displays three metrics:
+
+| Metric | Description |
+|---|---|
+| **Tasks** | Total number of tasks in the configuration |
+| **Parts** | Total number of parts across all tasks |
+| **Checklist Items** | Total number of checklist items across all parts |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Summary strip showing Tasks, Parts, and Checklist Items counts.
+
+{/* SCREENSHOT:
+Page: IT Config — Summary Strip
+Capture: Three metric cards with counts
+Suggested filename: daily-operation-it-config-summary.png
+Purpose: Show configuration counts at a glance
+*/}
+
+## Search and expand controls
+
+Above the task list, you will find:
+
+- **Search** — Type in the search box to filter tasks, parts, or checklist items by name
+- **Expand All** — Click to expand all task and part sections
+- **Collapse All** — Click to collapse all task and part sections
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Search box with Expand All and Collapse All buttons.
+
+{/* SCREENSHOT:
+Page: IT Config — Controls
+Capture: Search input and Expand/Collapse buttons
+Suggested filename: daily-operation-it-config-controls.png
+Purpose: Show the search and expand/collapse controls
+*/}
+
+## Creating a new task
+
+1. Click the **New Task** button (or the **Create Task** button in the empty state)
+2. Enter a task name in the **Task** field
+3. Click **Create Task**
+4. The new task appears in the task list
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Create Task dialog with task name input field.
+
+{/* SCREENSHOT:
+Page: IT Config — Create Task
+Capture: Create Task dialog with input field and Create/Cancel buttons
+Suggested filename: daily-operation-create-task.png
+Purpose: Show the task creation dialog
+*/}
+
+## Task sections
+
+Tasks are displayed as collapsible sections. Each task shows:
+
+- **Task name**
+- **Part count** — Number of parts within the task
+- **Item count** — Number of checklist items across all parts
+
+### Renaming a task
+
+1. Click the **Rename** button (pencil icon) on the task row
+2. Edit the task name in the inline editor
+3. Press **Enter** or click **Save** to confirm
+4. Press **Escape** or click **Cancel** to discard
+
+### Deleting a task
+
+1. Click the **Delete** button (trash icon) on the task row
+2. A confirmation dialog appears explaining the consequences
+3. Click **Delete** to confirm, or **Cancel** to abort
+
+<Callout type="warning">
+  Deleting a task removes all its parts and checklist items. Existing
+  submissions that reference the task may be affected.
+</Callout>
+
+## Part sections
+
+Within each task, parts are displayed as nested collapsible sections. Each part shows:
+
+- **Part name**
+- **Checklist item count**
+
+### Adding a part
+
+1. Expand a task section
+2. Click the **Add Part** inline form at the bottom of the expanded task
+3. Enter a part name in the **Part name** field
+4. Click **Add Part**
+
+### Renaming a part
+
+1. Click the **Rename** button (pencil icon) on the part row
+2. Edit the part name in the inline editor
+3. Press **Enter** or click **Save** to confirm
+
+### Deleting a part
+
+1. Click the **Delete** button (trash icon) on the part row
+2. A confirmation dialog appears
+3. Click **Delete** to confirm, or **Cancel** to abort
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Part sections showing rename and delete buttons, and the Add Part form.
+
+{/* SCREENSHOT:
+Page: IT Config — Parts
+Capture: Expanded task with part sections, rename/delete buttons, and Add Part form
+Suggested filename: daily-operation-it-config-parts.png
+Purpose: Show how to manage parts within a task
+*/}
+
+## Checklist items table
+
+Within each expanded part, the checklist items are displayed in a table:
+
+| Column | Description |
+|---|---|
+| **#** | Sequential item number |
+| **Checklist Item** | The name of the checklist item |
+| **Order** | Sort order number |
+| **Actions** | Rename and Delete buttons |
+
+### Adding a checklist item
+
+1. Expand a part section
+2. Use the **Add Item** form at the bottom of the expanded part
+3. Enter an item name in the **Checklist item** field
+4. Click **Add Item**
+
+### Renaming a checklist item
+
+1. Click the **Rename** button (pencil icon) on the item row
+2. Edit the item name in the inline editor
+3. Press **Enter** or click **Save** to confirm
+
+### Deleting a checklist item
+
+1. Click the **Delete** button (trash icon) on the item row
+2. A confirmation dialog appears
+3. Click **Delete** to confirm, or **Cancel** to abort
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Checklist items table with rename/delete buttons and Add Item form.
+
+{/* SCREENSHOT:
+Page: IT Config — Checklist Items
+Capture: Items table with action buttons and Add Item form
+Suggested filename: daily-operation-it-config-items.png
+Purpose: Show how to manage checklist items within a part
+*/}
+
+## Empty states
+
+If no tasks are configured yet, you will see an empty state with a **New Task** button to get started. If your search does not match any configuration, you will see a message suggesting you try a different search.
+
+<Callout type="info">
+  Changes made in IT Config take effect immediately. Newly created tasks and
+  items will appear on the Today's Checklist page for the relevant business
+  dates.
+</Callout>
+
+<Callout type="info">
+  You need IT Config permissions to access this page. Contact your
+  administrator if you cannot see the IT Config page in the sidebar.
+</Callout>

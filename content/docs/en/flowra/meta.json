@@ -3,5 +3,12 @@
   "description": "Account opening and financial workflow automation",
   "root": true,
   "icon": "Workflow",
-  "pages": ["index", "getting-started"]
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "opening-accounts",
+    "agreements",
+    "digital-signing"
+  ]
 }

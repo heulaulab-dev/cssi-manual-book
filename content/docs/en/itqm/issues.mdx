@@ -1,0 +1,207 @@
+---
+title: Issues
+description: Create and manage issues using the list view or Kanban board.
+---
+
+# Issues
+
+Issues let you track bugs, tasks, and other work items that need attention. You can manage issues using either the list view or the Kanban board, depending on your preference.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Issues section showing the list view.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: Issues list view with representative entries
+Filename suggestion: itqm-issues-list.png
+Purpose: Show the issues list view
+*/}
+
+## Issues list
+
+The Issues list displays all tracked issues in a table format. Each row shows:
+
+| Column | Description |
+|---|---|
+| Key | The unique issue identifier |
+| Title | The issue title or summary |
+| Type | The category of issue (e.g., Bug, Task, Improvement) |
+| Priority | How urgent the issue is (e.g., Critical, High, Medium, Low) |
+| Status | Current workflow status |
+| Assignee | Who is responsible for the issue |
+| Due Date | When the issue should be resolved |
+| Linked Request | Any development request linked to this issue |
+| Actions | Available actions for the issue |
+
+Use the column headers to sort and the search bar to filter issues.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Issues table with column headers and representative data.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: Issues table showing all columns
+Filename suggestion: itqm-issues-table-columns.png
+Purpose: Show all available columns in the issues table
+*/}
+
+### Creating a new issue
+
+To create a new issue:
+
+1. Click the **New Issue** button in the top-right corner of the Issues page
+2. Fill in the required fields in the dialog:
+   - **Title** — A clear summary of the issue
+   - **Description** — Detailed information about the issue
+   - **Type** — Select the issue category from the dropdown
+   - **Priority** — Select the urgency level from the dropdown
+   - **Assignee** — Optionally assign someone to the issue
+   - **Due Date** — Optionally set a deadline
+   - **Linked Request** — Optionally link to an existing development request
+3. Click **Submit** to create the issue
+
+> **Screenshot placeholder**
+>
+> Add screenshot: New Issue dialog showing all fields.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: New Issue dialog with all form fields visible
+Filename suggestion: itqm-new-issue-dialog.png
+Purpose: Show how to create a new issue
+*/}
+
+### Issue actions
+
+Depending on the issue status and your role, you may see these actions:
+
+- **Edit** — Modify the issue details
+- **Assign** — Change the assigned person
+- **Close** — Mark the issue as resolved
+- **Reopen** — Reopen a closed issue
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Issue actions visible on a row.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: Action buttons visible on issue rows
+Filename suggestion: itqm-issue-actions.png
+Purpose: Show available actions for issues
+*/}
+
+### Issue detail
+
+Click on any issue in the list to open its full detail view, which shows:
+
+- Title, description, and type information
+- Priority and status
+- Assignee and due date
+- Linked development request (if any)
+- Activity history and comments
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full issue detail view showing all information.
+
+{/* SCREENSHOT:
+Page: Issue Detail
+Capture: Complete issue detail with all metadata
+Filename suggestion: itqm-issue-detail.png
+Purpose: Show the full detail view of an issue
+*/}
+
+---
+
+## Kanban Board
+
+The Kanban Board provides a visual, card-based view of issues organized by status. It uses five columns to represent the workflow stages.
+
+### Board columns
+
+| Column | Description |
+|---|---|
+| Backlog | Issues that have been created but not yet prioritized |
+| Ready | Issues that are prepared and available to be worked on |
+| In Progress | Issues that are actively being worked on |
+| In Review | Issues that are complete and awaiting review |
+| Done | Issues that have been completed and closed |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full Kanban Board showing all five columns with cards.
+
+{/* SCREENSHOT:
+Page: Kanban Board
+Capture: Complete Kanban board with cards in each column
+Filename suggestion: itqm-kanban-board.png
+Purpose: Show the visual Kanban board layout
+*/}
+
+### Moving issues between columns
+
+To move an issue to a different status:
+
+1. Click and hold on an issue card
+2. Drag the card to the target column
+3. Release to drop the card in the new column
+4. The issue status updates automatically
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Dragging a card between columns on the Kanban board.
+
+{/* SCREENSHOT:
+Page: Kanban Board
+Capture: Card being dragged between columns
+Filename suggestion: itqm-kanban-drag.png
+Purpose: Show how drag-and-drop works on the board
+*/}
+
+### Creating issues from the board
+
+You can also create new issues directly from the Kanban Board:
+
+1. Click the **New Issue** button
+2. Fill in the issue details in the dialog
+3. The issue is created and placed in the appropriate column based on its status
+
+### Filtering the board
+
+Use the filter controls at the top of the board to narrow down which issues are displayed:
+
+- Filter by assignee to see one person's work
+- Filter by priority to focus on critical items
+- Filter by type to see specific categories of issues
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Kanban Board with filter controls visible.
+
+{/* SCREENSHOT:
+Page: Kanban Board
+Capture: Board showing filter controls and filtered results
+Filename suggestion: itqm-kanban-filters.png
+Purpose: Show how to filter the Kanban board
+*/}
+
+## List view vs. Kanban Board
+
+| When to use | Recommended view |
+|---|---|
+| Detailed filtering and sorting | Issues list |
+| Visual workflow management | Kanban Board |
+| Bulk operations on many issues | Issues list |
+| Quick status changes via drag-and-drop | Kanban Board |
+| Viewing issue details inline | Issues list |
+
+You can switch between the list view and Kanban Board using the view toggle buttons at the top of the page.
+
+## Start here
+
+- [Development Requests](./development-requests) — Submit and track development requests
+- [Done Report](./done-report) — View and verify completed work
+- [Dashboard](./dashboard) — See your issue summary on the dashboard

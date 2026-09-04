@@ -3,5 +3,13 @@
   "description": "IT quality management and development request workflows",
   "root": true,
   "icon": "CircleGauge",
-  "pages": ["index", "getting-started"]
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "development-requests",
+    "done-report",
+    "issues",
+    "config"
+  ]
 }

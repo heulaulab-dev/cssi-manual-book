@@ -1,0 +1,125 @@
+---
+title: Trend Catch
+description: Review profit/loss rankings and trading activity rankings filtered by date, segment, and type.
+---
+
+# Trend Catch
+
+The Trend Catch section provides two ranking pages that help you analyze stock performance. Both pages are accessible from the sidebar under the **Trend Catch** group.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Trend Catch section overview showing sidebar with P/L Rank and Trading Rank.
+
+{/* SCREENSHOT:
+Page: Trend Catch Overview
+Capture: Sidebar showing Trend Catch group with P/L Rank and Trading Rank
+Filename suggestion: crm-trend-catch-overview.png
+Purpose: Show the Trend Catch navigation structure
+*/}
+
+## P/L Rank
+
+The P/L Rank page shows profit and loss rankings for stocks, filtered by date, segment, and P&L type. Use this page to analyze which stocks are performing best or worst.
+
+### Filters
+
+The toolbar at the top provides three filters that update the results automatically:
+
+| Filter | Description |
+|---|---|
+| **Date** | Select the ranking date using the date picker |
+| **Segment** | Choose the market segment to filter by |
+| **P&L type** | Select the profit/loss calculation type |
+
+### Search
+
+Use the **search box** to filter results by stock name or code. This is a client-side filter that narrows the already-loaded ranking data.
+
+### Ranking table
+
+The results table displays the following columns:
+
+| Column | Description |
+|---|---|
+| Rank | Position in the ranking (displayed in a badge) |
+| Stock | Stock code (monospace) and full name |
+| Avg price | Average transaction price |
+| Close price | Latest closing price |
+| Daily P/L amount | Profit or loss for the day (red for losses) |
+| Stock value | Total market value |
+| Total balance | Account balance |
+| P/L rate | Percentage return (color-coded badge: green for positive, red for negative) |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: P/L Rank page showing filters and ranking table with data.
+
+{/* SCREENSHOT:
+Page: P/L Rank
+Capture: P/L Rank table with date, segment, and P&L type filters visible
+Filename suggestion: crm-pnl-rank.png
+Purpose: Show the P/L ranking interface
+*/}
+
+### Clearing filters
+
+Click the **clear button** in the search box to reset the client-side search. Use the filter controls to reset the server-side filters.
+
+## Trading Rank
+
+The Trading Rank page shows equities ranked by buy and sell transaction value, filtered by date, segment, and trade type. Use this page to analyze trading activity across stocks.
+
+### Filters
+
+The toolbar at the top provides three filters that update the results automatically:
+
+| Filter | Description |
+|---|---|
+| **Date** | Select the ranking date using the date picker |
+| **Segment** | Choose the market segment to filter by |
+| **Trade type** | Select the type of trade activity to rank by |
+
+### Search
+
+Use the **search box** to filter results by stock name or code. This is a client-side filter that narrows the already-loaded ranking data.
+
+### Ranking table
+
+The results table displays the following columns:
+
+| Column | Description |
+|---|---|
+| Rank | Position in the ranking (displayed in a badge) |
+| Stock | Stock code (monospace) and full name |
+| Open price | Opening price for the period |
+| Close price | Closing price for the period |
+| Change price | Absolute price change (red for negative) |
+| Total lot | Number of shares traded |
+| Total value | Total traded value |
+| Total volume | Trading volume |
+| Change rate % | Percentage change (color-coded badge: green for positive, red for negative) |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Trading Rank page showing filters and ranking table with data.
+
+{/* SCREENSHOT:
+Page: Trading Rank
+Capture: Trading Rank table with date, segment, and trade type filters visible
+Filename suggestion: crm-trading-rank.png
+Purpose: Show the trading ranking interface
+*/}
+
+### Clearing filters
+
+Click the **clear button** in the search box to reset the client-side search. Use the filter controls to reset the server-side filters.
+
+## Data availability
+
+Ranking data depends on published data for the selected date. If data is not yet available for a given date, you will see a message indicating that the data is not ready. Try selecting a different date or contact your administrator for assistance.
+
+<Callout type="info">
+  Ranking data is published on a regular schedule. If you see a "data not
+  ready" message, the data for that date may not have been published yet.
+</Callout>

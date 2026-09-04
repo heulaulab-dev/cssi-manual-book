@@ -1,0 +1,187 @@
+---
+title: Today's Checklist
+description: Complete and submit daily checklists for your division.
+---
+
+# Today's Checklist
+
+The Today's Checklist page is your primary workspace for completing daily operational tasks. Here you mark checklist items as done, add comments, and submit completed parts for approval.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full Today's Checklist page with Business Date picker, summary strip, and task sections.
+
+{/* SCREENSHOT:
+Page: Today's Checklist
+Capture: Complete page showing date picker, summary metrics, and expanded task sections
+Suggested filename: daily-operation-today-checklist.png
+Purpose: Show the main checklist workspace
+*/}
+
+## Business Date picker
+
+Use the **Business Date** picker in the toolbar to select the date you want to work on. The checklist data updates to match the selected date.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Business Date picker showing the calendar dropdown.
+
+{/* SCREENSHOT:
+Page: Today's Checklist — Date Picker
+Capture: Business Date picker expanded with calendar visible
+Suggested filename: daily-operation-date-picker.png
+Purpose: Show how to change the business date
+*/}
+
+## Summary strip
+
+The summary strip displays seven metrics for the selected date:
+
+| Metric | Description |
+|---|---|
+| **Tasks** | Total number of tasks configured for the date |
+| **Parts** | Total number of parts across all tasks |
+| **Completed** | Number and percentage of completed checklist items |
+| **Draft** | Number of parts still in draft status |
+| **Pending** | Number of parts submitted and awaiting approval |
+| **Rejected** | Number of parts that were rejected |
+| **Approved** | Number of parts that have been approved |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Summary strip showing all seven metric cards.
+
+{/* SCREENSHOT:
+Page: Today's Checklist — Summary Strip
+Capture: Seven metric cards with sample values
+Suggested filename: daily-operation-summary-strip.png
+Purpose: Show the summary metrics at a glance
+*/}
+
+## Task sections
+
+Tasks are displayed as collapsible sections. Each task shows:
+
+- **Task name** and sequence number
+- **Parts count** badge indicating how many parts belong to the task
+- **Completion progress** — percentage and item counts
+
+Click the expand/collapse chevron on the left of a task to show or hide its parts.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Collapsed and expanded task sections showing task headers and parts.
+
+{/* SCREENSHOT:
+Page: Today's Checklist — Task Sections
+Capture: Task sections in both collapsed and expanded states
+Suggested filename: daily-operation-task-sections.png
+Purpose: Show how tasks and parts are organized
+*/}
+
+## Part sections
+
+Within each task, parts are displayed as nested collapsible sections. Each part shows:
+
+- **Part name** and part number (e.g., 1.1)
+- **Status badge** — Draft, Pending, Approved, or Rejected
+- **Completion count** — Number of completed items out of total
+- **Saved time** — When the part was last saved or submitted
+
+### Part status
+
+Parts can have one of four statuses:
+
+| Status | Meaning |
+|---|---|
+| **Draft** | Not yet submitted; you can still edit and save |
+| **Pending** | Submitted and waiting for approval |
+| **Approved** | Approved by a supervisor; read-only |
+| **Rejected** | Rejected by a supervisor; corrections required |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Part sections showing different status badges (Draft, Pending, Approved, Rejected).
+
+{/* SCREENSHOT:
+Page: Today's Checklist — Part Status
+Capture: Part headers with different status badges
+Suggested filename: daily-operation-part-status.png
+Purpose: Show the different part statuses
+*/}
+
+## Checklist table
+
+When you expand a part, the checklist table is displayed with the following columns:
+
+| Column | Description |
+|---|---|
+| **#** | Sequential item number |
+| **Checklist Item** | The name of the checklist item |
+| **Complete** | Checkbox to mark the item as complete or incomplete |
+| **Comment** | Optional text field for adding comments |
+| **Action Taken** | Optional text field for recording actions performed |
+
+### Completing checklist items
+
+1. Expand a task section by clicking its name or chevron
+2. Expand the part you want to work on
+3. For each checklist item, click the **Complete** checkbox to mark it as done
+4. Optionally add a **Comment** or **Action Taken** for any item
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Checklist table with items, checkboxes, and text fields visible.
+
+{/* SCREENSHOT:
+Page: Today's Checklist — Checklist Table
+Capture: Checklist table showing items with checkboxes, comments, and action taken fields
+Suggested filename: daily-operation-checklist-table.png
+Purpose: Show how to complete individual checklist items
+*/}
+
+## Saving and submitting
+
+Once you have completed the checklist items for a part, you can save your progress or submit for approval.
+
+### Save Part
+
+Click **Save Part** to save your progress without submitting. Use this when you are not yet ready to submit (e.g., you still have items to complete). The part remains in Draft status.
+
+### Submit Part / Resubmit Part
+
+Click **Submit Part** to send the completed part to your supervisor for approval. This button is only available when:
+
+- All checklist items in the part are marked complete
+- The part has been saved at least once
+
+If a part was previously rejected, the button changes to **Resubmit Part**. You can review the rejection reason in the red alert banner above the checklist table.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Save Part and Submit Part buttons, with a rejected part showing the rejection reason.
+
+{/* SCREENSHOT:
+Page: Today's Checklist — Save and Submit
+Capture: Action buttons and rejection reason banner
+Suggested filename: daily-operation-save-submit.png
+Purpose: Show the save and submit workflow
+*/}
+
+### Read-only parts
+
+Parts in Pending or Approved status are read-only. The checklist table displays your submitted values as static text, and the checkboxes and text fields are disabled. A **Read-only** badge appears next to the part.
+
+## Empty states
+
+If no checklist tasks are configured for the selected date, you will see a message indicating that no tasks are available. This is normal for dates without scheduled operations.
+
+<Callout type="info">
+  Your checklist may look different from another team member's checklist
+  because tasks and parts are configured per division and role.
+</Callout>
+
+<Callout type="warning">
+  Always save your progress before navigating away. Unsaved changes will be
+  lost.
+</Callout>

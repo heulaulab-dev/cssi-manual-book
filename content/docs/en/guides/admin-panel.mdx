@@ -1,0 +1,167 @@
+---
+title: Admin Panel
+description: Manage users, roles, permissions, and system announcements across CSSI.
+---
+
+# Admin Panel
+
+The Admin Panel is available in every CSSI application and provides tools for managing users, roles, permissions, announcements, and audit logs. Access it by clicking **Administration** in the sidebar (available only to authorized administrators).
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Admin Panel dashboard showing overview cards and quick actions.
+
+{/* SCREENSHOT:
+Page: Admin Panel
+Capture: Admin dashboard with user overview, activity, and quick actions
+Filename suggestion: shared-admin-panel.png
+Purpose: Show the Admin Panel interface
+*/}
+
+## Admin Dashboard
+
+The Admin Dashboard provides a quick overview of your system:
+
+### User Overview
+
+Shows the total number of users, with counts for **Active** and **Inactive** users.
+
+### Activity (24h)
+
+Shows the number of audit events recorded in the last 24 hours.
+
+### Quick Actions
+
+Four shortcut buttons for common administrative tasks:
+
+| Action | Description |
+|---|---|
+| **Create User** | Open the Users page to add a new user |
+| **Roles & Permissions** | Manage roles and their access levels |
+| **New Announcement** | Create a system-wide announcement |
+| **View Audit Logs** | Review recent administrative activity |
+
+### Recent Activity
+
+The last five administrative actions are displayed with the action type, affected entity, who performed it, and when.
+
+## Users
+
+Manage all users in the system. From this page you can:
+
+- View a list of all users with their role, status, last login, and creation date
+- Search users by name or email
+- Filter users by role or status (Active, Suspended, Inactive)
+- Create new users with the **New User** button
+- Edit or deactivate existing users from the **Actions** dropdown
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Users list page showing user table with filters.
+
+{/* SCREENSHOT:
+Page: Admin — Users
+Capture: Users table with role and status badges
+Filename suggestion: shared-admin-users.png
+Purpose: Show the user management interface
+*/}
+
+## Role Permissions
+
+Manage roles, module access, and user assignments. The page is split into two panels:
+
+### Role selector (left panel)
+
+- Search for roles by name
+- Click **Create Role** to add a new role
+- Select a role to view and edit its details
+
+### Role detail (right panel)
+
+When you select a role, you see:
+
+- Role name, code, category, and type
+- Number of users assigned to the role
+- Two tabs: **Permissions** and **Users**
+
+#### Permissions tab
+
+A matrix of modules and actions. Toggle checkboxes to grant or revoke specific permissions for the role. Click **Save** to apply changes.
+
+#### Users tab
+
+View and manage users assigned to this role. Remove users with the **Remove** button, or assign new users with the **Assign User** button.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Role Permissions page showing the permissions matrix.
+
+{/* SCREENSHOT:
+Page: Admin — Role Permissions
+Capture: Permissions matrix with module/action checkboxes
+Filename suggestion: shared-admin-roles.png
+Purpose: Show the role and permissions management interface
+*/}
+
+## Audit Logs
+
+View a detailed history of administrative activities and security events. The log shows:
+
+- **Action** — What was done (Create, Update, Delete)
+- **Target** — The affected entity
+- **Date** — When the action occurred
+- **Details** — Click **View details** for more information
+
+### Filtering audit logs
+
+Use the filter controls to narrow down results:
+
+- **Action** — Filter by action type
+- **Filter by project** — Search by project name
+- **From date / To date** — Filter by date range
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Audit Logs page with filter controls and log entries.
+
+{/* SCREENSHOT:
+Page: Admin — Audit Logs
+Capture: Audit log table with filters
+Filename suggestion: shared-admin-audit-logs.png
+Purpose: Show the audit log interface
+*/}
+
+## System Announcements
+
+Create and manage announcements displayed across all CSSI applications.
+
+### Creating an announcement
+
+1. Click **New System Announcement**
+2. Enter a **Title** and **Content** (using the rich text editor)
+3. Set the **Status** (Active or Inactive)
+4. Toggle **Urgent** if the announcement requires immediate attention
+5. Set **Start Date** and **End Date** for the publishing period
+6. Attach files if needed using the file dropzone
+7. Click **Create** to publish
+
+### Managing announcements
+
+- **Edit** — Click the Edit button to modify an existing announcement
+- **Delete** — Click the Delete button and confirm to remove an announcement permanently
+
+> **Screenshot placeholder**
+>
+> Add screenshot: System Announcements page with announcement list.
+
+{/* SCREENSHOT:
+Page: Admin — System Announcements
+Capture: Announcements table with status and urgency badges
+Filename suggestion: shared-admin-announcements.png
+Purpose: Show the system announcements management interface
+*/}
+
+<Callout type="info">
+  The Admin Panel is available in every CSSI application. Changes made in one
+  application's Admin Panel apply across the entire system.
+</Callout>

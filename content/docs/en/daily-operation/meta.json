@@ -3,5 +3,13 @@
   "description": "Operational checklist, approval, and reporting workspace",
   "root": true,
   "icon": "ClipboardCheck",
-  "pages": ["index", "getting-started"]
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "today-checklist",
+    "approvals",
+    "history",
+    "it-config"
+  ]
 }

@@ -1,0 +1,142 @@
+---
+title: Approvals
+description: Review and approve or reject checklist submissions from your team.
+---
+
+# Approvals
+
+The Approvals page allows supervisors and authorized users to review checklist submissions, approve them, or reject them with a reason. Access this page from the sidebar under **IT Division > Approvals**.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full Approvals page showing the summary strip, filter controls, and submission table.
+
+{/* SCREENSHOT:
+Page: Approvals
+Capture: Complete approvals view with date picker, filters, and submission list
+Suggested filename: daily-operation-approvals.png
+Purpose: Show the approvals workspace
+*/}
+
+## Business Date picker
+
+Use the **Business Date** picker in the toolbar to select the date you want to review. The submissions list updates to match the selected date.
+
+## Summary strip
+
+The summary strip displays four metrics for the selected date:
+
+| Metric | Description |
+|---|---|
+| **Pending** | Number of submissions awaiting review |
+| **Approved** | Number of submissions already approved today |
+| **Rejected** | Number of submissions rejected today |
+| **Total** | Total number of submissions for the date |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Summary strip showing the four approval metrics.
+
+{/* SCREENSHOT:
+Page: Approvals — Summary Strip
+Capture: Four metric cards showing pending, approved, rejected, and total counts
+Suggested filename: daily-operation-approvals-summary.png
+Purpose: Show approval counts at a glance
+*/}
+
+## Filter controls
+
+Use the filter controls above the submissions table to narrow down results:
+
+| Filter | Description |
+|---|---|
+| **Date** | Filter submissions by business date |
+| **Status** | Filter by submission status (Pending, Approved) |
+
+You can also use the **Search** box to find submissions by item label.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Filter controls with status dropdown and search box.
+
+{/* SCREENSHOT:
+Page: Approvals — Filters
+Capture: Filter bar with status selector and search input
+Suggested filename: daily-operation-approvals-filters.png
+Purpose: Show how to filter submissions
+*/}
+
+## Approval queue table
+
+The submissions table displays each pending or approved submission with the following columns:
+
+| Column | Description |
+|---|---|
+| **Task** | The task name this submission belongs to |
+| **Part** | The part name |
+| **Status** | Current status badge (Pending, Approved) |
+| **Submitted By** | Who submitted the checklist |
+| **Submitted At** | When the submission was made |
+| **Actions** | Approve and Reject buttons (for pending items) |
+
+### Approving a submission
+
+1. Locate the pending submission in the table
+2. Click the **Approve** button in the Actions column
+3. The submission status changes to Approved
+
+### Rejecting a submission
+
+1. Locate the pending submission in the table
+2. Click the **Reject** button in the Actions column
+3. A reject dialog appears asking for a reason
+4. Enter the rejection reason in the **Reason** text area
+5. Click **Reject** to confirm, or **Cancel** to abort
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Reject dialog with reason textarea and Reject/Cancel buttons.
+
+{/* SCREENSHOT:
+Page: Approvals — Reject Dialog
+Capture: Rejection dialog with reason textarea
+Suggested filename: daily-operation-reject-dialog.png
+Purpose: Show the rejection workflow
+*/}
+
+<Callout type="info">
+  Rejection reasons are visible to the person who submitted the checklist. They
+  will see the reason displayed as a red alert on their Today's Checklist page.
+</Callout>
+
+## Viewing submission details
+
+Click on a row in the submissions table to open the detail panel. The detail panel shows:
+
+- Task and part name
+- Submission status
+- Business date
+- Submitted by and submitted at
+- Approved by and approved at (if applicable)
+- Full checklist table with all items, completion status, comments, and actions taken
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Detail panel showing submission details and checklist entries.
+
+{/* SCREENSHOT:
+Page: Approvals — Detail Panel
+Capture: Detail panel showing submission metadata and checklist table
+Suggested filename: daily-operation-approvals-detail.png
+Purpose: Show how to inspect a submission in detail
+*/}
+
+## Empty states
+
+If there are no submissions matching your filters, you will see a message indicating that no submissions are available for the selected date and filters.
+
+<Callout type="info">
+  You need approval permissions to access this page. If you cannot see the
+  Approvals page in the sidebar, contact your administrator to request the
+  appropriate permissions.
+</Callout>

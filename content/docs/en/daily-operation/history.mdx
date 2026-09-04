@@ -1,0 +1,122 @@
+---
+title: History
+description: Browse approved checklist history and view detailed reports.
+---
+
+# History
+
+The History page lets you browse approved checklist records for any business date. You can view the full details of each approved submission, including all checklist entries, comments, and actions taken.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Full History page showing the summary strip, report list, and detail panel.
+
+{/* SCREENSHOT:
+Page: History
+Capture: Complete history view with date picker, summary, report list, and detail panel
+Suggested filename: daily-operation-history.png
+Purpose: Show the history workspace
+*/}
+
+## Business Date picker
+
+Use the **Business Date** picker in the toolbar to select the date you want to review. The approved records list updates to match the selected date.
+
+## Summary strip
+
+The summary strip displays four metrics for the selected date:
+
+| Metric | Description |
+|---|---|
+| **Approved Records** | Total number of approved submissions for the date |
+| **Checklist Items** | Total number of checklist items across all records |
+| **Completed Items** | Number of items marked complete out of total |
+| **Approvers** | Number of distinct approvers who reviewed submissions |
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Summary strip showing the four history metrics.
+
+{/* SCREENSHOT:
+Page: History — Summary Strip
+Capture: Four metric cards with sample values
+Suggested filename: daily-operation-history-summary.png
+Purpose: Show history metrics at a glance
+*/}
+
+## Approved History section
+
+Below the summary, the Approved History section provides context about the data shown:
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Approved History section header with date context.
+
+{/* SCREENSHOT:
+Page: History — Approved History
+Capture: Approved History header with date context
+Suggested filename: daily-operation-approved-history.png
+Purpose: Show the approved history section header
+*/}
+
+## Report list table
+
+The report list table displays all approved submissions for the selected date:
+
+| Column | Description |
+|---|---|
+| **Date** | The business date of the submission |
+| **Task / Part** | The task and part name |
+| **Submitted By** | Who submitted the checklist |
+| **Approved By** | Who approved the submission |
+| **Checklist** | Number of completed items out of total |
+| **View** | Button to inspect the full details |
+
+Click on a row or the **View** button to see the full submission details in the right panel.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Report list table showing approved submissions with View buttons.
+
+{/* SCREENSHOT:
+Page: History — Report List
+Capture: Table rows showing approved records with task/part names and completion counts
+Suggested filename: daily-operation-history-report-list.png
+Purpose: Show how approved records appear in the list
+*/}
+
+### Pagination
+
+Use the **Previous** and **Next** buttons at the bottom of the report list to navigate between pages of results. The current page number and total pages are displayed.
+
+## Report detail panel
+
+When you select a report from the list, the detail panel on the right shows:
+
+- **Part name** and **Task name**
+- **Status** badge (always Approved)
+- **Business Date**
+- **Checklist Summary** — completed items count
+- **Submitted By** and **Submitted At**
+- **Approved By** and **Approved At**
+- **Checklist entries table** — all items with completion status, comments, and actions taken
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Detail panel showing approved submission with full checklist entries.
+
+{/* SCREENSHOT:
+Page: History — Report Detail
+Capture: Detail panel showing submission metadata and checklist entries table
+Suggested filename: daily-operation-history-detail.png
+Purpose: Show the full detail view of an approved record
+*/}
+
+## Empty states
+
+If no approved records exist for the selected date, you will see a message suggesting you try another business date.
+
+<Callout type="info">
+  History only shows approved submissions. Rejected or draft submissions are
+  not included in the history view.
+</Callout>

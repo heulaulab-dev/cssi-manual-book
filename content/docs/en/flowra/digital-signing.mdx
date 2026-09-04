@@ -1,0 +1,176 @@
+---
+title: Digital Signing & Documents
+description: Upload documents, manage attachments, and use Digital Card Signing for account opening workflows.
+---
+
+# Digital Signing & Documents
+
+Flowra provides document management and digital signing capabilities to support the account opening process. You can upload required client documents, attach supporting files, and process agreements through the Digital Card Signing (DCS) system.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Documents section of the opening account form showing required and additional documents.
+
+{/* SCREENSHOT:
+Page: Digital Signing & Documents
+Capture: Documents tab of the opening account creation form
+Filename suggestion: flowra-documents-section.png
+Purpose: Show the document upload interface
+*/}
+
+## What this section is for
+
+- **Upload required documents** — Submit mandatory identity and business documents for each account
+- **Attach supporting files** — Add any additional documents that support the account application
+- **Manage attachments** — View, replace, or remove documents attached to an account
+- **Digital signing** — Process agreements through the DCS system for electronic signatures
+
+## Required documents
+
+When creating an opening account, three document categories are required:
+
+| Document | Description | Accepted formats |
+|---|---|---|
+| **KTP / ID Card** | Identity card scan | JPG, PNG, PDF |
+| **NPWP** | Taxpayer identification document | PDF, DOCX, DOC, PNG, JPG, JPEG |
+| **SIUP** | Business license document | PDF, DOCX, DOC, PNG, JPG, JPEG |
+
+Each required document has a dedicated upload row with an **Attach file** button. Click the button to select a file from your computer.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Required documents section showing the three document categories with upload controls.
+
+{/* SCREENSHOT:
+Page: Documents Tab
+Capture: Required documents section with KTP, NPWP, and SIUP upload rows
+Filename suggestion: flowra-required-documents.png
+Purpose: Show the required document upload interface
+*/}
+
+### Uploading a required document
+
+1. Click **Attach file** next to the document category
+2. Select the file from your computer
+3. The file name and size appear next to the category
+4. To change the file, click **Replace file**
+5. To remove the file, click **Remove file**
+
+### Document guidelines
+
+The Documents tab includes a **Document Guidelines** panel on the right side:
+
+- Accepted formats: PDF, DOCX, DOC, PNG, JPG, JPEG
+- Maximum file size: 10 MB per document
+- One file per required document; use **Replace file** to change it
+
+An **Upload Summary** panel shows your progress:
+
+- **Required documents** — Number of required documents uploaded out of the total
+- **Additional documents** — Count of optional supporting files attached
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Document Guidelines and Upload Summary panels.
+
+{/* SCREENSHOT:
+Page: Documents Tab
+Capture: Document Guidelines panel and Upload Summary panel on the right side
+Filename suggestion: flowra-document-guidelines.png
+Purpose: Show the guidelines and summary panels
+*/}
+
+## Additional documents
+
+In addition to the three required documents, you can upload any number of supporting files. These are optional and can include any document that supports the account application.
+
+### Uploading additional documents
+
+1. In the **Additional Documents** section, drag and drop files onto the upload area, or click **browse** to select files
+2. You can select multiple files at once
+3. Each file appears in a table with its name, category, and size
+4. Click the trash icon next to a file to remove it
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Additional Documents section showing the drag-and-drop area and file list.
+
+{/* SCREENSHOT:
+Page: Documents Tab
+Capture: Additional Documents section with drag-and-drop area and file table
+Filename suggestion: flowra-additional-documents.png
+Purpose: Show the additional documents upload interface
+*/}
+
+### Supported file types
+
+All documents (required and additional) must be one of the following formats:
+
+- PDF (.pdf)
+- Microsoft Word (.docx, .doc)
+- PNG image (.png)
+- JPEG image (.jpg, .jpeg)
+
+Files larger than 10 MB will be rejected with an error message.
+
+## Managing attachments on existing accounts
+
+When viewing the detail page of an existing opening account, the **Attachments** section shows all documents that have been uploaded for that account.
+
+From the detail page, you can:
+
+- View a list of uploaded documents with their file name, category, and upload date
+- Upload new attachments through the document management interface
+- Replace or remove existing attachments
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Attachments section on the account detail page showing uploaded documents.
+
+{/* SCREENSHOT:
+Page: Account Detail
+Capture: Attachments section showing a list of uploaded documents
+Filename suggestion: flowra-account-attachments.png
+Purpose: Show how attachments appear on an existing account
+*/}
+
+## Digital Card Signing (DCS)
+
+The Digital Card Signing system enables electronic signature processing for agreements and other documents. DCS allows clients to sign documents digitally, eliminating the need for physical signatures in many cases.
+
+### How DCS works
+
+1. An agreement or document is prepared for signing
+2. The document is sent to the client through the DCS system
+3. The client reviews and signs the document electronically
+4. The signed document is returned and filed with the account
+
+### DCS benefits
+
+- **Faster processing** — No need to wait for physical document delivery
+- **Reduced errors** — Digital forms enforce required fields and validation
+- **Audit trail** — All signing actions are logged for compliance
+- **Secure** — Documents are encrypted and access-controlled
+
+<Callout type="info">
+  DCS availability may depend on the account type and your organization's
+  configuration. Contact your administrator if you need to enable or
+  configure DCS for your workflow.
+</Callout>
+
+## Document validation
+
+Flowra validates uploaded documents automatically:
+
+- **File type** — Only accepted formats are allowed
+- **File size** — Maximum 10 MB per document
+- **Required fields** — All three required document categories must have a file before the account can be submitted
+
+If a validation error occurs, an error message appears below the affected document row explaining the issue.
+
+## Tips for document management
+
+- Upload clear, legible scans of identity documents
+- Ensure document files are named descriptively for easy identification
+- Use the **Replace file** option if you need to update a document
+- Check the **Upload Summary** to verify all required documents are attached before submitting

@@ -1,0 +1,217 @@
+---
+title: Opening Accounts
+description: Create, manage, and process account opening applications through the full onboarding workflow.
+---
+
+# Opening Accounts
+
+The Opening Accounts section is the core of Flowra. It lets you create new account applications, track their progress through various stages, and manage the queue of accounts assigned to your role.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Opening Accounts page showing the full list view with filters.
+
+{/* SCREENSHOT:
+Page: Opening Accounts
+Capture: Full opening accounts list view with filters and table
+Filename suggestion: flowra-opening-accounts-list.png
+Purpose: Show the main opening accounts list view
+*/}
+
+## What Opening Accounts is for
+
+- **Create new accounts** — Submit new client account applications with all required information
+- **Track status** — Monitor each account through its onboarding lifecycle
+- **Manage queues** — Work through accounts assigned to your role (Sales or CSO)
+- **Upload documents** — Attach required and supporting documents to each account
+
+## Views
+
+The Opening Accounts section has three views, accessible from the sidebar:
+
+| View | Description |
+|---|---|
+| **All Opening Accounts** | Complete list of all account applications with filters and search |
+| **Sales Queue** | Accounts returned to Sales/Branch requiring follow-up |
+| **CSO Queue** | Accounts waiting for compliance review and verification |
+
+## All Opening Accounts
+
+The All Opening Accounts view displays every account application in a table. You can search by client name and filter by account status, client type, client status, creator, and date range.
+
+### Table columns
+
+| Column | Description |
+|---|---|
+| Process Acc Status | Current status of the account process (e.g., Branch Verification, Send to CSO) |
+| Client Name | Name of the client being onboarded |
+| Account Service | Service category (e.g., VOLT+, By Order VOLT+) |
+| Client Type | Type of client account |
+| Client Status | Current client status |
+| Phone | Client phone number |
+| Mobile Phone | Client mobile number |
+| Process Note | Notes about the account process |
+| Assigned To | Person who created or is handling the account |
+| Date Created | When the account application was created |
+| Date Modified | When the account was last updated |
+
+### Filtering accounts
+
+Use the filter panel to narrow down the list:
+
+1. Click the **filter icon** to expand the advanced filters
+2. Select criteria such as **Account Status**, **Client Type**, **Client Status**, or **Created By**
+3. Use the **Date Created** range picker to filter by creation date
+4. Click **Apply** to update the list, or **Reset** to clear all filters
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Advanced filter panel expanded with filter options visible.
+
+{/* SCREENSHOT:
+Page: Opening Accounts
+Capture: Advanced filter panel with filter fields visible
+Filename suggestion: flowra-opening-accounts-filters.png
+Purpose: Show the filtering options available for the accounts list
+*/}
+
+### Searching accounts
+
+Use the search box at the top of the table to search by client name. Type a name and the list will update automatically.
+
+## Sales Queue
+
+The Sales Queue shows accounts that have been returned to Sales/Branch and require follow-up action. This queue is used by sales staff to address issues or complete missing information.
+
+The queue summary at the top shows two counts:
+
+- **Requires Follow-up** — Total accounts returned to the branch
+- **Branch Verification** — Accounts pending branch-level verification
+
+Click **Review** on any account to open its detail page and take action.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Sales Queue view showing summary cards and account list.
+
+{/* SCREENSHOT:
+Page: Sales Queue
+Capture: Sales Queue view with summary counts and account entries
+Filename suggestion: flowra-sales-queue.png
+Purpose: Show the Sales Queue interface
+*/}
+
+## CSO Queue
+
+The CSO Queue shows accounts waiting for compliance review and verification. This queue is used by compliance staff to review and verify account applications.
+
+The queue summary at the top shows two counts:
+
+- **Waiting Review** — Accounts sent to CSO awaiting review
+- **CSO Verification** — Accounts currently under compliance verification
+
+Click **Review** on any account to open its detail page and process it.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: CSO Queue view showing summary cards and account list.
+
+{/* SCREENSHOT:
+Page: CSO Queue
+Capture: CSO Queue view with summary counts and account entries
+Filename suggestion: flowra-cso-queue.png
+Purpose: Show the CSO Queue interface
+*/}
+
+## Creating a new opening account
+
+To create a new account application:
+
+1. Click **Create New Opening Account** in the header
+2. Complete each tab of the form (see below)
+3. Click **Save Opening Account** to submit
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Create Opening Account form showing the tab navigation.
+
+{/* SCREENSHOT:
+Page: Create Opening Account
+Capture: The creation form with tabs visible
+Filename suggestion: flowra-create-account-form.png
+Purpose: Show the multi-tab form for creating an opening account
+*/}
+
+### Form tabs
+
+The creation form is organized into seven tabs. You can complete them in any order, but all required fields must be filled before submission.
+
+| Tab | What it covers |
+|---|---|
+| **Product** | Client name, account status, client type, contact details, addresses |
+| **Institution Data** | Corporate details — establishment date, SIUP, NPWP, notaris information |
+| **Personal Data** | Gender, marital status, education, ID card details, occupation, income |
+| **Spouse or Parents Data** | Spouse or parent information if applicable |
+| **Bank** | Bank account details (Bank A and Bank B), custody type |
+| **Financial & Investments Background** | Source of funds, investment experience, purpose, risk profile |
+| **Documents** | Upload required and supporting documents |
+
+### Saving progress
+
+Each tab saves its data independently. Save each tab to ensure all required sections are completed before final submission. A tip message reminds you to save each tab if you have not yet completed all sections.
+
+### Editing an existing account
+
+From the account detail page, click **Edit** to update the information. The form loads with the existing data pre-filled, and you can modify any field.
+
+### Deleting an account
+
+From the account detail page, click **Delete** in the header to remove the account. A confirmation dialog will appear — click **Delete** to confirm or **Cancel** to keep the account.
+
+## Viewing account details
+
+Click on any account in the list or queue to open its detail page. The detail page displays all information organized into collapsible sections:
+
+- **Client Profile** — Name, status, type, branch, agreement number
+- **Contact Info** — Phone numbers, email addresses
+- **Primary Address** — Full address with city, state, postal code, country
+- **Alternate Address** — Secondary address if provided
+- **Personal Data** — Gender, marital status, education, ID details, religion
+- **Occupation** — Job title, company, income details
+- **Bank Accounts** — Bank A and Bank B details, custody information
+- **Financial Background** — Source of funds, investment experience and objectives
+- **Sales** — Lead source, sales code, assigned salesperson
+- **Attachments** — Documents attached to this account
+- **Process Metadata** — Created/updated dates and by whom
+
+Each section can be collapsed or expanded using the section headers.
+
+> **Screenshot placeholder**
+>
+> Add screenshot: Account detail page showing collapsible sections with data.
+
+{/* SCREENSHOT:
+Page: Opening Account Detail
+Capture: Account detail page with sections expanded
+Filename suggestion: flowra-account-detail.png
+Purpose: Show the detail view of an opening account
+*/}
+
+### Actions on an account
+
+From the detail page, you can perform the following actions:
+
+| Action | Description |
+|---|---|
+| **Edit** | Open the form to update account information |
+| **Delete** | Remove the account (requires confirmation) |
+| **Duplicate** | Create a new account pre-filled with this account's data |
+| **Close Process** | Mark the account process as closed (coming soon) |
+| **Reopen Process** | Reopen a closed account process (coming soon) |
+| **View Change Log** | See the history of changes (coming soon) |
+
+<Callout type="info">
+  Actions may be limited depending on your role and the current status of
+  the account. Contact your administrator if you need additional permissions.
+  For managing users and roles, see the [Admin Panel](../guides/admin-panel).
+</Callout>
