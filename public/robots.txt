@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manual.cssi.kbvalbury.com/sitemap.xml
