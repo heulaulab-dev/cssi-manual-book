@@ -1,0 +1,159 @@
+---
+title: 대시보드
+description: Intranet 대시보드와 그 위젯을 이해합니다.
+---
+
+# 대시보드
+
+Intranet 대시보드에는 내부 기업 정보의 통합 뷰가 표시됩니다. 위젯은 역할과 권한에 따라 다를 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full Intranet Dashboard showing all major widget areas.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Full dashboard after opening Intranet showing all widget areas
+Filename suggestion: intranet-dashboard-overview.png
+Purpose: Show the complete dashboard layout
+*/}
+
+## 대시보드 인사말
+
+대시보드를 처음 로드할 때, 현재 시간대에 따라 "안녕하세요, John님"과 같은 개인화된 인사말이 표시됩니다. 이 인사말은 페이지 상단에 나타납니다. 위젯 데이터를 새로 고치기 위해 오른쪽 상단에 **새로 고침** 버튼이 있습니다.
+
+## Intranet 공지사항
+
+Intranet 공지사항 위젯은 대시보드 상단에 나타나며, Portal을 떠나지 않고도 내부 및 관리 정보를 확인할 수 있습니다:
+
+- 요약 뷰 — 가장 최근 공지사항만 표시됩니다
+- 각 공지사항은 제목, 간략한 발췌문, 날짜 및 **새로운** 또는 **긴급** 배지를 표시합니다
+- 공지사항을 클릭하여 Portal 내에서 전체 내용을 읽습니다
+- 하단의 **전체 인트라넷 공지사항 보기** 링크를 사용하여 Intranet에서 완전한 목록을 엽니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Intranet Announcements widget showing announcement entries with New/Urgent badges.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Intranet Announcements widget with representative content visible
+Filename suggestion: intranet-announcements-widget.png
+Purpose: Show how announcements appear on the dashboard
+*/}
+
+## 알림
+
+알림 위젯에는 최신 경고와 메시지에 대한 빠른 뷰가 표시됩니다:
+
+- 각 알림은 제목, 메시지 및 날짜를 표시합니다
+- 완전한 알림 페이지를 열려면 **전체 알림 보기** 링크를 사용합니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Notifications widget showing notification entries.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Notifications widget with notification entries
+Filename suggestion: intranet-notifications-widget.png
+Purpose: Show how notifications appear on the dashboard
+*/}
+
+## 규정
+
+규정 위젯은 규정 준수, 인사부 및 법률 세 가지 카테고리 전반의 규제 문서 요약을 제공합니다:
+
+- 상단의 카테고리 요약 막대는 각 카테고리의 수를 표시합니다
+- 각 카테고리에서 최근 규정이 제목과 간단한 발췌문과 함께 아래에 나열됩니다
+- 카테고리 링크를 사용하여 각 카테고리의 완전한 규정 목록으로 이동합니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Regulations widget showing category counts and recent entries.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Regulations widget showing category summary and recent entries
+Filename suggestion: intranet-regulations-widget.png
+Purpose: Show how regulations appear on the dashboard
+*/}
+
+## 개발
+
+개발 위젯에는 IT 개발 요청과 현재 상태에 대한 빠른 뷰가 표시됩니다:
+
+- 위젯 상단의 카테고리 탭을 사용하여 상태로 필터링할 수 있습니다
+- 각 항목은 요청 제목, 간단한 설명, 상태 배지 및 요청자 이름을 표시합니다
+- 요청을 클릭하여 ITQM에서 더 많은 세부 정보를 봅니다
+
+표시되는 상태 카테고리:
+
+| 상태 | 설명 |
+|---|---|
+| 진행 중 | 작업이 활발히 진행 중입니다 |
+| 승인 대기 | 요청자나 사업 부서로부터 승인을 기다리고 있습니다 |
+| 할당 대기 | IT 개발자가 할당되기를 기다리고 있습니다 |
+| IT 승인 대기 | 완료 후 IT 승인을 기다리고 있습니다 |
+| 검증 대기 | 요청자의 검증을 기다리고 있습니다 |
+| 수정 | 피드백에 따라 변경 중입니다 |
+| 초안 | 아직 준비 중이며 제출되지 않았습니다 |
+| 완료 | 완료되어 종료되었습니다 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Development widget showing request statuses and entries.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Development widget with request status navigation visible
+Filename suggestion: intranet-development-widget.png
+Purpose: Show how development activity appears on the dashboard
+*/}
+
+<Callout type="info">
+  상세한 개발 요청 워크플로우는 ITQM에 문서화되어 있습니다.
+</Callout>
+
+## 매일의 체크리스트
+
+매일의 체크리스트 위젯에는 사용자에게 관련된 운영 체크리스트 활동을 빠르게 보여줍니다:
+
+- 각 항목은 작업 이름, 부서/팀 이름, 확인된 항목 수, 상태 배지 및 제출자를 표시합니다
+- 상태별로 필터링하기 위한 카테고리 탭을 사용합니다: **전체**, **대기**, **승인됨**, **거부됨**
+- 체크리스트 항목을 클릭하여 Daily Operation에서 세부 정보를 보고 작업을 수행합니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Daily Checklists widget showing checklist status categories.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Daily Checklists widget with status navigation visible
+Filename suggestion: intranet-daily-checklists-widget.png
+Purpose: Show how checklist activity appears on the dashboard
+*/}
+
+<Callout type="info">
+  상세한 체크리스트 제출 및 승인 워크플로우는 Daily Operation에 문서화되어 있습니다.
+</Callout>
+
+## 모듈 탐색 바
+
+여러 대시보드 모듈(공지사항, 규정, 알림)에 접근하는 경우, 위젯 아래에 모듈 탐색 바가 나타납니다. 모듈별 KPI 카드, 차트 및 빠른 작업으로 전환하는 데 사용합니다:
+
+- 모듈 탭을 클릭하여 해당 KPI와 차트를 봅니다
+- 각 모듈은 키 메트릭을 카드 형태로 표시합니다(예: 총 공지사항, 긴급 공지사항)
+- 차트는 데이터 분포를 시각화합니다(예: 긴급 분포 파이 차트, 카테고리별 규정 막대 차트)
+- 빠른 작업 버튼은 관리 페이지로 직접 이동할 수 있습니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Module navigation bar with tabs for Announcements, Regulations, and Notifications.
+
+{/* SCREENSHOT:
+Page: Intranet Dashboard
+Capture: Module navigation bar showing available modules
+Filename suggestion: intranet-module-nav.png
+Purpose: Show the module navigation and KPI cards
+*/}

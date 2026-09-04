@@ -1,0 +1,160 @@
+---
+title: Konfigurasi
+description: Kelola jenis permintaan dan jenis sistem yang digunakan dalam permintaan pengembangan.
+---
+
+# Konfigurasi
+
+Bagian Konfigurasi memungkinkan pengguna berwenang mengelola jenis permintaan dan jenis sistem yang muncul di formulir permintaan pengembangan. Konfigurasi ini menentukan opsi yang tersedia ketika membuat atau mengedit permintaan.
+
+<Callout type="warning">
+  Manajemen konfigurasi terbatas untuk pengguna berwenang saja. Jika Anda tidak
+  melihat bagian ini di bilah sisi, Anda tidak memiliki izin untuk mengaksesnya.
+</Callout>
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Konfigurasi menampilkan bagian konfigurasi yang tersedia.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Configuration page with Request Type and System Type sections
+Filename suggestion: itqm-config-overview.png
+Purpose: Show the configuration management workspace
+*/}
+
+## Jenis Permintaan
+
+Jenis Permintaan mendefinisikan kategori yang tersedia ketika membuat permintaan pengembangan. Contoh termasuk Permintaan Fitur, Perbaikan Bug, Peningkatan Sistem, atau Perubahan Data.
+
+### Tabel Jenis Permintaan
+
+Tabel menampilkan semua jenis permintaan yang dikonfigurasi. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Nama | Nama jenis permintaan |
+| Deskripsi | Deskripsi singkat jenis |
+| Status | Apakah jenis aktif atau dinonaktifkan |
+| Tindakan | Tindakan yang tersedia untuk jenis |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Jenis Permintaan dengan entri perwakilan.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Request Type table showing all columns
+Filename suggestion: itqm-config-request-types.png
+Purpose: Show the list of configured request types
+*/}
+
+### Menambahkan jenis permintaan baru
+
+1. Klik tombol **Tambah** di bagian Jenis Permintaan
+2. Masukkan **Nama** untuk jenis baru
+3. Opsional masukkan **Deskripsi**
+4. Klik **Simpan** untuk membuat jenis
+
+### Mengedit jenis permintaan
+
+1. Klik **Edit** pada baris jenis permintaan
+2. Modifikasi nama atau deskripsi
+3. Klik **Simpan** untuk menerapkan perubahan
+
+### Mengaktifkan dan menonaktifkan jenis permintaan
+
+Untuk menyembunyikan jenis permintaan dari formulir permintaan tanpa menghapusnya:
+
+1. Klik **Aktifkan** atau **Nonaktifkan** pada baris jenis permintaan
+2. Jenis yang dinonaktifkan tidak tersedia ketika membuat permintaan baru
+3. Permintaan yang sudah ada menggunakan jenis tersebut tidak terpengaruh
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tindakan Jenis Permintaan menampilkan opsi Edit/Aktifkan/Nonaktifkan.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Request Type actions visible on a row
+Filename suggestion: itqm-config-request-type-actions.png
+Purpose: Show available actions for request types
+*/}
+
+---
+
+## Jenis Sistem
+
+Jenis Sistem mendefinisikan sistem atau aplikasi target yang tersedia ketika membuat permintaan pengembangan. Contoh termasuk CRM, FLOWRA, Intranet, atau Daily Operation.
+
+### Tabel Jenis Sistem
+
+Tabel menampilkan semua jenis sistem yang dikonfigurasi. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Nama | Nama jenis sistem |
+| Deskripsi | Deskripsi singkat sistem |
+| Status | Apakah jenis aktif atau dinonaktifkan |
+| Tindakan | Tindakan yang tersedia untuk jenis |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Jenis Sistem dengan entri perwakilan.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: System Type table showing all columns
+Filename suggestion: itqm-config-system-types.png
+Purpose: Show the list of configured system types
+*/}
+
+### Menambahkan jenis sistem baru
+
+1. Klik tombol **Tambah** di bagian Jenis Sistem
+2. Masukkan **Nama** untuk sistem baru
+3. Opsional masukkan **Deskripsi**
+4. Klik **Simpan** untuk membuat jenis
+
+### Mengedit jenis sistem
+
+1. Klik **Edit** pada baris jenis sistem
+2. Modifikasi nama atau deskripsi
+3. Klik **Simpan** untuk menerapkan perubahan
+
+### Mengaktifkan dan menonaktifkan jenis sistem
+
+Untuk menyembunyikan jenis sistem dari formulir permintaan tanpa menghapusnya:
+
+1. Klik **Aktifkan** atau **Nonaktifkan** pada baris jenis sistem
+2. Jenis yang dinonaktifkan tidak tersedia ketika membuat permintaan baru
+3. Permintaan yang sudah ada menggunakan jenis tersebut tidak terpengaruh
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tindakan Jenis Sistem menampilkan opsi Edit/Aktifkan/Nonaktifkan.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: System Type actions visible on a row
+Filename suggestion: itqm-config-system-type-actions.png
+Purpose: Show available actions for system types
+*/}
+
+## Bagaimana konfigurasi memengaruhi permintaan
+
+Ketika pengguna membuat atau mengedit permintaan pengembangan, dropdown **Jenis** dan **Sistem** hanya menampilkan jenis permintaan dan jenis sistem yang saat ini diaktifkan. Ini memastikan bahwa:
+
+- Hanya kategori yang disetujui yang tersedia untuk dipilih
+- Jenis yang tidak lagi berlaku dapat dinonaktifkan tanpa memengaruhi permintaan yang sudah ada
+- Jenis baru dapat ditambahkan seiring kebutuhan organisasi berkembang
+
+<Callout type="info">
+  Perubahan pada jenis permintaan dan jenis sistem berlaku secara langsung untuk
+  permintaan baru. Permintaan yang sudah ada tidak terpengaruh oleh pengaktifan atau penonaktifan jenis.
+</Callout>
+
+## Mulai di sini
+
+- [Permintaan Pengembangan](./development-requests) — Gunakan jenis yang dikonfigurasi di formulir permintaan
+- [Dashboard](./dashboard) — Lihat gambaran Anda di dashboard

@@ -1,6 +1,14 @@
 {
   "title": "Intranet",
-  "description": "Internal regulations, information, and company resources",
+  "description": "Regulasi internal, informasi, dan sumber daya perusahaan",
+  "root": true,
   "icon": "Building2",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "announcements",
+    "regulations",
+    "admin"
+  ]
 }

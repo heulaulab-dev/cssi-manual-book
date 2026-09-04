@@ -1,0 +1,296 @@
+---
+title: 개발 요청
+description: 완전한 워크플로우를 통해 개발 요청을 제출, 수락, 승인 및 추적합니다.
+---
+
+# 개발 요청
+
+개발 요청은 초기 제출부터 승인, 할당 및 추적을 거쳐 IT 개발 작업의 완전한 수명 주기를 관리합니다. 워크플로우는 역할에 따라 세 가지 주요 뷰로 나뉩니다: **요청 개발**(제출자), **요청 수락**(IT 승인자), **요청 승인**(부서 승인자).
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Development Requests section showing the request table.
+
+{/* SCREENSHOT:
+Page: Development Requests
+Capture: Main request table view with representative entries
+Filename suggestion: itqm-develop-request-table.png
+Purpose: Show the development request list view
+*/}
+
+## 요청 워크플로우 개요
+
+개발 요청은 다음 단계를 거칩니다:
+
+1. **초안** — 생성되었지만 아직 제출되지 않음
+2. **승인 대기** — 제출되어 부서 승인을 기다리고 있음
+3. **수정** — 변경을 위해 다시 보내짐
+4. **IT 승인 대기** — 승인되고 IT 승인을 기다리고 있음
+5. **할당 대기** — 수락되었고 개발자를 할당받기를 기다리고 있음
+6. **진행 중** — 작업이 활발히 수행 중임
+7. **검증 대기** — 완료되어 요청자의 검증을 기다리고 있음
+8. **완료** — 검증되어 종료됨
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Visual workflow diagram showing request stages.
+
+{/* SCREENSHOT:
+Page: Development Requests
+Capture: Workflow stages visual representation
+Filename suggestion: itqm-request-workflow.png
+Purpose: Show the request lifecycle stages
+*/}
+
+---
+
+## 요청 개발
+
+**요청 개발** 뷰는 제출자가 개발 요청을 생성, 관리 및 추적하는 곳입니다.
+
+### 요청 테이블
+
+테이블은 제출했거나 관련이 있는 모든 요청을 표시합니다. 각 행은 다음을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 제목 | 요청 제목 |
+| 유형 | 요청 카테고리(예: 기능, 버그 수정) |
+| 시스템 | 대상 시스템 또는 애플리케이션 |
+| 상태 | 현재 워크플로우 상태 |
+| 제출됨 | 요청이 제출된 날짜와 시각 |
+| 작업 | 요청에 대한 사용 가능한 작업 |
+
+열 헤더를 사용하여 정렬하고 검색 바로 필터링합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Develop Request table with column headers and entries.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: Request table showing columns and representative data
+Filename suggestion: itqm-develop-request-list.png
+Purpose: Show the request list with all columns visible
+*/}
+
+### 새 요청 생성
+
+새 개발 요청을 제출하려면:
+
+1. 요청 개발 페이지 오른쪽 상단의 **새 요청** 버튼 클릭
+2. 대화상자의 필수 필드 채우기:
+   - **제목** — 요청에 대한 명확한 제목
+   - **요구사항** — 필요한 내용에 대한 상세 설명
+   - **유형** — 드롭다운에서 요청 카테고리 선택
+   - **시스템** — 드롭다운에서 대상 시스템 선택
+   - **첨부 파일** — 선택적으로 지원 파일 첨부
+3. 요청을 승인에 보내려면 **제출** 클릭
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: New Request dialog showing all fields.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: New Request dialog with all form fields visible
+Filename suggestion: itqm-new-request-dialog.png
+Purpose: Show how to create a new development request
+*/}
+
+<Callout type="info">
+  제출 후, 요청은 **승인 대기** 상태로 이동하고 부서 승인자에게 알립��다.
+</Callout>
+
+### 편집 및 재제출
+
+요청이 **수정** 상태로 보내지면, 편집하고 재제출할 수 있습니다:
+
+1. 테이블에서 요청 열기
+2. **편집** 클릭하여 제목, 요구사항, 유형, 시스템 또는 첨부 파일 수정
+3. 변경 사항을 검토하고 **재제출** 클릭하여 워크플로우로 다시 보냄
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Request in Revision status with Edit/Resubmit buttons.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: Request detail showing revision status and edit options
+Filename suggestion: itqm-request-revision.png
+Purpose: Show how to edit a request in revision status
+*/}
+
+---
+
+## 요청 수락
+
+**요청 수락** 뷰는 IT 승인자가 도착한 요청을 검토하고 개발 작업을 할당하는 데 사용됩니다.
+
+### 수락 테이블
+
+테이블은 IT 승인을 받을 준비가 된 요청을 표시합니다. 각 행은 다음을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 제목 | 요청 제목 |
+| 유형 | 요청 카테고리 |
+| 시스템 | 대상 시스템 |
+| 요청자 | 요청을 제출한 사람 |
+| 부서 승인자 | 승인한 부서 승인자 |
+| 승인됨 | 부서 승인 날짜 |
+| 상태 | 현재 워크플로우 상태 |
+| 작업 | 요청에 대한 사용 가능한 작업 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Develop Accept table with representative entries.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Accept table showing columns and request entries
+Filename suggestion: itqm-develop-accept-list.png
+Purpose: Show the IT acceptance queue
+*/}
+
+### 요청 수락
+
+요청을 수락하려면:
+
+1. 요청 행에서 **수락** 클릭
+2. PIC(책임자)와 기한을 선택할 수 있는 할당 패널이 열림
+3. 드롭다운에서 **PIC** 선택
+4. 작업에 대한 **기한** 설정
+5. 확인하려면 **할당** 클릭
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Assignment Panel with PIC selection and due date fields.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Assignment Panel showing PIC dropdown and due date picker
+Filename suggestion: itqm-assignment-panel.png
+Purpose: Show how to assign work to a developer
+*/}
+
+### 요청 거부
+
+요청을 거부하려면:
+
+1. 요청 행에서 **거부** 클릭
+2. 거부 대화상자가 열림
+3. 거부 이유 입력
+4. 요청자를 보낼 **제출** 클릭
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Rejection Dialog with reason field.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Rejection Dialog with reason input
+Filename suggestion: itqm-rejection-dialog.png
+Purpose: Show how to reject a request with a reason
+*/}
+
+---
+
+## 요청 승인
+
+**요청 승인** 뷰는 부서 승인자가 요청을 검토하고 승인 또는 거부하는 데 사용됩니다.
+
+### 승인 테이블
+
+테이블은 부서 승인을 기다리는 요청을 표시합니다. 각 행은 다음을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 제목 | 요청 제목 |
+| 유형 | 요청 카테고리 |
+| 시스템 | 대상 시스템 |
+| 요청자 | 요청을 제출한 사람 |
+| 제출됨 | 요청이 제출된 날짜와 시각 |
+| 상태 | 현재 워크플로우 상태 |
+| 작업 | 요청에 대한 사용 가능한 작업 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Develop Approve table with representative entries.
+
+{/* SCREENSHOT:
+Page: Develop Approve
+Capture: Approve table showing columns and request entries
+Filename suggestion: itqm-develop-approve-list.png
+Purpose: Show the approval queue
+*/}
+
+### 요청 승인
+
+요청을 승인하려면:
+
+1. 요청 행에서 **승인** 클릭
+2. 요청이 **IT 승인 대기** 상태로 이동
+3. IT 승인자가 검토하고 작업을 할당하도록 알림
+
+### 요청 거부
+
+요청을 거부하려면:
+
+1. 요청 행에서 **거부** 클릭
+2. 거부 대화상자가 열림
+3. 거부 이유 입력
+4. 요청자를 **수정** 상태로 보내려면 **제출** 클릭
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Rejection Dialog in the approve view.
+
+{/* SCREENSHOT:
+Page: Develop Approve
+Capture: Rejection Dialog with reason input
+Filename suggestion: itqm-approve-rejection.png
+Purpose: Show how to reject a request during approval
+*/}
+
+---
+
+## 요청 세부 정보 보기
+
+테이블에서 요청을 클릭하면 완전한 세부 정보 보기가 열립니다. 여기에는 다음이 표시됩니다:
+
+- 제목, 요구사항 및 유형 정보
+- 시스템 및 첨부 파일 세부 정보
+- 현재 상태 및 워크플로우 이력
+- 할당된 PIC와 기한(할당된 경우)
+- 현재 상태에 맞는 작업 버튼
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full request detail view showing all information.
+
+{/* SCREENSHOT:
+Page: Request Detail
+Capture: Complete request detail with all metadata and action buttons
+Filename suggestion: itqm-request-detail.png
+Purpose: Show the full detail view of a development request
+*/}
+
+## 상태 참조
+
+| 상태 | 설명 |
+|---|---|
+| 초안 | 생성되었지만 아직 제출되지 않음 |
+| 승인 대기 | 제출되어 부서 승인을 기다리고 있음 |
+| 수정 | 승인자에 의해 변경을 위해 다시 보내짐 |
+| IT 승인 대기 | 승인되고 IT 승인을 기다리고 있음 |
+| 할당 대기 | 수락되었고 개발자를 할당받기를 기다리고 있음 |
+| 진행 중 | 작업이 활발히 수행 중임 |
+| 검증 대기 | 완료되어 요청자의 검증을 기다리고 있음 |
+| 완료 | 검증되어 종료됨 |
+
+## 시작하기
+
+- [완료 보고](./done-report) — 완료된 요청 보기 및 검증
+- [문제](./issues) — 문제 생성 및 관리
+- [대시보드](./dashboard) — 대시보드에서 요청 요약 보기

@@ -1,0 +1,217 @@
+---
+title: Membuka Akun
+description: Buat, kelola, dan proses aplikasi pembukaan akun melalui alur kerja onboarding lengkap.
+---
+
+# Membuka Akun
+
+Bagian Membuka Akun adalah inti dari Flowra. Ini memungkinkan Anda membuat aplikasi akun baru, melacak kemajuan mereka melalui berbagai tahap, dan mengelola antrian akun yang ditugaskan ke peran Anda.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Membuka Akun menampilkan tampilan daftar lengkap dengan filter.
+
+{/* SCREENSHOT:
+Page: Opening Accounts
+Capture: Full opening accounts list view with filters and table
+Filename suggestion: flowra-opening-accounts-list.png
+Purpose: Show the main opening accounts list view
+*/}
+
+## Apa itu Membuka Akun
+
+- **Buat akun baru** — Submit aplikasi akun klien baru dengan semua informasi yang diperlukan
+- **Lacak status** — Pantau setiap akun melalui siklus onboarding mereka
+- **Kelola antrian** — Kerjakan akun yang ditugaskan ke peran Anda (Penjualan atau CSO)
+- **Unggah dokumen** — Lampirkan dokumen yang diperlukan dan pendukung untuk setiap akun
+
+## Tampilan
+
+Bagian Membuka Akun memiliki tiga tampilan, yang dapat diakses dari bilah sisi:
+
+| Tampilan | Deskripsi |
+|---|---|
+| **Semua Akun Pembukaan** | Daftar lengkap semua aplikasi akun dengan filter dan pencarian |
+| **Antrian Penjualan** | Akun yang dikembalikan ke Penjualan/Cabang yang memerlukan tindak lanjut |
+| **Antrian CSO** | Akun yang menunggu tinjauan dan verifikasi kepatuhan |
+
+## Semua Akun Pembukaan
+
+Tampilan Semua Akun Pembukaan menampilkan setiap aplikasi akun dalam tabel. Anda dapat mencari berdasarkan nama klien dan memfilter berdasarkan status akun, jenis klien, status klien, pembuat, dan rentang tanggal.
+
+### Kolom tabel
+
+| Kolom | Deskripsi |
+|---|---|
+| Status Proses Acc | Status saat ini dari proses akun (misalnya, Verifikasi Cabang, Kirim ke CSO) |
+| Nama Klien | Nama klien yang sedang di-onboard |
+| Layanan Akun | Kategori layanan (misalnya, VOLT+, By Order VOLT+) |
+| Jenis Klien | Jenis akun klien |
+| Status Klien | Status klien saat ini |
+| Telepon | Nomor telepon klien |
+| Telepon Seluler | Nomor mobile klien |
+| Catatan Proses | Catatan tentang proses akun |
+| Ditetapkan Ke | Orang yang membuat atau menangani akun |
+| Tanggal Dibuat | Kapan aplikasi akun dibuat |
+| Tanggal Dimodifikasi | Kapan akun terakhir diperbarui |
+
+### Memfilter akun
+
+Gunakan panel filter untuk mempersempit daftar:
+
+1. Klik **ikon filter** untuk memperluas filter lanjutan
+2. Pilih kriteria seperti **Status Akun**, **Jenis Klien**, **Status Klien**, atau **Dibuat Oleh**
+3. Gunakan pemilih rentang **Tanggal Dibuat** untuk memfilter berdasarkan tanggal pembuatan
+4. Klik **Terapkan** untuk memperbarui daftar, atau **Reset** untuk menghapus semua filter
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Panel filter lanjutan diperluas dengan opsi filter terlihat.
+
+{/* SCREENSHOT:
+Page: Opening Accounts
+Capture: Advanced filter panel with filter fields visible
+Filename suggestion: flowra-opening-accounts-filters.png
+Purpose: Show the filtering options available for the accounts list
+*/}
+
+### Mencari akun
+
+Gunakan kotak pencarian di bagian atas tabel untuk mencari berdasarkan nama klien. Ketik nama dan daftar akan diperbarui secara otomatis.
+
+## Antrian Penjualan
+
+Antrian Penjualan menampilkan akun yang telah dikembalikan ke Penjualan/Cabang dan memerlukan tindakan tindak lanjut. Antrian ini digunakan oleh staf penjualan untuk menyelesaikan masalah atau melengkapi informasi yang hilang.
+
+Ringkasan antrian di bagian atas menampilkan dua hitungan:
+
+- **Perlu Tindak Lanjut** — Total akun yang dikembalikan ke cabang
+- **Verifikasi Cabang** — Akun yang menunggu verifikasi tingkat cabang
+
+Klik **Tinjau** pada akun apa pun untuk membuka halaman detailnya dan melakukan tindakan.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tampilan Antrian Penjualan menampilkan kartu ringkasan dan daftar akun.
+
+{/* SCREENSHOT:
+Page: Sales Queue
+Capture: Sales Queue view with summary counts and account entries
+Filename suggestion: flowra-sales-queue.png
+Purpose: Show the Sales Queue interface
+*/}
+
+## Antrian CSO
+
+Antrian CSO menampilkan akun yang menunggu tinjauan dan verifikasi kepatuhan. Antrian ini digunakan oleh staf kepatuhan untuk meninjau dan memverifikasi aplikasi akun.
+
+Ringkasan antrian di bagian atas menampilkan dua hitungan:
+
+- **Menunggu Tinjauan** — Akun yang dikirim ke CSO menunggu tinjauan
+- **Verifikasi CSO** — Akun yang saat ini under verifikasi kepatuhan
+
+Klik **Tinjau** pada akun apa pun untuk membuka halaman detailnya dan memprosesnya.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tampilan Antrian CSO menampilkan kartu ringkasan dan daftar akun.
+
+{/* SCREENSHOT:
+Page: CSO Queue
+Capture: CSO Queue view with summary counts and account entries
+Filename suggestion: flowra-cso-queue.png
+Purpose: Show the CSO Queue interface
+*/}
+
+## Membuat akun pembukaan baru
+
+Untuk membuat aplikasi akun baru:
+
+1. Klik **Buat Akun Pembukaan Baru** di header
+2. Selesaikan setiap tab formulir (lihat di bawah)
+3. Klik **Simpan Akun Pembukaan** untuk submit
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Formulir Buat Akun Pembukaan menampilkan navigasi tab.
+
+{/* SCREENSHOT:
+Page: Create Opening Account
+Capture: The creation form with tabs visible
+Filename suggestion: flowra-create-account-form.png
+Purpose: Show the multi-tab form for creating an opening account
+*/}
+
+### Tab formulir
+
+Formulir pembuatan diorganisasi menjadi tujuh tab. Anda dapat menyelesaikannya dalam urutan apa pun, tetapi semua bidang yang diperlukan harus diisi sebelum submit.
+
+| Tab | Cakupan |
+|---|---|
+| **Produk** | Nama klien, status akun, jenis klien, detail kontak, alamat |
+| **Data Institusi** | Detail korporat — tanggal pendirian, SIUP, NPWP, informasi notaris |
+| **Data Pribadi** | Jenis kelamin, status perkawinan, pendidikan, detail KTP, pekerjaan, penghasilan |
+| **Data Pasangan atau Orang Tua** | Informasi pasangan atau orang tua jika berlaku |
+| **Bank** | Detail rekening bank (Bank A dan Bank B), jenis custody |
+| **Latar Belakang Keuangan & Investasi** | Sumber dana, pengalaman investasi, tujuan, profil risiko |
+| **Dokumen** | Unggah dokumen yang diperlukan dan pendukung |
+
+### Menyimpan kemajuan
+
+Setiap tab menyimpan datanya secara independen. Simpan setiap tab untuk memastikan semua bagian yang diperlukan selesai sebelum submit akhir. Pesan tip mengingatkan Anda untuk menyimpan setiap tab jika Anda belum menyelesaikan semua bagian.
+
+### Mengedit akun yang ada
+
+Dari halaman detail akun, klik **Edit** untuk memperbarui informasi. Formulir dimuat dengan data yang ada terisi sebelumnya, dan Anda dapat memodifikasi bidang apa pun.
+
+### Menghapus akun
+
+Dari halaman detail akun, klik **Hapus** di header untuk menghapus akun. Dialog konfirmasi akan muncul — klik **Hapus** untuk mengonfirmasi atau **Batal** untuk menyimpan akun.
+
+## Melihat detail akun
+
+Klik pada akun apa pun di daftar atau antrian untuk membuka halaman detailnya. Halaman detail menampilkan semua informasi yang diorganisasi ke dalam bagian yang dapat dilipat:
+
+- **Profil Klien** — Nama, status, jenis, cabang, nomor perjanjian
+- **Info Kontak** — Nomor telepon, alamat email
+- **Alamat Utama** — Alamat lengkap dengan kota, negara bagian, kode pos, negara
+- **Alamat Alternatif** — Alamat sekunder jika disediakan
+- **Data Pribadi** — Jenis kelamin, status perkawinan, pendidikan, detail ID, agama
+- **Pekerjaan** — Jabatan, perusahaan, detail penghasilan
+- **Rekening Bank** — Detail Bank A dan Bank B, informasi custody
+- **Latar Belakang Keuangan** — Sumber dana, pengalaman dan tujuan investasi
+- **Penjualan** — Sumber prospek, kode penjualan, penjual yang ditugaskan
+- **Lampiran** — Dokumen yang dilampirkan ke akun ini
+- **Metadata Proses** — Tanggal dibuat/diperbarui dan oleh siapa
+
+Setiap bagian dapat dilipat atau diperluas menggunakan header bagian.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman detail akun menampilkan bagian-bagian yang dapat dilipat dengan data.
+
+{/* SCREENSHOT:
+Page: Opening Account Detail
+Capture: Account detail page with sections expanded
+Filename suggestion: flowra-account-detail.png
+Purpose: Show the detail view of an opening account
+*/}
+
+### Tindakan pada akun
+
+Dari halaman detail, Anda dapat melakukan tindakan berikut:
+
+| Tindakan | Deskripsi |
+|---|---|
+| **Edit** | Buka formulir untuk memperbarui informasi akun |
+| **Hapus** | Hapus akun (memerlukan konfirmasi) |
+| **Duplikat** | Buat akun baru yang terisi sebelumnya dengan data akun ini |
+| **Tutup Proses** | Tandai proses akun sebagai ditutup (segera hadir) |
+| **Buka Kembali Proses** | Buka kembali proses akun yang ditutup (segera hadir) |
+| **Lihat Log Perubahan** | Lihat riwayat perubahan (segera hadir) |
+
+<Callout type="info">
+  Tindakan mungkin dibatasi tergantung pada peran Anda dan status saat ini
+  dari akun. Hubungi administrator Anda jika Anda memerlukan izin tambahan.
+  Untuk mengelola pengguna dan peran, lihat [Panel Admin](../guides/admin-panel).
+</Callout>

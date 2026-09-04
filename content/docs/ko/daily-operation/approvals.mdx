@@ -1,0 +1,140 @@
+---
+title: 승인
+description: 팀으로부터 체크리스트 제출을 검토하고 승인 또는 거부합니다.
+---
+
+# 승인
+
+승인 페이지는 감독자와 권한 있는 사용자가 체크리스트 제출을 검토하고, 승인하거나 사유와 함께 거부할 수 있게 합니다. **IT 부서 > 승인** 아래의 사이드바에서 접근합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full Approvals page showing the summary strip, filter controls, and submission table.
+
+{/* SCREENSHOT:
+Page: Approvals
+Capture: Complete approvals view with date picker, filters, and submission list
+Suggested filename: daily-operation-approvals.png
+Purpose: Show the approvals workspace
+*/}
+
+## 사업 날짜 선택기
+
+도구 모음의 **사업 날짜** 선택기를 사용하여 검토할 날짜를 선택합니다. 제출 목록이 선택한 날짜에 맞게 업데이트됩니다.
+
+## 요약 막대
+
+요약 막대는 선택한 날짜에 대한 네 가지 지표를 표시합니다:
+
+| 지표 | 설명 |
+|---|---|
+| **대기 중** | 검토 대기 중인 제출 ��� |
+| **승인됨** | 오늘까지 승인된 제출 수 |
+| **거부됨** | 오늘까지 거부된 제출 수 |
+| **총계** | 날짜의 총 제출 수 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Summary strip showing the four approval metrics.
+
+{/* SCREENSHOT:
+Page: Approvals — Summary Strip
+Capture: Four metric cards showing pending, approved, rejected, and total counts
+Suggested filename: daily-operation-approvals-summary.png
+Purpose: Show approval counts at a glance
+*/}
+
+## 필터 컨트롤
+
+제출 테이블 상단의 필터 컨트롤을 사용하여 결과를 좁힐 수 있습니다:
+
+| 필터 | 설명 |
+|---|---|
+| **날짜** | 사업 날짜로 제출 필터링 |
+| **상태** | 제출 상태(대기, 승인)로 필터 |
+
+**검색** 상자를 사용하여 아이템 라벨로 제출을 찾을 수도 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Filter controls with status dropdown and search box.
+
+{/* SCREENSHOT:
+Page: Approvals — Filters
+Capture: Filter bar with status selector and search input
+Suggested filename: daily-operation-approvals-filters.png
+Purpose: Show how to filter submissions
+*/}
+
+## 승인 대기열 테이블
+
+제출 테이블은 각 대기 중 또는 승인된 제출을 다음 열과 함께 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| **작업** | 제출이 속한 작업 이름 |
+| **파트** | 파트 이름 |
+| **상태** | 현재 상태 배지(대기, 승인) |
+| **제출자** | 체크리스트를 제출한 사람 |
+| **제출 시각** | 제출이 이루어진 시각 |
+| **작업** | 대기 중인 항목에 대한 승인 및 거부 버튼 |
+
+### 제출 승인
+
+1. 테이블에서 대기 중인 제출을 찾습니다
+2. **작업** 열에서 **승인** 버튼을 클릭합니다
+3. 제출 상태가 승인된 것으로 변경됩니다
+
+### 제출 거부
+
+1. 테이블에서 대기 중인 제출을 찾습니다
+2. **작업** 열에서 **거부** 버튼을 클릭합니다
+3. 거부 대화상자가 나타나 이유를 요청합니다
+4. **이유** 텍스트 영역에 거부 이유를 입력합니다
+5. 확인하려면 **거부**를, 중단하려면 **취소**를 클릭합니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Reject dialog with reason textarea and Reject/Cancel buttons.
+
+{/* SCREENSHOT:
+Page: Approvals — Reject Dialog
+Capture: Rejection dialog with reason textarea
+Suggested filename: daily-operation-reject-dialog.png
+Purpose: Show the rejection workflow
+*/}
+
+<Callout type="info">
+  거부 이유는 체크리스트를 제출한 사람이 볼 수 있습니다. 그들은 거부가 있는 오늘의 체크리스트 페이지에 빨간색 경고로 표시됩니다.
+</Callout>
+
+## 제출 세부 정보 보기
+
+제출 테이블의 행을 클릭하면 세부 패널이 열립니다. 세부 패널에는 다음이 표시됩니다:
+
+- 작업 및 파트 이름
+- 제출 상태
+- 사업 날짜
+- 제출자 및 제출 시각
+- 승인자 및 승인 시각(해당되는 경우)
+- 모든 항목, 완료 상태, 코멘트 및 수행된 작업이 포함된 완전한 체크리스트 테이블
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Detail panel showing submission details and checklist entries.
+
+{/* SCREENSHOT:
+Page: Approvals — Detail Panel
+Capture: Detail panel showing submission metadata and checklist table
+Suggested filename: daily-operation-approvals-detail.png
+Purpose: Show how to inspect a submission in detail
+*/}
+
+## 빈 상태
+
+필터와 일치하는 제출이 없으면, 선택한 날짜와 필터에 대해 사용 가능한 제출이 없다는 메시지가 표시됩니다.
+
+<Callout type="info">
+  이 페이지에 접근하려면 승인 권한이 필요합니다. 사이드바에 승인 페이지가 보이지 않는 경우,
+  적절한 권한을 요청하기 위해 관리자에게 문의하세요.
+</Callout>

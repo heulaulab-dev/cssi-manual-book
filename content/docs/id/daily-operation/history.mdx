@@ -1,0 +1,122 @@
+---
+title: Riwayat
+description: Telusuri riwayat daftar periksa yang disetujui dan lihat laporan detail.
+---
+
+# Riwayat
+
+Halaman Riwayat memungkinkan Anda menelusuri catatan daftar periksa yang disetujui untuk tanggal operasional apa pun. Anda dapat melihat detail lengkap setiap pengiriman yang disetujui, termasuk semua entri daftar periksa, komentar, dan tindakan yang diambil.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full halaman Riwayat menampilkan strip ringkasan, daftar laporan, dan panel detail.
+
+{/* SCREENSHOT:
+Page: History
+Capture: Complete history view with date picker, summary, report list, and detail panel
+Suggested filename: daily-operation-history.png
+Purpose: Show the history workspace
+*/}
+
+## Pemilih Tanggal Operasional
+
+Gunakan pemilih **Tanggal Operasional** di toolbar untuk memilih tanggal yang ingin Anda tinjau. Daftar catatan yang disetujui diperbarui sesuai dengan tanggal yang dipilih.
+
+## Strip ringkasan
+
+Strip ringkasan menampilkan empat metrik untuk tanggal yang dipilih:
+
+| Metrik | Deskripsi |
+|---|---|
+| **Catatan Disetujui** | Jumlah total pengiriman yang disetujui untuk tanggal |
+| **Item Daftar Periksa** | Jumlah total item daftar periksa di seluruh catatan |
+| **Item Selesai** | Jumlah item yang ditandai selesai dari total |
+| **Persetuju** | Jumlah persetujuan berbeda yang meninjau pengiriman |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Strip ringkasan menampilkan empat metrik riwayat.
+
+{/* SCREENSHOT:
+Page: History — Summary Strip
+Capture: Four metric cards with sample values
+Suggested filename: daily-operation-history-summary.png
+Purpose: Show history metrics at a glance
+*/}
+
+## Bagian Riwayat Disetujui
+
+Di bawah ringkasan, bagian Riwayat Disetujui memberikan konteks tentang data yang ditampilkan:
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Header bagian Riwayat Disetujui dengan konteks tanggal.
+
+{/* SCREENSHOT:
+Page: History — Approved History
+Capture: Approved History header with date context
+Suggested filename: daily-operation-approved-history.png
+Purpose: Show the approved history section header
+*/}
+
+## Tabel daftar laporan
+
+Tabel daftar laporan menampilkan semua pengiriman yang disetujui untuk tanggal yang dipilih:
+
+| Kolom | Deskripsi |
+|---|---|
+| **Tanggal** | Tanggal operasional pengiriman |
+| **Tugas / Bagian** | Nama tugas dan bagian |
+| **Dikirim Oleh** | Siapa yang mengirim daftar periksa |
+| **Disetujui Oleh** | Siapa yang menyetujui pengiriman |
+| **Daftar Periksa** | Jumlah item yang selesai dari total |
+| **Lihat** | Tombol untuk memeriksa detail lengkap |
+
+Klik pada baris atau tombol **Lihat** untuk melihat detail pengiriman lengkap di panel kanan.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel daftar laporan menampilkan catatan yang disetujui dengan tombol Lihat.
+
+{/* SCREENSHOT:
+Page: History — Report List
+Capture: Table rows showing approved records with task/part names and completion counts
+Suggested filename: daily-operation-history-report-list.png
+Purpose: Show how approved records appear in the list
+*/}
+
+### Paginasi
+
+Gunakan tombol **Sebelumnya** dan **Selanjutnya** di bagian bawah daftar laporan untuk menavigasi antar halaman hasil. Nomor halaman saat ini dan total halaman ditampilkan.
+
+## Panel detail laporan
+
+Ketika Anda memilih laporan dari daftar, panel detail di sebelah kanan menampilkan:
+
+- **Nama bagian** dan **Nama tugas**
+- **Badge status** (selalu Disetujui)
+- **Tanggal Operasional**
+- **Ringkasan Daftar Periksa** — hitungan item yang selesai
+- **Dikirim Oleh** dan **Dikirim Pada**
+- **Disetujui Oleh** dan **Disetujui Pada**
+- **Tabel entri daftar periksa** — semua item dengan status penyelesaian, komentar, dan tindakan yang diambil
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Panel detail menampilkan pengiriman yang disetujui dengan entri daftar periksa lengkap.
+
+{/* SCREENSHOT:
+Page: History — Report Detail
+Capture: Detail panel showing approved submission with full checklist entries
+Suggested filename: daily-operation-history-detail.png
+Purpose: Show the full detail view of an approved record
+*/}
+
+## Status kosong
+
+Jika tidak ada catatan yang disetujui untuk tanggal yang dipilih, Anda akan melihat pesan yang menyarankan Anda mencoba tanggal operasional lain.
+
+<Callout type="info">
+  Riwayat hanya menampilkan pengiriman yang disetujui. Pengiriman yang ditolak atau draf
+  tidak dimasukkan ke dalam tampilan riwayat.
+</Callout>

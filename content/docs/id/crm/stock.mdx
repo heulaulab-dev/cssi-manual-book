@@ -1,0 +1,64 @@
+---
+title: Saham
+description: Cari simbol saham, lihat grafik harga, dan pantau data pasar di CRM.
+---
+
+# Saham
+
+Halaman Saham menyediakan antarmuka tampilan split untuk mencari simbol saham dan melihat informasi harga detail. Halaman ini dapat diakses dari bilah sisi di bawah kelompok **Penjualan**.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Saham menampilkan tata letak split dengan daftar saham dan panel detail.
+
+{/* SCREENSHOT:
+Page: Stock
+Capture: Stock page with stock list on the left and empty detail panel on the right
+Filename suggestion: crm-stock-page.png
+Purpose: Show the stock lookup interface
+*/}
+
+## Bagaimana halaman Saham bekerja
+
+Halaman Saham dibagi menjadi dua bagian:
+
+- **Daftar saham** (sisi kiri) — Tabel yang dapat dicari dari simbol saham dan nama efek
+- **Detail saham** (sisi kanan) — Informasi harga untuk saham yang dipilih
+
+Ketika Anda pertama kali membuka halaman, panel detail menampilkan pesan placeholder: **"Pilih saham — Pilih saham dari daftar untuk melihat informasi harganya."**
+
+## Mencari saham
+
+1. Gunakan **kotak pencarian** di bagian atas daftar saham untuk memfilter berdasarkan kode atau nama saham
+2. Klik pada baris saham apa pun untuk memilihnya
+3. Panel detail diperbarui untuk menampilkan informasi harga untuk saham yang dipilih
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Daftar saham dengan satu saham dipilih dan detail harga terlihat.
+
+{/* SCREENSHOT:
+Page: Stock Detail
+Capture: Stock list with a stock highlighted and price chart visible in detail panel
+Filename suggestion: crm-stock-detail.png
+Purpose: Show the stock detail view with price data
+*/}
+
+## Informasi detail saham
+
+Ketika Anda memilih saham, panel detail menampilkan:
+
+- **Kode dan nama saham** — Pengenal dan nama lengkap saham yang dipilih
+- **Harga saat ini** — Harga penutupan terbaru dalam Rupiah Indonesia
+- **Perubahan harga** — Perubahan absolut dan persentase, berwarna (hijau untuk positif, merah untuk negatif)
+- **Grafik harga** — Grafik interaktif yang menunjukkan riwayat harga dari waktu ke waktu
+- **Pemilih rentang waktu** — Pilih periode berbeda untuk dilihat (1H, 5H, 1B, 3B, 1T)
+
+## Membersihkan pilihan Anda
+
+Klik **tombol clear** di panel detail untuk menghapus saham saat ini dan kembali ke status placeholder. Anda kemudian dapat memilih saham berbeda dari daftar.
+
+<Callout type="info">
+  Data saham disediakan untuk referensi penjualan. Untuk operasi perdagangan penuh,
+  lihat bagian Perdagangan di dalam CRM jika tersedia untuk peran Anda.
+</Callout>

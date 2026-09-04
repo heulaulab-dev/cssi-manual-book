@@ -1,0 +1,127 @@
+---
+title: Dashboard
+description: Pahami Dasbor Flowra dan widget-widget gambaran nya.
+---
+
+# Dashboard
+
+Dashboard Flowra memberikan Anda pandangan terpadu dari beban kerja pembukaan akun Anda. Ini menampilkan hitungan antrian saat ini, aktivitas terbaru, dan menyediakan akses cepat ke area yang paling sering Anda gunakan.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full Flowra Dashboard showing all major sections.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Full dashboard after opening Flowra, showing all sections
+Filename suggestion: flowra-dashboard-overview.png
+Purpose: Show the complete Dashboard layout
+*/}
+
+## Header dashboard
+
+Bagian atas Dashboard menampilkan judul **Dashboard** dengan subtulisan **GAMBARAN**. Tombol **Refresh** di pojok kanan atas memungkinkan Anda memuat ulang data semua widget.
+
+## Gambaran Pembukaan Akun
+
+Bagian Gambaran Pembukaan Akun menampilkan tujuh kartu metrik, masing-masing menampilkan hitungan akun dalam status tertentu:
+
+| Metrik | Apa yang dihitung |
+|---|---|
+| Proses OA Total | Semua akun pembukaan saat ini di sistem |
+| Verifikasi Cabang | Akun yang menunggu verifikasi tingkat cabang |
+| Kirim ke CSO | Akun yang dikirim ke kepatuhan untuk tinjauan |
+| Verifikasi CSO | Akun yang saat iniunder verifikasi kepatuhan |
+| Dikembalikan ke Cabang | Akun yang dikembalikan ke Penjualan/Cabang untuk tindak lanjut |
+| Dibatalkan | Akun yang telah dibatalkan |
+| Dikonversi | Akun yang telah berhasil dikonversi |
+
+Setiap kartu menampilkan ikon, label, dan hitungan saat ini. Metrik ini diperbarui secara otomatis ketika Anda mengklik **Refresh**.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Gambaran Pembukaan Akun menampilkan tujuh kartu metrik dengan hitungan.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Opening Account Overview section with all seven metric cards
+Filename suggestion: flowra-overview-metrics.png
+Purpose: Show the account status metrics on the Dashboard
+*/}
+
+## Pratinjau antrian
+
+Di bawah metrik gambaran, Dashboard menampilkan dua panel pratinjau antrian berdampingan:
+
+### Antrian CSO
+
+Menampilkan akun pembukaan yang saat ini menunggu tinjauan dan verifikasi CSO. Setiap entri menampilkan nama klien, tanggal, dan badge **Menunggu Tinjauan**. Klik **Lihat semua antrian CSO** untuk membuka Antrian CSO lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Panel pratinjau Antrian CSO menampilkan entri akun.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: CSO Queue preview panel with account entries
+Filename suggestion: flowra-cso-queue-preview.png
+Purpose: Show the CSO Queue preview on the Dashboard
+*/}
+
+### Antrian Penjualan
+
+Menampilkan akun pembukaan yang dikembalikan ke Penjualan/Cabang yang memerlukan tindak lanjut. Setiap entri menampilkan nama klien, tanggal, dan badge **Dikembalikan ke Cabang**. Klik **Lihat semua antrian Penjualan** untuk membuka Antrian Penjualan lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Panel pratinjau Antrian Penjualan menampilkan entri akun.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Sales Queue preview panel with account entries
+Filename suggestion: flowra-sales-queue-preview.png
+Purpose: Show the Sales Queue preview on the Dashboard
+*/}
+
+## Pengumuman Intranet
+
+Widget Pengumuman Intranet menampilkan pengumuman internal terbaru dari seluruh CSSI. Klik pada pengumuman untuk membaca konten lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Pengumuman Intranet di Dashboard Flowra.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Intranet Announcements widget with announcement entries
+Filename suggestion: flowra-intranet-announcements.png
+Purpose: Show how intranet announcements appear on the Dashboard
+*/}
+
+## Akun Pembukaan Terbaru
+
+Bagian Akun Pembukaan Terbaru menampilkan lima akun pembukaan yang paling baru dibuat. Setiap entri menampilkan nama klien dan tanggal pembuatan. Klik pada entri apa pun untuk membuka halaman detailnya, atau klik **Lihat semua akun pembukaan** untuk melihat daftar lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Akun Pembukaan Terbaru menampilkan lima entri paling baru.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Latest Opening Accounts section with account entries
+Filename suggestion: flowra-latest-accounts.png
+Purpose: Show the most recent opening accounts on the Dashboard
+*/}
+
+## Status kosong
+
+Ketika bagian tidak memiliki data, bagian tersebut menampilkan pesan yang menjelaskan apa yang akan muncul di sana. Misalnya, jika tidak ada akun yang menunggu tinjauan CSO, pratinjau Antrian CSO akan menampilkan **Tidak ada akun yang menunggu tinjauan CSO** dengan catatan bahwa akun baru akan muncul ketika mereka dikirim ke CSO.
+
+## Status error
+
+Jika bagian gagal memuat karena masalah koneksi atau kesalahan sementara, tombol **Coba Lagi** ditampilkan. Klik **Coba Lagi** untuk mencoba memuat ulang bagian tersebut.
+
+<Callout type="info">
+  Dashboard memberikan ringkasan beban kerja Anda. Untuk informasi akun detail
+  dan tindakan, buka antrian yang relevan dari bilah sisi.
+</Callout>

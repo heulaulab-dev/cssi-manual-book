@@ -1,6 +1,14 @@
 {
   "title": "Flowra",
-  "description": "Digital account opening and onboarding workflows",
+  "description": "Pembukaan akun dan otomatisasi alur kerja keuangan",
+  "root": true,
   "icon": "Workflow",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "opening-accounts",
+    "agreements",
+    "digital-signing"
+  ]
 }

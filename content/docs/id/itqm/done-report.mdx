@@ -1,0 +1,135 @@
+---
+title: Laporan Selesai
+description: Lihat permintaan pengembangan yang selesai, verifikasi pekerjaan, dan kelola status registrasi.
+---
+
+# Laporan Selesai
+
+Laporan Selesai menyediakan pandangan terpusat dari permintaan pengembangan yang selesai. Ini memungkinkan Anda memverifikasi bahwa pekerjaan telah delievered sesuai harapan dan mengelola status registrasi.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Laporan Selesai menampilkan tabel permintaan.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Full Done Report table with representative entries
+Filename suggestion: itqm-done-report.png
+Purpose: Show the completed requests view
+*/}
+
+## Tabel Laporan Selesai
+
+Tabel menampilkan semua permintaan pengembangan yang telah ditandai sebagai selesai. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Subjek | Judul permintaan |
+| Jenis | Kategori permintaan |
+| Sistem | Sistem target |
+| Peminta | Siapa yang.submit permintaan |
+| PIC | Pengembang yang ditugaskan |
+| Tenggat | Tanggal jatuh tempo untuk pekerjaan |
+| Status | Status saat ini |
+| Overdue | Apakah permintaan diselesaikan setelah tanggal jatuh tempo |
+| Terdaftar | Apakah permintaan telah didaftarkan |
+| Tindakan | Tindakan yang tersedia untuk permintaan |
+
+Gunakan header kolom untuk mengurutkan dan bilah pencarian untuk memfilter entri.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Laporan Selesai dengan header kolom dan semua data terlihat.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Table showing all columns including Overdue and Registered
+Filename suggestion: itqm-done-report-columns.png
+Purpose: Show all available columns in the done report
+*/}
+
+## Tindakan
+
+Tergantung pada peran dan status permintaan Anda, Anda mungkin melihat tindakan berikut:
+
+### Tandai Selesai
+
+Ketika permintaan berada dalam status **Sedang Dikerjakan** atau **Menunggu Verifikasi**, Anda dapat menandainya sebagai selesai:
+
+1. Klik **Tandai Selesai** pada baris permintaan
+2. Permintaan bergerak ke status **Selesai**
+3. Peminta akan menerima notifikasi untuk memverifikasi penyelesaian
+
+### Verifikasi
+
+Ketika permintaan berada dalam status **Menunggu Verifikasi**, peminta dapat memverifikasi penyelesaian:
+
+1. Klik **Verifikasi** pada baris permintaan
+2. Permintaan dikonfirmasi sebagai selesai dan ditutup
+3. Permintaan bergerak ke status **Selesai** secara permanen
+
+### Lewati Selesai
+
+Untuk permintaan yang perlu dipindahkan secara manual ke status Selesai di luar alur kerja normal:
+
+1. Klik **Lewati Selesai** pada baris permintaan
+2. Permintaan ditutup paksa tanpa memerlukan verifikasi
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Laporan Selesai menampilkan tombol tindakan (Tandai Selesai, Verifikasi, Lewati Selesai).
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Action buttons visible on request rows
+Filename suggestion: itqm-done-report-actions.png
+Purpose: Show the available actions for completed requests
+*/}
+
+### Alihkan Registrasi
+
+Tindakan **Alihkan Registrasi** memungkinkan Anda menandai atau menghapus tanda permintaan sebagai terdaftar:
+
+1. Klik **Alihkan Registrasi** pada baris permintaan
+2. Status registrasi diperbarui sesuai
+
+Registrasi digunakan untuk melacak apakah permintaan yang selesai telah didaftarkan secara formal di sistem.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tindakan Alihkan Registrasi di Laporan Selesai.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Toggle Register action and registration status
+Filename suggestion: itqm-done-report-register.png
+Purpose: Show how to manage registration status
+*/}
+
+## Indikator overdue
+
+Kolom **Overdue** menunjukkan apakah permintaan diselesaikan setelah tanggal jatuh tempo. Ini membantu mengidentifikasi keterlambatan pengiriman dan melacak tingkat penyelesaian tepat waktu.
+
+- Permintaan overdue disorot secara visual
+- Dashboard juga menampilkan informasi overdue di widget Tenggat Waktu yang Akan Datang
+
+## Detail permintaan
+
+Klik pada permintaan apa pun di Laporan Selesai untuk membuka tampilan detail lengkapnya, yang menampilkan riwayat lengkap termasuk siapa yang mengerjakannya, kapan diselesaikan, dan catatan verifikasi apa pun.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Detail permintaan dari Laporan Selesai menampilkan riwayat penyelesaian.
+
+{/* SCREENSHOT:
+Page: Done Report
+Capture: Request detail view showing completion information
+Filename suggestion: itqm-done-report-detail.png
+Purpose: Show the full detail of a completed request
+*/}
+
+## Mulai di sini
+
+- [Permintaan Pengembangan](./development-requests) — Submit dan lacak permintaan aktif
+- [Dashboard](./dashboard) — Lihat ringkasan pekerjaan yang selesai di dashboard
+- [Masalah](./issues) — Buat dan kelola masalah

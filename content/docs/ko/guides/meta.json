@@ -1,0 +1,10 @@
+{
+  "title": "공통 가이드",
+  "pages": [
+    "account-settings",
+    "notifications",
+    "app-navigation",
+    "admin-panel",
+    "common-ui-patterns"
+  ]
+}

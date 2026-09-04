@@ -1,0 +1,127 @@
+---
+title: 대시보드
+description: Flowra 대시보드와 그 개요 위젯을 이해합니다.
+---
+
+# 대시보드
+
+Flowra 대시보드에는 계정 개설 작업량의 통합 뷰가 표시됩니다. 현재 대기열 수, 최근 활동 및 가장 많이 사용하는 영역에 빠른 접근을 제공합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full Flowra Dashboard showing all major sections.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Full dashboard after opening Flowra, showing all sections
+Filename suggestion: flowra-dashboard-overview.png
+Purpose: Show the complete Dashboard layout
+*/}
+
+## 대시보드 헤더
+
+대시보드 상단에는 **대시보드** 제목과 **개요** 부제목이 표시됩니다. 오른쪽 상단의 **새로 고침** 버튼은 모든 위젯 데이터를 새로 로드할 수 있습니다.
+
+## 계정 개설 개요
+
+계정 개설 개요 섹션은 특정 상태의 계정 수를 보여주는 일곱 개의 지표 카드를 표시합니다:
+
+| 지표 | 카운트 대상 |
+|---|---|
+| 총 OA 처리 | 시스템의 모든 개설 계정 |
+| 지부 확인 | 지부 수준 확인을 기다리는 계정 |
+| CSO 제출 | 규정 검토를 위해 제출된 계정 |
+| CSO 확인 | 현재 규정 확인 중인 계정 |
+| 지부로 반환 | 추가 조치를 위해 Sales/지부로 반환된 계정 |
+| 취소됨 | 취소된 계정 |
+| 전환됨 | 성공적으로 전환된 계정 |
+
+각 카드는 아이콘, 레이블 및 현재 수를 표시합니다. 이러한 지표는 **새로 고침**을 클릭할 때 자동으로 업데이트됩니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Opening Account Overview showing the seven metric cards with counts.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Opening Account Overview section with all seven metric cards
+Filename suggestion: flowra-overview-metrics.png
+Purpose: Show the account status metrics on the Dashboard
+*/}
+
+## 대기열 미리보기
+
+개요 지표 아래에, 대시보드에는 두 개의 대기열 미리보기 패널이 나란히 표시됩니다:
+
+### CSO 대기열
+
+CSO 검토 및 확인을 기다리는 개설 계정을 표시합니다. 각 항목은 고객 이름, 날짜 및 **검토 대기** 배지를 표시합니다. **CSO 대기열 모두 보기**를 클릭하여 완전한 CSO 대기열을 엽니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: CSO Queue preview panel showing account entries.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: CSO Queue preview panel with account entries
+Filename suggestion: flowra-cso-queue-preview.png
+Purpose: Show the CSO Queue preview on the Dashboard
+*/}
+
+### Sales 대기열
+
+추가 조치가 필요한 Sales/지부로 반환된 개설 계정을 표시합니다. 각 항목은 고객 이름, 날짜 및 **지부로 반환** 배지를 표시합니다. **Sales 대기열 모두 보기**를 클릭하여 완전한 Sales 대기열을 엽니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Sales Queue preview panel showing account entries.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Sales Queue preview panel with account entries
+Filename suggestion: flowra-sales-queue-preview.png
+Purpose: Show the Sales Queue preview on the Dashboard
+*/}
+
+## Intranet 공지사항
+
+Intranet 공지사항 위젯은 CSSI 전반의 최근 내부 공지사항을 표시합니다. 공지사항을 클릭하여 전체 내용을 읽습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Intranet Announcements widget on the Flowra Dashboard.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Intranet Announcements widget with announcement entries
+Filename suggestion: flowra-intranet-announcements.png
+Purpose: Show how intranet announcements appear on the Dashboard
+*/}
+
+## 최근 개설 계정
+
+최근 개설 계정 섹션은 가장 최근에 생성된 다섯 개의 개설 계정을 표시합니다. 각 항목은 고객 이름과 생성 날짜를 표시합니다. 항목을 클릭하여 세부 페이지를 열거나, **개설 계정 모두 보기**를 클릭하여 완전한 목록을 봅니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Latest Opening Accounts section showing the five most recent entries.
+
+{/* SCREENSHOT:
+Page: Flowra Dashboard
+Capture: Latest Opening Accounts section with account entries
+Filename suggestion: flowra-latest-accounts.png
+Purpose: Show the most recent opening accounts on the Dashboard
+*/}
+
+## 빈 상태
+
+섹션에 데이터가 없을 때, 그곳에 무엇이 나타날지 설명하는 메시지가 표시됩니다. 예를 들어, CSO 검토를 기다리는 계정이 없으면 CSO 대기열 미리보기는 **CSO 검토 대기 중인 계정 없음**과 CSO로 제출될 때 새 계정이 나타난다는 메모를 표시합니다.
+
+## 에러 상태
+
+연결 문제나 일시적 에러로 인해 섹션이 로드되지 않으면, **재시도** 버튼이 표시됩니다. **재시도**를 클릭하여 해당 섹션을 다시 로드합니다.
+
+<Callout type="info">
+  대시보드에는 작업량의 요약이 표시됩니다. 상세한 계정 정보와 작업을 위해서는
+  사이드바에서 관련 대기열을 엽니다.
+</Callout>

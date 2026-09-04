@@ -1,0 +1,175 @@
+---
+title: 디지털 서명 및 문서
+description: 문서 업로드, 첨부 파일 관리 및 계정 개설 워크플로우를 위한 디지털 카드 서명 사용.
+---
+
+# 디지털 서명 및 문서
+
+Flowra는 계정 개설 프로세스를 지원하기 위한 문서 관리 및 디지털 서명 기능을 제공합니다. 필요한 고객 문서를 업로드하고, 지원 파일을 첨부하며, 계약서를 Digital Card Signing(DCS) 시스템을 통해 처리할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Documents section of the opening account form showing required and additional documents.
+
+{/* SCREENSHOT:
+Page: Digital Signing & Documents
+Capture: Documents tab of the opening account creation form
+Filename suggestion: flowra-documents-section.png
+Purpose: Show the document upload interface
+*/}
+
+## 이 섹션이란
+
+- **필수 문서 업로드** — 각 계정에 대한 필수 신원 및 사업 문서 제출
+- **지원 파일 첨부** — 계정 신청을 지원하는 추가 문서 첨부
+- **첨부 파일 관리** — 계정에 첨부된 문서 보기, 교체 또는 제거
+- **디지털 서명** — 전자 서명을 위해 DCS 시스템을 통해 계약서 처리
+
+## 필수 문서
+
+계정 개설을 생성할 때 세 가지 문서 카테고리가 필요합니다:
+
+| 문서 | 설명 | 허용된 형식 |
+|---|---|---|
+| **KTP / 신분증** | 신분증 스캔 | JPG, PNG, PDF |
+| **NPWP** | 납세자 식별 문서 | PDF, DOCX, DOC, PNG, JPG, JPEG |
+| **SIUP** | 사업 허가 문서 | PDF, DOCX, DOC, PNG, JPG, JPEG |
+
+각 필수 문서에는 전용 업로드 행과 **파일 첨부** 버튼이 있습니다. 버튼을 클릭하여 컴퓨터에서 파일을 선택합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Required documents section showing the three document categories with upload controls.
+
+{/* SCREENSHOT:
+Page: Documents Tab
+Capture: Required documents section with KTP, NPWP, and SIUP upload rows
+Filename suggestion: flowra-required-documents.png
+Purpose: Show the required document upload interface
+*/}
+
+### 필수 문서 업로드
+
+1. 문서 카테고리 옆의 **파일 첨부** 클릭
+2. 컴퓨터에서 파일 선택
+3. 파일 이름과 크기가 카테고리 옆에 표시됨
+4. 파일을 변경하려면 **파일 교체** 클릭
+5. 파일을 제거하려면 **파일 제거** 클릭
+
+### 문서 가이드라인
+
+문서 탭에는 오른쪽에 **문서 가이드라인** 패널이 있습니다:
+
+- 허용된 형식: PDF, DOCX, DOC, PNG, JPG, JPEG
+- 최대 파일 크기: 문서당 10MB
+- 필수 문서당 하나의 파일; 변경하려면 **파일 교체** 사용
+
+**업로드 요약** 패널은 진행 상황을 보여줍니다:
+
+- **필수 문서** — 총 필수 문서 중 업로드된 수
+- **추가 문서** — 첨부된 선택적 지원 파일 수
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Document Guidelines and Upload Summary panels.
+
+{/* SCREENSHOT:
+Page: Documents Tab
+Capture: Document Guidelines panel and Upload Summary panel on the right side
+Filename suggestion: flowra-document-guidelines.png
+Purpose: Show the guidelines and summary panels
+*/}
+
+## 추가 문서
+
+세 가지 필수 문서 외에도, 지원 파일을 무제한 업로드할 수 있습니다. 이는 선택적이며 계정 신청을 지원하는 어떤 문서라도 포함될 수 있습니다.
+
+### 추가 문서 업로드
+
+1. **추가 문서** 섹션에서 파일을 드래그 앤 드롭하거나 **찾아보기**를 클릭하여 파일 선택
+2. 여러 파일을 한 번에 선택할 수 있습니다
+3. 각 파일은 이름, 카테고리 및 크기와 함께 테이블에 나타납니다
+4. 파일 옆의 휴지통 아이콘을 클릭하여 제거
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Additional Documents section showing the drag-and-drop area and file list.
+
+{/* SCREENSHOT:
+Page: Documents Tab
+Capture: Additional Documents section with drag-and-drop area and file table
+Filename suggestion: flowra-additional-documents.png
+Purpose: Show the additional documents upload interface
+*/}
+
+### 지원되는 파일 형식
+
+모든 문서(필수 및 추가)는 다음 형식 중 하나여야 합니다:
+
+- PDF (.pdf)
+- Microsoft Word (.docx, .doc)
+- PNG 이미지 (.png)
+- JPEG 이미지 (.jpg, .jpeg)
+
+10MB를 초과하는 파일은 에러 메시지와 함께 거부됩니다.
+
+## 기존 계정의 첨부 파일 관리
+
+기존 개설 계정의 세부 페이지를 볼 때, **첨부 파일** 섹션에는 해당 계정에 대해 업로드된 모든 문서가 표시됩니다.
+
+세부 페이지에서:
+
+- 파일 이름, 카테고리 및 업로드 날짜가 있는 업로드된 문서 목록 보기
+- 문서 관리 인터페이스를 통해 새 첨부 파일 업로드
+- 기존 첨부 파일 교체 또는 제거
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Attachments section on the account detail page showing uploaded documents.
+
+{/* SCREENSHOT:
+Page: Account Detail
+Capture: Attachments section showing a list of uploaded documents
+Filename suggestion: flowra-account-attachments.png
+Purpose: Show how attachments appear on an existing account
+*/}
+
+## Digital Card Signing (DCS)
+
+Digital Card Signing 시스템은 계약서 및 기타 문서에 대한 전자 서명 처리를 가능하게 합니다. DCS를 사용하면 고객은 많은 경우 물리적 서명 없이 문서에 디지털로 서명할 수 있습니다.
+
+### DCS 작동 방식
+
+1. 서명을 위해 계약서 또는 문서 준비
+2. 문서를 DCS 시스템을 통해 고객에게 전송
+3. 고객이 문서를 검토하고 전자적으로 서명
+4. 서명된 문서가 반환되어 계정과 함께 저장
+
+### DCS 이점
+
+- **빠른 처리** — 물리적 문서 배송을 기다릴 필요가 없음
+- **오류 감소** — 디지털 양식은 필수 필드와 유효성 검사를 강제
+- **감사 추적** — 모든 ���명 작업은 규정 준수를 위해 기록됨
+- **보안** — 문서는 암호화되고 접근 제어됨
+
+<Callout type="info">
+  DCS 사용 가능성은 계정 유형과 조직의 구성에 따라 다를 수 있습니다. 워크플로우에 DCS를
+  활성화하거나 구성해야 하는 경우 관리자에게 문의하세요.
+</Callout>
+
+## 문서 유효성 검사
+
+Flowra는 업로드된 문서를 자동으로 유효 검사합니다:
+
+- **파일 유형** — 허용된 형식만 허용
+- **파일 크기** — 문서당 최대 10MB
+- **필수 필드** — 세 가지 필수 문서 카테고리 모두 파일이 있어야만 계정을 제출할 수 있습니다
+
+유효성 검사 에러가 발생하면, 영향을 받는 문서 행 아래에 문제가 설명된 에러 메시지가 표시됩니다.
+
+## 문서 관리를 위한 팁
+
+- 신원 문서의 명확하고 판독 가능한 스캔본 업로드
+- 문서 파일이 쉽게 식별할 수 있도록 의미 있는 이름으로 지정
+- 문서를 업데이트해야 할 경우 **파일 교체** 옵션 사용
+- 제출 전에 **업로드 요약**을 확인하여 모든 필수 문서가 첨부되었는지 확인

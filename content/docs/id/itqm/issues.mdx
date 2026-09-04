@@ -1,0 +1,207 @@
+---
+title: Masalah
+description: Buat dan kelola masalah menggunakan tampilan daftar atau papan Kanban.
+---
+
+# Masalah
+
+Masalah memungkinkan Anda melacak bug, tugas, dan item pekerjaan lain yang memerlukan perhatian. Anda dapat mengelola masalah menggunakan either tampilan daftar atau papan Kanban, tergantung pada preferensi Anda.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Masalah menampilkan tampilan daftar.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: Issues list view with representative entries
+Filename suggestion: itqm-issues-list.png
+Purpose: Show the issues list view
+*/}
+
+## Daftar masalah
+
+Daftar Masalah menampilkan semua masalah yang dilacak dalam format tabel. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Kunci | Pengidentifikasi unik masalah |
+| Judul | Judul atau ringkasan masalah |
+| Jenis | Kategori masalah (misalnya, Bug, Tugas, Peningkatan) |
+| Prioritas | Seberapa mendesak masalah tersebut (misalnya, Kritis, Tinggi, Sedang, Rendah) |
+| Status | Status alur kerja saat ini |
+| Penugasan | Siapa yang bertanggung jawab atas masalah |
+| Tanggal Jatuh Tempo | Kapan masalah harus diselesaikan |
+| Permintaan Terkait | Permintaan pengembangan apa pun yang terhubung ke masalah ini |
+| Tindakan | Tindakan yang tersedia untuk masalah |
+
+Gunakan header kolom untuk mengurutkan dan bilah pencarian untuk memfilter masalah.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Masalah dengan header kolom dan data perwakilan.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: Issues table showing all columns
+Filename suggestion: itqm-issues-table-columns.png
+Purpose: Show all available columns in the issues table
+*/}
+
+### Membuat masalah baru
+
+Untuk membuat masalah baru:
+
+1. Klik tombol **Masalah Baru** di pojok kanan atas halaman Masalah
+2. Isi bidang yang diperlukan di dialog:
+   - **Judul** — Ringkasan jelas tentang masalah
+   - **Deskripsi** — Informasi detail tentang masalah
+   - **Jenis** — Pilih kategori masalah dari dropdown
+   - **Prioritas** — Pilih level urgensi dari dropdown
+   - **Penugasan** — Opsional tugaskan seseorang ke masalah
+   - **Tanggal Jatuh Tempo** — Opsional atur tenggat waktu
+   - **Permintaan Terkait** — Opsional hubungkan dengan permintaan pengembangan yang ada
+3. Klik **Submit** untuk membuat masalah
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog Masalah Baru menampilkan semua bidang.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: New Issue dialog with all form fields visible
+Filename suggestion: itqm-new-issue-dialog.png
+Purpose: Show how to create a new issue
+*/}
+
+### Tindakan masalah
+
+Tergantung pada status masalah dan peran Anda, Anda mungkin melihat tindakan berikut:
+
+- **Edit** — Modifikasi detail masalah
+- **Tugaskan** — Ubah orang yang ditugaskan
+- **Tutup** — Tandai masalah sebagai terselesaikan
+- **Buka Kembali** — Buka kembali masalah yang ditutup
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tindakan masalah terlihat di baris.
+
+{/* SCREENSHOT:
+Page: Issues
+Capture: Action buttons visible on issue rows
+Filename suggestion: itqm-issue-actions.png
+Purpose: Show available actions for issues
+*/}
+
+### Detail masalah
+
+Klik pada masalah apa pun di daftar untuk membuka tampilan detail lengkapnya, yang menampilkan:
+
+- Judul, deskripsi, dan informasi jenis
+- Prioritas dan status
+- Penugasan dan tanggal jatuh tempo
+- Permintaan pengembangan terkait (jika ada)
+- Riwayat aktivitas dan komentar
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tampilan detail masalah lengkap menampilkan semua informasi.
+
+{/* SCREENSHOT:
+Page: Issue Detail
+Capture: Complete issue detail with all metadata
+Filename suggestion: itqm-issue-detail.png
+Purpose: Show the full detail view of an issue
+*/}
+
+---
+
+## Papan Kanban
+
+Papan Kanban memberikan tampilan visual berbasis kartu dari masalah yang diorganisasi berdasarkan status. Ini menggunakan lima kolom untuk mewakili tahap alur kerja.
+
+### Kolom papan
+
+| Kolom | Deskripsi |
+|---|---|
+| Backlog | Masalah yang telah dibuat tetapi belum diprioritaskan |
+| Siap | Masalah yang disiapkan dan tersedia untuk dikerjakan |
+| Sedang Dikerjakan | Masalah yang sedang aktif dikerjakan |
+| Dalam Tinjauan | Masalah yang selesai dan menunggu tinjauan |
+| Selesai | Masalah yang telah diselesaikan dan ditutup |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Papan Kanban lengkap menampilkan semua lima kolom dengan kartu.
+
+{/* SCREENSHOT:
+Page: Kanban Board
+Capture: Complete Kanban board with cards in each column
+Filename suggestion: itqm-kanban-board.png
+Purpose: Show the visual Kanban board layout
+*/}
+
+### Memindahkan masalah antar kolom
+
+Untuk memindahkan masalah ke status berbeda:
+
+1. Klik dan tahan pada kartu masalah
+2. Seret kartu ke kolom target
+3. Lepaskan untuk menjatuhkan kartu di kolom baru
+4. Status masalah diperbarui secara otomatis
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Menarik kartu antar kolom di papan Kanban.
+
+{/* SCREENSHOT:
+Page: Kanban Board
+Capture: Card being dragged between columns
+Filename suggestion: itqm-kanban-drag.png
+Purpose: Show how drag-and-drop works on the board
+*/}
+
+### Membuat masalah dari papan
+
+Anda juga dapat membuat masalah baru langsung dari Papan Kanban:
+
+1. Klik tombol **Masalah Baru**
+2. Isi detail masalah di dialog
+3. Masalah dibuat dan ditempatkan di kolom yang sesuai berdasarkan statusnya
+
+### Memfilter papan
+
+Gunakan kontrol filter di bagian atas papan untuk mempersempit masalah yang ditampilkan:
+
+- Filter berdasarkan penugasan untuk melihat pekerjaan satu orang
+- Filter berdasarkan prioritas untuk fokus pada item kritis
+- Filter berdasarkan jenis untuk melihat kategori masalah tertentu
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Papan Kanban dengan kontrol filter terlihat.
+
+{/* SCREENSHOT:
+Page: Kanban Board
+Capture: Board showing filter controls and filtered results
+Filename suggestion: itqm-kanban-filters.png
+Purpose: Show how to filter the Kanban board
+*/}
+
+## Tampilan daftar vs. Papan Kanban
+
+| Kapan menggunakannya | Tampilan yang disarankan |
+|---|---|
+| Filter dan sorting detail | Daftar Masalah |
+| Manajemen alur kerja visual | Papan Kanban |
+| Operasi massal pada banyak masalah | Daftar Masalah |
+| Perubahan status cepat melalui drag-and-drop | Papan Kanban |
+| Melihat detail masalah inline | Daftar Masalah |
+
+Anda dapat beralih antara tampilan daftar dan Papan Kanban menggunakan tombol toggle tampilan di bagian atas halaman.
+
+## Mulai di sini
+
+- [Permintaan Pengembangan](./development-requests) — Submit dan lacak permintaan pengembangan
+- [Laporan Selesai](./done-report) — Lihat dan verifikasi pekerjaan yang selesai
+- [Dashboard](./dashboard) — Lihat ringkasan masalah Anda di dashboard

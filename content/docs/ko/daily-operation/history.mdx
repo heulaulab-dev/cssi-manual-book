@@ -1,0 +1,121 @@
+---
+title: 이력
+description: 승인된 체크리스트 이력을 탐색하고 상세 보고서를 봅니다.
+---
+
+# 이력
+
+이력 페이지는 모든 사업 날짜에 대한 승인된 체크리스트 기록을 탐색할 수 있습니다. 각 승인된 제출의 완전한 세부 정보를 볼 수 있으며, 모든 체크리스트 항목, 코멘트 및 수행된 작업을 포함합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full History page showing the summary strip, report list, and detail panel.
+
+{/* SCREENSHOT:
+Page: History
+Capture: Complete history view with date picker, summary, report list, and detail panel
+Suggested filename: daily-operation-history.png
+Purpose: Show the history workspace
+*/}
+
+## 사업 날짜 선택기
+
+도구 모음의 **사업 날짜** 선택기를 사용하여 검토할 날짜를 선택합니다. 승인된 기록 목록이 선택한 날짜에 맞게 업데이트됩니다.
+
+## 요약 막대
+
+요약 막대는 선택한 날짜에 대한 네 가지 지표를 표시합니다:
+
+| 지표 | 설명 |
+|---|---|
+| **승인된 기록** | 날짜의 총 승인된 제출 수 |
+| **체크리스트 항목** | 모든 기록의 총 체크리스트 항목 수 |
+| **완료된 항목** | 총 항목 대비 완료로 표시된 항목 수 |
+| **승인자** | 제출을 검토한 고유 승인자 수 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Summary strip showing the four history metrics.
+
+{/* SCREENSHOT:
+Page: History — Summary Strip
+Capture: Four metric cards with sample values
+Suggested filename: daily-operation-history-summary.png
+Purpose: Show history metrics at a glance
+*/}
+
+## 승인된 이력 섹션
+
+요약 아래에, 승인된 이력 섹션은 표시되는 데이터에 대한 맥락을 제공합니다:
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Approved History section header with date context.
+
+{/* SCREENSHOT:
+Page: History — Approved History
+Capture: Approved History header with date context
+Suggested filename: daily-operation-approved-history.png
+Purpose: Show the approved history section header
+*/}
+
+## 보고서 목록 테이블
+
+보고서 목록 테이블은 선택한 날짜에 대한 모든 승인된 제출을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| **날짜** | 제출의 사업 날짜 |
+| **작업 / 파트** | 작업 및 파트 이름 |
+| **제출자** | 체크리스트를 제출한 사람 |
+| **승인자** | 제출을 승인한 사람 |
+| **체크리스트** | 총 항목 대비 완료된 항목 수 |
+| **보기** | 완전한 세부 정보를 검사하는 버튼 |
+
+행이나 **보기** 버튼을 클릭하여 오른쪽 패널에서 완전한 제출 세부 정보를 봅니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Report list table showing approved submissions with View buttons.
+
+{/* SCREENSHOT:
+Page: History — Report List
+Capture: Table rows showing approved records with task/part names and completion counts
+Suggested filename: daily-operation-history-report-list.png
+Purpose: Show how approved records appear in the list
+*/}
+
+### 페이지네이션
+
+보고서 하단의 **이전** 및 **다음** 버튼을 사용하여 결과 페이지 사이를 이동합니다. 현재 페이지 번호와 총 페이지가 표시됩니다.
+
+## 보고서 세부 패널
+
+목록에서 보고서를 선택하면 오른쪽 세부 패널이 표시됩니다:
+
+- **파트 이름**과 **작업 이름**
+- **상태** 배지(항상 승인됨)
+- **사업 날짜**
+- **체크리스트 요약** — 완료된 항목 수
+- **제출자** 및 **제출 시각**
+- **승인자** 및 **승인 시각**
+- **체크리스트 항목 테이블** — 완료 상태, 코멘트 및 수행된 작업이 포함된 모든 항목
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Detail panel showing approved submission with full checklist entries.
+
+{/* SCREENSHOT:
+Page: History — Report Detail
+Capture: Detail panel showing submission metadata and checklist entries table
+Suggested filename: daily-operation-history-detail.png
+Purpose: Show the full detail view of an approved record
+*/}
+
+## 빈 상태
+
+선택한 날짜에 승인된 기록이 없으면, 다른 사업 날짜를 시도하라는 메시지가 표시됩니다.
+
+<Callout type="info">
+  이력은 승인된 제출만 표시합니다. 거부되거나 초안 상태의 제출은 이력 뷰에 포함되지 않습니다.
+</Callout>

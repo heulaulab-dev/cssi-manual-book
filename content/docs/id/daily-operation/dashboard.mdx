@@ -1,0 +1,118 @@
+---
+title: Dashboard
+description: Pahami dashboard Daily Operation, widget metrik, dan gambaran operasional.
+---
+
+# Dashboard
+
+Dashboard memberikan pandangan terpadu dari aktivitas operasional harian Anda. Ini menampilkan metrik kunci sekilas sehingga Anda dapat dengan cepat mengidentifikasi apa yang perlu diperhatikan.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full Daily Operation Dashboard showing all metric cards and sections.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard
+Capture: Complete dashboard with metric cards, Today's Operations, Approvals, and Status Context
+Suggested filename: daily-operation-dashboard-full.png
+Purpose: Show the full Dashboard layout and all visible sections
+*/}
+
+## Tanggal Operasional
+
+Dashboard menampilkan tanggal operasional saat ini di toolbar di bagian atas halaman. Tanggal ini menentukan data daftar periksa dan pengiriman mana yang ditampilkan.
+
+## Kartu metrik
+
+Bagian atas Dashboard menampilkan lima kartu metrik yang merangkum status operasional hari ini:
+
+| Kartu | Deskripsi |
+|---|---|
+| **Tugas Hari Ini** | Jumlah total tugas yang dikonfigurasi untuk daftar periksa hari ini |
+| **Bagian Memerlukan Pekerjaan** | Jumlah bagian yang berstatus draf, ditolak, atau belum lengkap |
+| **Menunggu Persetujuan** | Jumlah pengiriman daftar periksa yang menunggu tinjauan |
+| **Ditolak / Koreksi** | Jumlah bagian yang ditolak dan memerlukan koreksi |
+| **Selesai / Disetujui** | Jumlah bagian yang telah disetujui |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Close-up of the five metric cards at the top of the Dashboard.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Metric Cards
+Capture: The five metric cards with representative values
+Suggested filename: daily-operation-metric-cards.png
+Purpose: Show the key metrics at a glance
+*/}
+
+## Operasi Hari Ini
+
+Bagian Operasi Hari Ini menampilkan bagian daftar periksa yang memerlukan perhatian Anda, diurutkan berdasarkan prioritas status (ditolak dulu, lalu draf, pending, dan disetujui).
+
+Setiap baris menampilkan:
+
+- **Nama Tugas / Bagian** — Tugas dan bagian yang menjadi milik daftar periksa ini
+- **Badge status** — Status saat ini (Draf, Pending, Disetujui, atau Ditolak)
+- **Kemajuan** — Jumlah item yang selesai dari total, dengan progress bar
+- **Konteks** — Detail tambahan seperti alasan koreksi atau waktu pengiriman
+
+Klik **Buka Hari Ini** untuk menavigasi ke halaman Daftar Periksa Hari Ini lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Operasi Hari Ini menampilkan baris daftar periksa dengan badge status dan progress.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Today's Operations
+Capture: List of operational rows with task names, status badges, and progress bars
+Suggested filename: daily-operation-today-operations.png
+Purpose: Show how operational items appear in the Dashboard
+*/}
+
+## Persetujuan
+
+Jika Anda memiliki izin persetujuan, bagian Persetujuan di Dashboard menampilkan tiga kartu ringkasan:
+
+- **Menunggu tinjauan** — Pengiriman tertunda yang menunggu tindakan Anda
+- **Disetujui hari ini** — Pengiriman yang disetujui sejauh hari ini
+- **Ditolak hari ini** — Pengiriman yang ditolak sejauh hari ini
+
+Klik **Lihat Persetujuan** untuk membuka halaman Persetujuan lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Persetujuan menampilkan tiga kartu ringkasan.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Approvals
+Capture: Approvals summary cards with pending, approved, and rejected counts
+Suggested filename: daily-operation-approvals-summary.png
+Purpose: Show approval activity at a glance
+*/}
+
+## Konteks Status
+
+Bagian Konteks Status di bagian bawah Dashboard menampilkan kemajuan penyelesaian keseluruhan di seluruh daftar periksa yang dikonfigurasi hari ini. Ini menampilkan jumlah item yang selesai dari total, bersama dengan persentase dan progress bar.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Konteks Status menampilkan kemajuan penyelesaian.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Status Context
+Capture: Completion progress bar with item counts and percentage
+Suggested filename: daily-operation-status-context.png
+Purpose: Show overall checklist completion progress
+*/}
+
+## Pengumuman Intranet
+
+Widget Pengumuman Intranet muncul di bagian atas Dashboard dan menyoroti pembaruan internal sehingga Anda dapat melihat informasi penting tanpa meninggalkan Daily Operation.
+
+- Setiap pengumuman menampilkan judul, cuplikan singkat, dan tanggal
+- Klik pada pengumuman untuk membaca konten lengkap
+
+<Callout type="info">
+  Data Dashboard berdasarkan tanggal operasional saat ini. Gunakan pemilih Tanggal
+  Operasional di halaman Daftar Periksa Hari Ini untuk melihat data untuk tanggal berbeda.
+</Callout>

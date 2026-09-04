@@ -1,0 +1,141 @@
+---
+title: 공지사항
+description: 내부 공지사항을 브라우즈 및 관리합니다.
+---
+
+# 공지사항
+
+공지사항 섹션은 내부 기업 공지사항을 생성, 보기, 편집 및 관리할 수 있습니다. 공지사항은 시작 및 종료 날짜로 예약할 수 있고, 긴급으로 표시되며, 특정 역할에 대상 지정할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Announcements management page showing the table with filters and entries.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: Full announcements table with filters, search, and announcement entries
+Filename suggestion: intranet-announcements-list.png
+Purpose: Show the announcements management interface
+*/}
+
+## 공지사항 보기
+
+대시보드에서, Intranet 공지사항 위젯은 가장 최근 공지사항을 보여줍니다. 어떤 공지사항이든 클릭하여 전체 내용을 봅니다.
+
+사이드바에서, **Intranet > 공지사항**으로 이동하여 완전한 관리 페이지를 엽니다. 이 페이지는 정렬 가능한 테이블에 모든 공지사항을 표시합니다.
+
+각 공지사항 항목은 다음을 표시합니다:
+
+- **제목** — 공지사항 헤드라인(자세히 보려면 클릭)
+- **긴급** — 공지사항이 긴급으로 표시된 경우 빨간색 **긴급** 배지
+- **게시** — 현재 게시 상태(활성, 비활성, 예정 또는 만료)
+- **시작일** — 공지사항 게시 시작 날짜
+- **종료일** — 공지사항 게시 종료 날짜
+- **생성됨** — 공지사항이 생성된 날
+- **작업** — 편집 또는 삭제 버튼
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Announcements table with columns visible and an Urgent badge displayed.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: Table showing announcement rows with badges and action buttons
+Filename suggestion: intranet-announcements-table.png
+Purpose: Show the table layout and column structure
+*/}
+
+## 공지사항 검색 및 필터링
+
+테이블 상단의 검색바로 제목으로 공지사항을 찾을 수 있습니다. 검색은 입력할 때 또는 Enter를 눌렀을 때 적용됩니다.
+
+더 세분화된 필터링을 위해 고급 필터 옵션을 사용합니다:
+
+- **상태** — 게시 상태로 필터링(활성, 비활성, 예정, 만료)
+- **긴급** — 긴급성 수준으로 필터링(긴급, 일반)
+
+**재설정**을 클릭하여 모든 필터를 지우고 기본 뷰로 돌아갑니다.
+
+## 새 공지사항 생성
+
+권한이 있는 경우, 페이지 상단에 **새 공지사항** 버튼이 표시됩니다.
+
+1. **새 공지사항** 클릭하여 생성 대화상자 열기
+2. 필수 필드 채우기:
+   - **제목** — 공지사항 헤드라인
+   - **내용** — 완전한 공지사항 텍스트
+   - **긴급** — 긴급 공지사항인지 토글
+   - **시작일** — 공지사항 게시 시작 날짜(선택사항)
+   - **종료일** — 공지사항 게시 종료 날짜(선택사항)
+   - **보여질 대상** — 이 공지사항을 볼 특정 역할 선택(선택사항 — 비워두면 모든 사람이 볼 수 있음)
+3. **저장** 클릭하여 공지사항 생성
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: New Announcement dialog with form fields visible.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: New Announcement dialog showing all form fields
+Filename suggestion: intranet-announcement-create.png
+Purpose: Show the announcement creation form
+*/}
+
+## 공지사항 편집
+
+1. 테이블에서 공지사항 행의 **편집** 버튼 클릭
+2. 편집 대화상자가 현재 공지사항 데이터로 사전 채워져 열림
+3. 변경 사항 적용
+4. **저장** 클릭하여 업데이트 적용
+
+## 공지사항 세부 정보 보기
+
+테이블에서 공지사항 제목을 클릭하면 세부 정보 보기가 열립니다. 세부 정보 페이지는 다음을 표시합니다:
+
+- **공지사항 내용** — 완전한 텍스트
+- **기록 세부 정보** — 긴급성, 게시 상태, 게시 기간, 마지막으로 업데이트, 생성자 및 보여질 대상 역할
+- **활동** — 생성 및 업데이트 타임스탬프
+
+세부 정보 보기에서:
+
+- **편집** 클릭하여 공지사항 수정
+- **삭제** 클릭하여 공지사항 제거(확인 필요)
+- **관리로 돌아가기** 클릭하여 목록으로 돌아감
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Announcement detail page showing content, record details, and activity.
+
+{/* SCREENSHOT:
+Page: Announcement Detail
+Capture: Full announcement detail page with content, sidebar details, and activity
+Filename suggestion: intranet-announcement-detail.png
+Purpose: Show the complete announcement detail layout
+*/}
+
+## 공지사항 삭제
+
+1. 공지사항 행(또는 세부 정보 페이지)의 **삭제** 버튼 클릭
+2. "이 공지사항을 삭제하시겠습니까?" 확인 대화상자가 나타납니다
+3. 확인하려면 **삭제**를, 중단하려면 **취소**를 클릭
+
+<Callout type="warning">
+  공지사항 삭제는 되돌릴 수 없습니다.
+</Callout>
+
+## 게시 상태
+
+공지사항은 가시성을 결정하는 게시 상태를 가지고 있습니다:
+
+| 상태 | 설명 |
+|---|---|
+| **활성** | 현재 게시되어 사용자에게 표시됨 |
+| **예정** — 미래에 게시 시작 |
+| **만료** | 종료일을 지나 더 이상 표시되지 않음 |
+| **비활성** | 수동으로 비활성화됨, 사용자에게 표시되지 않음 |
+
+## 권한 요구 사항
+
+- **공지사항 보기** — 공지사항 모듈 읽기 권한 필요
+- **공지사항 생성, 편집, 삭제** — 각각 공지사항 모듈의 생성, 업데이트, 삭제 권한 필요
+- 필요한 권한이 없으면 **새 공지사항** 버튼과 작업 버튼이 표시되지 않음

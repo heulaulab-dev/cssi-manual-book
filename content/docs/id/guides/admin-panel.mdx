@@ -1,0 +1,167 @@
+---
+title: Panel Admin
+description: Kelola pengguna, peran, izin, dan pengumuman sistem di seluruh CSSI.
+---
+
+# Panel Admin
+
+Panel Admin tersedia di setiap aplikasi CSSI dan menyediakan alat untuk mengelola pengguna, peran, izin, pengumuman, dan catatan audit. Akses dengan mengklik **Administrasi** di bilah sisi (hanya tersedia untuk administrator yang berwenang).
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dasbor Panel Admin menampilkan kartu ringkasan dan tindakan cepat.
+
+{/* SCREENSHOT:
+Page: Admin Panel
+Capture: Admin dashboard with user overview, activity, and quick actions
+Filename suggestion: shared-admin-panel.png
+Purpose: Show the Admin Panel interface
+*/}
+
+## Dasbor Admin
+
+Dasbor Admin menyediakan gambaran cepat sistem Anda:
+
+### Ringkasan Pengguna
+
+Menampilkan jumlah total pengguna, dengan hitungan untuk pengguna **Aktif** dan **Nonaktif**.
+
+### Aktivitas (24 jam)
+
+Menampilkan jumlah peristiwa audit yang dicatat dalam 24 jam terakhir.
+
+### Tindakan Cepat
+
+Empat tombol pintas untuk tugas administratif umum:
+
+| Tindakan | Deskripsi |
+|---|---|
+| **Buat Pengguna** | Buka halaman Pengguna untuk menambahkan pengguna baru |
+| **Peran & Izin** | Kelola peran dan level akses mereka |
+| **Pengumuman Baru** | Buat pengumuman seluruh sistem |
+| **Lihat Catatan Audit** | Tinjau aktivitas administratif terbaru |
+
+### Aktivitas Terbaru
+
+Lima tindakan administratif terakhir ditampilkan dengan jenis tindakan, entitas yang terkena, siapa yang melaksanakannya, dan kapan.
+
+## Pengguna
+
+Kelola semua pengguna di sistem. Dari halaman ini Anda dapat:
+
+- Melihat daftar semua pengguna dengan peran, status, masuk terakhir, dan tanggal pembuatan
+- Mencari pengguna berdasarkan nama atau email
+- Memfilter pengguna berdasarkan peran atau status (Aktif, Ditangguhkan, Nonaktif)
+- Membuat pengguna baru dengan tombol **Pengguna Baru**
+- Mengedit atau menonaktifkan pengguna yang ada dari dropdown **Tindakan**
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman daftar pengguna menampilkan tabel pengguna dengan filter.
+
+{/* SCREENSHOT:
+Page: Admin — Users
+Capture: Users table with role and status badges
+Filename suggestion: shared-admin-users.png
+Purpose: Show the user management interface
+*/}
+
+## Izin Peran
+
+Kelola peran, akses modul, dan penugasan pengguna. Halaman ini dibagi menjadi dua panel:
+
+### Pilihan peran (panel kiri)
+
+- Cari peran berdasarkan nama
+- Klik **Buat Peran** untuk menambahkan peran baru
+- Pilih peran untuk melihat dan mengedit detailnya
+
+### Detail peran (panel kanan)
+
+Ketika Anda memilih peran, Anda melihat:
+
+- Nama peran, kode, kategori, dan jenis
+- Jumlah pengguna yang ditugaskan ke peran
+- Dua tab: **Izin** dan **Pengguna**
+
+#### Tab Izin
+
+Matriks modul dan tindakan. Aktifkan atau nonaktifkan kotak centang untuk memberikan atau mencabut izin spesifik untuk peran tersebut. Klik **Simpan** untuk menerapkan perubahan.
+
+#### Tab Pengguna
+
+Lihat dan kelola pengguna yang ditugaskan ke peran ini. Hapus pengguna dengan tombol **Hapus**, atau tambahkan pengguna baru dengan tombol **Tugaskan Pengguna**.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Izin Peran menampilkan matriks izin.
+
+{/* SCREENSHOT:
+Page: Admin — Role Permissions
+Capture: Permissions matrix with module/action checkboxes
+Filename suggestion: shared-admin-roles.png
+Purpose: Show the role and permissions management interface
+*/}
+
+## Catatan Audit
+
+Lihat riwayat detail aktivitas administratif dan peristiwa keamanan. Catatan menampilkan:
+
+- **Tindakan** — Apa yang dilakukan (Buat, Perbarui, Hapus)
+- **Target** — Entitas yang terkena dampak
+- **Tanggal** — Kapan tindakan terjadi
+- **Detail** — Klik **Lihat detail** untuk informasi lebih lanjut
+
+### Memfilter catatan audit
+
+Gunakan kontrol filter untuk mempersempit hasil:
+
+- **Tindakan** — Filter berdasarkan jenis tindakan
+- **Filter berdasarkan proyek** — Cari berdasarkan nama proyek
+- **Dari tanggal / Sampai tanggal** — Filter berdasarkan rentang tanggal
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Catatan Audit dengan kontrol filter dan entri catatan.
+
+{/* SCREENSHOT:
+Page: Admin — Audit Logs
+Capture: Audit log table with filters
+Filename suggestion: shared-admin-audit-logs.png
+Purpose: Show the audit log interface
+*/}
+
+## Pengumuman Sistem
+
+Buat dan kelola pengumuman yang ditampilkan di seluruh aplikasi CSSI.
+
+### Membuat pengumuman
+
+1. Klik **Pengumuman Sistem Baru**
+2. Masukkan **Judul** dan **Konten** (menggunakan editor teks kaya)
+3. Atur **Status** (Aktif atau Nonaktif)
+4. Aktifkan **Penting** jika pengumuman memerlukan perhatian segera
+5. Atur **Tanggal Mulai** dan **Tanggal Berakhir** untuk periode penerbitan
+6. Lampirkan file jika diperlukan menggunakan dropzone file
+7. Klik **Buat** untuk menerbitkan
+
+### Mengelola pengumuman
+
+- **Edit** — Klik tombol Edit untuk memodifikasi pengumuman yang ada
+- **Hapus** — Klik tombol Hapus dan konfirmasi untuk menghapus pengumuman secara permanen
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Pengumuman Sistem dengan daftar pengumuman.
+
+{/* SCREENSHOT:
+Page: Admin — System Announcements
+Capture: Announcements table with status and urgency badges
+Filename suggestion: shared-admin-announcements.png
+Purpose: Show the system announcements management interface
+*/}
+
+<Callout type="info">
+  Panel Admin tersedia di setiap aplikasi CSSI. Perubahan yang dibuat di Panel
+  Admin satu aplikasi berlaku di seluruh sistem.
+</Callout>

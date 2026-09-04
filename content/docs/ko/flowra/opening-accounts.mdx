@@ -1,0 +1,216 @@
+---
+title: 계정 개설
+description: 완전한 온보딩 워크플로우를 통해 계정 개설 신청을 생성, 관리 및 처리합니다.
+---
+
+# 계정 개설
+
+계정 개설 섹션은 Flowra의 핵심입니다. 새 계정 신청을 생성하고, 다양한 단계를 통해 진행 상황을 추적하며, 역할에 할당된 계정 대기열을 관리할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Opening Accounts page showing the full list view with filters.
+
+{/* SCREENSHOT:
+Page: Opening Accounts
+Capture: Full opening accounts list view with filters and table
+Filename suggestion: flowra-opening-accounts-list.png
+Purpose: Show the main opening accounts list view
+*/}
+
+## 계정 개설이란
+
+- **새 계정 생성** — 모든 필요한 정보와 함께 새 고객 계정 신청 제출
+- **상태 추적** — 각 계정을 온보딩 수명 주기 전체에 걸쳐 모니터링
+- **대기열 관리** — 역할에 할당된 계정 작업(Sales 또는 CSO)
+- **문서 업로드** — 각 계정에 필요한 및 지원 문서 첨부
+
+## 뷰
+
+계정 개설 섹션에는 사이드바에서 접근할 수 있는 세 가지 뷰가 있습니다:
+
+| 뷰 | 설명 |
+|---|---|
+| **모든 개설 계정** | 필터 및 검색이 있는 모든 계정 신청의 완전한 목록 |
+| **Sales 대기열** | 추가 조치가 필요한 Sales/지부로 반환된 계정 |
+| **CSO 대기열** | 규정 검토 및 확인을 기다리는 계정 |
+
+## 모든 개설 계정
+
+모든 개설 계정 뷰는 테이블에 모든 계정 신청을 표시합니다. 고객 이름으로 검색하고 계정 상태, 고객 유형, 고객 상태, 생성자 및 날짜 범위로 필터링할 수 있습니다.
+
+### 테이블 열
+
+| 열 | 설명 |
+|---|---|
+| 처리 계정 상태 | 계정 처리의 현재 상태(예: 지부 확인, CSO 제출) |
+| 고객 이름 | 온보딩되는 고객의 이름 |
+| 계정 서비스 | 서비스 카테고리(예: VOLT+, By Order VOLT+) |
+| 고객 유형 | 고객 계정 유형 |
+| 고객 상태 | 현재 고객 상태 |
+| 전화번호 | 고객 전화번호 |
+| 모바일 전화번호 | 고객 휴대폰 번호 |
+| 처리 메모 | 계정 처리에 대한 메모 |
+| 할당됨 | 계정을 생성하거나 처리하는 사람 |
+| 생성일 | 계정 신청이 생성된 날 |
+| 수정일 | 계정이 마지막으로 업데이트된 날 |
+
+### 계정 필터링
+
+필터 패널을 사용하여 목록을 좁힙니다:
+
+1. **필터 아이콘**을 클릭하여 고급 필터 확장
+2. **계정 상태**, **고객 유형**, **고객 상태** 또는 **생성자**와 같은 기준 선택
+3. **생성일** 범위 피커를 사용하여 생성일로 필터
+4. **적용**을 클릭하여 목록을 업데이트하거나, **재설정**을 클릭하여 모든 필터 지우기
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Advanced filter panel expanded with filter options visible.
+
+{/* SCREENSHOT:
+Page: Opening Accounts
+Capture: Advanced filter panel with filter fields visible
+Filename suggestion: flowra-opening-accounts-filters.png
+Purpose: Show the filtering options available for the accounts list
+*/}
+
+### 계정 검색
+
+테이블 상단의 검색 상자를 사용하여 고객 이름으로 검색합니다. 이름을 입력하면 목록이 자동으로 업데이트됩니다.
+
+## Sales 대기열
+
+Sales 대기열은 Sales/지부로 반환되어 추가 조치가 필요한 계정을 표시합니다. 이 대기열은 영업 직원이 문제를 해결하거나 누락된 정보를 완료하는 데 사용됩니다.
+
+대기열 상단의 요약에는 두 가지 수가 표시됩니다:
+
+- **추가 조치 필요** — 지부로 반환된 총 계정 수
+- **지부 확인** — 지부 수준 확인을 기다리는 계정
+
+계정의 **확인**을 클릭하여 세부 페이지를 열고 작업을 수행합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Sales Queue view showing summary cards and account list.
+
+{/* SCREENSHOT:
+Page: Sales Queue
+Capture: Sales Queue view with summary counts and account entries
+Filename suggestion: flowra-sales-queue.png
+Purpose: Show the Sales Queue interface
+*/}
+
+## CSO 대기열
+
+CSO 대기열은 규정 검토 및 확인을 기다리는 계정을 표시합니다. 이 대기열은 규정 직원이 계정 신청을 검토하고 확인하는 데 사용됩니다.
+
+대기열 상단의 요약에는 두 가지 수가 표시됩니다:
+
+- **검토 대기** — 검토를 기다리도록 CSO로 제출된 계정
+- **CSO 확인** — 현재 규정 확인 중인 계정
+
+계정의 **확인**을 클릭하여 세부 페이지를 열고 처리합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: CSO Queue view showing summary cards and account list.
+
+{/* SCREENSHOT:
+Page: CSO Queue
+Capture: CSO Queue view with summary counts and account entries
+Filename suggestion: flowra-cso-queue.png
+Purpose: Show the CSO Queue interface
+*/}
+
+## 새 개설 계정 생성
+
+새 계정 신청을 생성하려면:
+
+1. 헤더의 **새 개설 계정 생성** 클릭
+2. 폼의 각 탭 완료(아래 참조)
+3. **개설 계정 저장** 클릭하여 제출
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Create Opening Account form showing the tab navigation.
+
+{/* SCREENSHOT:
+Page: Create Opening Account
+Capture: The creation form with tabs visible
+Filename suggestion: flowra-create-account-form.png
+Purpose: Show the multi-tab form for creating an opening account
+*/}
+
+### 폼 탭
+
+생성 폼은 일곱 개의 탭으로 구성되어 있습니다. 어떤 순서로든 완료할 수 있지만, 모든 필수 필드는 제출 전에 채워야 합니다.
+
+| 탭 | 포함 내용 |
+|---|---|
+| **제품** | 고객 이름, 계정 상태, 고객 유형, 연락처 세부 정보, 주소 |
+| **기관 데이터** | 기업 세부 정보 — 설립 날짜, SIUP, NPWP, notaris 정보 |
+| **개인 데이터** | 성별, 결혼 상태, 교육, 신분증 세부 정보, 직업, 소득 |
+| **배우자 또는 부모 데이터** | 해당되는 경우 배우자 또는 부모 정보 |
+| **은행** | 은행 계좌 세부 정보(은행 A 및 은행 B), custodia 유형 |
+| **재무 및 투자 배경** | 자금 출처, 투자 경험, 목적, 위험 프로필 |
+| **문서** | 필요한 및 지원 문서 업로드 |
+
+### 진행 상황 저장
+
+각 탭은 데이터를 독립적으로 저장합니다. 최종 제출 전에 모든 필수 섹션을 완료했는지 확인하려면 각 탭을 저장합니다. 아직 모든 섹션을 완료하지 않았다면 각 탭을 저장하라는 팁 메시지가 표시됩니다.
+
+### 기존 계정 편집
+
+계정 세부 페이지에서 **편집**을 클릭하여 정보를 업데이트합니다. 폼은 기존 데이터로 사전 채워져 로드되며, 모든 필드를 수정할 수 있습니다.
+
+### 계정 삭제
+
+계정 세부 페이지에서 헤더의 **삭제**를 클릭하여 계정을 제거합니다. 확인 대화상자가 표시됩니다 — **삭제**를 클릭하여 확인하거나 **취소**를 클릭하여 계정을 유지합니다.
+
+## 계정 세부 정보 보기
+
+목록이나 대기열에서 계정을 클릭하면 세부 페이지가 열립니다. 세부 페이지는 다음을 포함하여 모든 정보를 압축 가능한 섹션으로 정리하여 표시합니다:
+
+- **고객 프로필** — 이름, 상태, 유형, 지부, 계약서 번호
+- **연락처 정보** — 전화번호, 이메일 주소
+- **기본 주소** — 도시, 주, 우편번호, 국가가 포함된 완전한 주소
+- **대체 주소** — 제공된 경우 보조 주소
+- **개인 데이터** — 성별, 결�� 상태, 교육, 신분증 세부 정보, 종교
+- **직업** — 직무, 회사, 소득 세부 정보
+- **은행 계좌** — 은행 A 및 은행 B 세부 정보, custodia 정보
+- **재무 배경** — 자금 출처, 투자 경험 및 목표
+- **영업** — 리드 출처, 영업 코드, 할당된 영업직원
+- **첨부 파일** — 이 계정과 첨부된 문서
+- **처리 메타데이터** — 생성/업데이트 날짜 및 수행자
+
+각 섹션은 섹션 헤더를 사용하여 축소하거나 확장할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Account detail page showing collapsible sections with data.
+
+{/* SCREENSHOT:
+Page: Opening Account Detail
+Capture: Account detail page with sections expanded
+Filename suggestion: flowra-account-detail.png
+Purpose: Show the detail view of an opening account
+*/}
+
+### 계정에서의 작업
+
+세부 페이지에서 다음 작업을 수행할 수 있습니다:
+
+| 작업 | 설명 |
+|---|---|
+| **편집** | 계정 정보를 업데이트하기 위해 폼 열기 |
+| **삭제** | 계정 제거(확인 필요) |
+| **복사** | 이 계정의 데이터로 사전 채워진 새 계정 생성 |
+| **프로세스 종료** | 계정 프로세스를 종료로 표시(곧 추가) |
+| **프로세스 재개** | 종료된 계정 프로세스 재개(곧 추가) |
+| **변경 이력 보기** | 변경 이력 보기(곧 추가) |
+
+<Callout type="info">
+  작업은 역할과 계정의 현재 상태에 따라 제한될 수 있습니다. 추가 권한이 필요한 경우
+  관리자에게 문의하세요. 사용자 및 역할 관리는 [관리자 패널](../guides/admin-panel)을 참조하세요.
+</Callout>

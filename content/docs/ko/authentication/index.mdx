@@ -1,0 +1,65 @@
+---
+title: 개요
+description: CSSI 애플리케이션 에코시스템의 인증.
+---
+
+# 인증
+
+인증은 CSSI 애플리케이션 에코시스템을 위한 공유 로그인 환경을 제공합니다. 사용자는 Portal에 진입하고 사용할 수 있는 애플리케이션에 접근하기 전에 인증해야 합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: CSSI sign-in page showing Employee ID and password fields.
+
+{/* SCREENSHOT:
+Page: Authentication Overview
+Capture: CSSI sign-in page with Employee ID and password fields
+Suggested filename: authentication-sign-in.png
+*/}
+
+## 인증 흐름
+
+<Cards>
+  <Card
+    title="로그인"
+    description="사원 ID와 비밀번호를 사용하여 CSSI에 로그인합니다."
+    href="/docs/authentication/sign-in"
+  />
+  <Card
+    title="첫 로그인 비밀번호 변경"
+    description="계속 진행하기 전에 기본 비밀번호를 새 비밀번호로 변경하세요."
+    href="/docs/authentication/first-time-password"
+  />
+  <Card
+    title="비밀번호 찾기"
+    description="이메일 OTP를 사용하여 신원을 확인하고 새 비밀번호를 생성합니다."
+    href="/docs/authentication/forgot-password"
+  />
+</Cards>
+
+## 인증 작동 방식
+
+**기존 사용자:**
+
+```
+로그인 → Portal
+```
+
+**최초 사용자:**
+
+```
+기본 비밀번호로 로그인
+→ 비밀번호 변경
+→ 다시 로그인
+→ Portal
+```
+
+**비밀번호 분실:**
+
+```
+비밀번호 찾기
+→ 이메일 OTP
+→ 새 비밀번호 설정
+→ 다시 로그인
+→ Portal
+```

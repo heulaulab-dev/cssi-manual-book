@@ -1,0 +1,143 @@
+---
+title: Persetujuan
+description: Tinjau dan setujui atau tolak pengiriman daftar periksa dari tim Anda.
+---
+
+# Persetujuan
+
+Halaman Persetujuan memungkinkan supervisor dan pengguna berwenang meninjau pengiriman daftar periksa, menyetujuinya, atau menolaknya dengan alasan. Akses halaman ini dari bilah sisi di bawah **Divisi TI > Persetujuan**.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full halaman Persetujuan menampilkan strip ringkasan, kontrol filter, dan tabel pengiriman.
+
+{/* SCREENSHOT:
+Page: Approvals
+Capture: Complete approvals view with date picker, filters, and submission list
+Suggested filename: daily-operation-approvals.png
+Purpose: Show the approvals workspace
+*/}
+
+## Pemilih Tanggal Operasional
+
+Gunakan pemilih **Tanggal Operasional** di toolbar untuk memilih tanggal yang ingin Anda tinjau. Daftar pengiriman diperbarui sesuai dengan tanggal yang dipilih.
+
+## Strip ringkasan
+
+Strip ringkasan menampilkan empat metrik untuk tanggal yang dipilih:
+
+| Metrik | Deskripsi |
+|---|---|
+| **Pending** | Jumlah pengiriman yang menunggu tinjauan |
+| **Disetujui** | Jumlah pengiriman yang telah disetujui hari ini |
+| **Ditolak** | Jumlah pengiriman yang ditolak hari ini |
+| **Total** | Jumlah total pengiriman untuk tanggal |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Strip ringkasan menampilkan empat metrik persetujuan.
+
+{/* SCREENSHOT:
+Page: Approvals — Summary Strip
+Capture: Four metric cards showing pending, approved, rejected, and total counts
+Suggested filename: daily-operation-approvals-summary.png
+Purpose: Show approval counts at a glance
+*/}
+
+## Kontrol filter
+
+Gunakan kontrol filter di atas tabel pengiriman untuk mempersempit hasil:
+
+| Filter | Deskripsi |
+|---|---|
+| **Tanggal** | Filter pengiriman berdasarkan tanggal operasional |
+| **Status** | Filter berdasarkan status pengiriman (Pending, Disetujui) |
+
+Anda juga dapat menggunakan kotak **Pencarian** untuk menemukan pengiriman berdasarkan label item.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Kontrol filter dengan dropdown status dan kotak pencarian.
+
+{/* SCREENSHOT:
+Page: Approvals — Filters
+Capture: Filter bar with status selector and search input
+Suggested filename: daily-operation-approvals-filters.png
+Purpose: Show how to filter submissions
+*/}
+
+## Tabel antrian persetujuan
+
+Tabel pengiriman menampilkan setiap pengiriman pending atau disetujui dengan kolom berikut:
+
+| Kolom | Deskripsi |
+|---|---|
+| **Tugas** | Nama tugas yang menjadi milik pengiriman |
+| **Bagian** | Nama bagian |
+| **Status** | Badge status saat ini (Pending, Disetujui) |
+| **Dikirim Oleh** | Siapa yang mengirim daftar periksa |
+| **Dikirim Pada** | Kapan pengiriman dibuat |
+| **Tindakan** | Tombol Setujui dan Tolak (untuk item pending) |
+
+### Menyetujui pengiriman
+
+1. Temukan pengiriman pending di tabel
+2. Klik tombol **Setujui** di kolom Tindakan
+3. Status pengiriman berubah menjadi Disetujui
+
+### Menolak pengiriman
+
+1. Temukan pengiriman pending di tabel
+2. Klik tombol **Tolak** di kolom Tindakan
+3. Dialog penolakan muncul meminta alasan
+4. Masukkan alasan penolakan di area teks **Alasan**
+5. Klik **Tolak** untuk mengonfirmasi, atau **Batal** untuk membatalkan
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog penolakan dengan area teks alasan dan tombol Tolak/Batal.
+
+{/* SCREENSHOT:
+Page: Approvals — Reject Dialog
+Capture: Rejection dialog with reason textarea
+Suggested filename: daily-operation-reject-dialog.png
+Purpose: Show the rejection workflow
+*/}
+
+<Callout type="info">
+  Alasan penolakan terlihat oleh orang yang mengirim daftar periksa. Mereka
+  akan melihat alasan ditampilkan sebagai alert merah di halaman Daftar Periksa
+  Hari Ini mereka.
+</Callout>
+
+## Melihat detail pengiriman
+
+Klik pada baris di tabel pengiriman untuk membuka panel detail. Panel detail menampilkan:
+
+- Nama tugas dan bagian
+- Status pengiriman
+- Tanggal operasional
+- Dikirim oleh dan dikirim pada
+- Disetujui oleh dan disetujui pada (jika berlaku)
+- Tabel daftar periksa lengkap dengan semua item, status penyelesaian, komentar, dan tindakan yang diambil
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Panel detail menampilkan detail pengiriman dan entri daftar periksa.
+
+{/* SCREENSHOT:
+Page: Approvals — Detail Panel
+Capture: Detail panel showing submission metadata and checklist table
+Suggested filename: daily-operation-approvals-detail.png
+Purpose: Show how to inspect a submission in detail
+*/}
+
+## Status kosong
+
+Jika tidak ada pengiriman yang cocok dengan filter Anda, Anda akan melihat pesan yang menunjukkan bahwa tidak ada pengiriman yang tersedia untuk tanggal dan filter yang dipilih.
+
+<Callout type="info">
+  Anda memerlukan izin persetujuan untuk mengakses halaman ini. Jika Anda tidak melihat
+  halaman Persetujuan di bilah sisi, hubungi administrator Anda untuk meminta
+  izin yang sesuai.
+</Callout>

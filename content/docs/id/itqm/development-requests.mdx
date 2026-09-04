@@ -1,0 +1,297 @@
+---
+title: Permintaan Pengembangan
+description: Submit, terima, setujui, dan lacak permintaan pengembangan melalui alur kerja lengkap.
+---
+
+# Permintaan Pengembangan
+
+Permintaan Pengembangan mengelola siklus lengkap pekerjaan pengembangan TI — dari submit awal melalui persetujuan, penugasan, dan pelacakan. Alur kerja dibagi menjadi tiga tampilan utama berdasarkan peran Anda: **Kembangkan Permintaan** (pengirim), **Terima Pengembangan** (persetujuan TI), dan **Setujui Pengembangan** (persetujuan divisi).
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Permintaan Pengembangan menampilkan tabel permintaan.
+
+{/* SCREENSHOT:
+Page: Development Requests
+Capture: Main request table view with representative entries
+Filename suggestion: itqm-develop-request-table.png
+Purpose: Show the development request list view
+*/}
+
+## Gambaran alur kerja permintaan
+
+Permintaan pengembangan bergerak melalui tahap-tahap ini:
+
+1. **Draf** — Dibuat tetapi belum dikirim
+2. **Menunggu Persetujuan** — Dikirim dan menunggu persetujuan divisi
+3. **Revisi** — Dikembalikan untuk perubahan
+4. **Menunggu Penerimaan IT** — Disetujui dan menunggu penerimaan TI
+5. **Menunggu Penugasan** — Diterima, menunggu pengembang untuk ditugaskan
+6. **Sedang Dikerjakan** — Pekerjaan sedang aktif dilakukan
+7. **Menunggu Verifikasi** — Selesai, menunggu verifikasi peminta
+8. **Selesai** — Terverifikasi dan ditutup
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Diagram alur kerja visual menampilkan tahap permintaan.
+
+{/* SCREENSHOT:
+Page: Development Requests
+Capture: Workflow stages visual representation
+Filename suggestion: itqm-request-workflow.png
+Purpose: Show the request lifecycle stages
+*/}
+
+---
+
+## Kembangkan Permintaan
+
+Tampilan **Kembangkan Permintaan** adalah tempat pengirim membuat, mengelola, dan melacak permintaan pengembangan mereka.
+
+### Tabel permintaan
+
+Tabel menampilkan semua permintaan yang telah Anda submit atau terlibat. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Subjek | Judul permintaan |
+| Jenis | Kategori permintaan (misalnya, Fitur, Perbaikan Bug) |
+| Sistem | Sistem atau aplikasi target |
+| Status | Status alur kerja saat ini |
+| Dikirim | Tanggal dan waktu permintaan dikirim |
+| Tindakan | Tindakan yang tersedia untuk permintaan |
+
+Gunakan header kolom untuk mengurutkan dan bilah pencarian untuk memfilter permintaan.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Kembangkan Permintaan dengan header kolom dan entri.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: Request table showing columns and representative data
+Filename suggestion: itqm-develop-request-list.png
+Purpose: Show the request list with all columns visible
+*/}
+
+### Membuat permintaan baru
+
+Untuk submit permintaan pengembangan baru:
+
+1. Klik tombol **Permintaan Baru** di pojok kanan atas halaman Kembangkan Permintaan
+2. Isi bidang yang diperlukan di dialog:
+   - **Subjek** — Judul jelas untuk permintaan Anda
+   - **Persyaratan** — Deskripsi detail tentang apa yang Anda butuhkan
+   - **Jenis** — Pilih kategori permintaan dari dropdown
+   - **Sistem** — Pilih sistem target dari dropdown
+   - **Lampiran** — Opsional lampirkan file pendukung
+3. Klik **Submit** untuk mengirim permintaan untuk persetujuan
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog Permintaan Baru menampilkan semua bidang.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: New Request dialog with all form fields visible
+Filename suggestion: itqm-new-request-dialog.png
+Purpose: Show how to create a new development request
+*/}
+
+<Callout type="info">
+  Setelah submit, permintaan bergerak ke status **Menunggu Persetujuan** dan
+  persetujuan divisi akan menerima notifikasi.
+</Callout>
+
+### Mengedit dan mengirim ulang
+
+Ketika permintaan dikembalikan untuk **Revisi**, Anda dapat mengedit dan mengirim ulang:
+
+1. Buka permintaan dari tabel
+2. Klik **Edit** untuk memodifikasi subjek, persyaratan, jenis, sistem, atau lampiran
+3. Tinjau perubahan Anda dan klik **Kirim Ulang** untuk mengirimkannya kembali ke alur kerja
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Permintaan dalam status Revisi dengan tombol Edit/Kirim Ulang.
+
+{/* SCREENSHOT:
+Page: Develop Request
+Capture: Request detail showing revision status and edit options
+Filename suggestion: itqm-request-revision.png
+Purpose: Show how to edit a request in revision status
+*/}
+
+---
+
+## Terima Pengembangan
+
+Tampilan **Terima Pengembangan** digunakan oleh persetujuan TI untuk meninjau permintaan masuk dan menugaskan pekerjaan pengembangan.
+
+### Tabel penerimaan
+
+Tabel menampilkan permintaan yang siap untuk penerimaan TI. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Subjek | Judul permintaan |
+| Jenis | Kategori permintaan |
+| Sistem | Sistem target |
+| Peminta | Siapa yang.submit permintaan |
+| Persetujuan Divisi | Persetujuan divisi yang menyetujuinya |
+| Disetujui | Tanggal persetujuan divisi |
+| Status | Status alur kerja saat ini |
+| Tindakan | Tindakan yang tersedia untuk permintaan |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Terima Pengembangan dengan entri perwakilan.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Accept table showing columns and request entries
+Filename suggestion: itqm-develop-accept-list.png
+Purpose: Show the IT acceptance queue
+*/}
+
+### Menerima permintaan
+
+Untuk menerima permintaan:
+
+1. Klik **Terima** pada baris permintaan
+2. Panel Penugasan terbuka di mana Anda dapat memilih pengembang dan tanggal jatuh tempo
+3. Pilih **PIC** (Person in Charge) dari dropdown
+4. Atur **Tanggal Jatuh Tempo** untuk pekerjaan
+5. Klik **Tugaskan** untuk mengonfirmasi
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Panel Penugasan dengan pemilihan PIC dan bidang tanggal jatuh tempo.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Assignment Panel with PIC selection and due date fields
+Filename suggestion: itqm-assignment-panel.png
+Purpose: Show how to assign work to a developer
+*/}
+
+### Menolak permintaan
+
+Untuk menolak permintaan:
+
+1. Klik **Tolak** pada baris permintaan
+2. Dialog Penolakan terbuka
+3. Masukkan alasan untuk penolakan
+4. Klik **Submit** untuk mengirim permintaan kembali ke peminta
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog Penolakan dengan bidang alasan.
+
+{/* SCREENSHOT:
+Page: Develop Accept
+Capture: Rejection Dialog with reason input
+Filename suggestion: itqm-rejection-dialog.png
+Purpose: Show how to reject a request with a reason
+*/}
+
+---
+
+## Setujui Pengembangan
+
+Tampilan **Setujui Pengembangan** digunakan oleh persetujuan divisi untuk meninjau dan menyetujui atau menolak permintaan.
+
+### Tabel persetujuan
+
+Tabel menampilkan permintaan yang menunggu persetujuan divisi. Setiap baris menampilkan:
+
+| Kolom | Deskripsi |
+|---|---|
+| Subjek | Judul permintaan |
+| Jenis | Kategori permintaan |
+| Sistem | Sistem target |
+| Peminta | Siapa yang.submit permintaan |
+| Dikirim | Tanggal dan waktu permintaan dikirim |
+| Status | Status alur kerja saat ini |
+| Tindakan | Tindakan yang tersedia untuk permintaan |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Setujui Pengembangan dengan entri perwakilan.
+
+{/* SCREENSHOT:
+Page: Develop Approve
+Capture: Approve table showing columns and request entries
+Filename suggestion: itqm-develop-approve-list.png
+Purpose: Show the approval queue
+*/}
+
+### Menyetujui permintaan
+
+Untuk menyetujui permintaan:
+
+1. Klik **Setujui** pada baris permintaan
+2. Permintaan bergerak ke status **Menunggu Penerimaan IT**
+3. Persetujuan TI akan menerima notifikasi untuk meninjau dan menugaskan pekerjaan
+
+### Menolak permintaan
+
+Untuk menolak permintaan:
+
+1. Klik **Tolak** pada baris permintaan
+2. Dialog Penolakan terbuka
+3. Masukkan alasan untuk penolakan
+4. Klik **Submit** untuk mengirim permintaan kembali ke peminta dalam status **Revisi**
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog Penolakan di tampilan setujui.
+
+{/* SCREENSHOT:
+Page: Develop Approve
+Capture: Rejection Dialog with reason input
+Filename suggestion: itqm-approve-rejection.png
+Purpose: Show how to reject a request during approval
+*/}
+
+---
+
+## Tampilan detail permintaan
+
+Mengklik permintaan apa pun di tabel membuka tampilan detail lengkapnya, yang menampilkan:
+
+- Subjek, persyaratan, dan informasi jenis
+- Detail sistem dan lampiran
+- Status saat ini dan riwayat alur kerja
+- PIC yang ditugaskan dan tanggal jatuh tempo (jika ditugaskan)
+- Tombol tindakan yang relevan dengan status saat ini
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tampilan detail permintaan lengkap menampilkan semua informasi.
+
+{/* SCREENSHOT:
+Page: Request Detail
+Capture: Complete request detail with all metadata and action buttons
+Filename suggestion: itqm-request-detail.png
+Purpose: Show the full detail view of a development request
+*/}
+
+## Referensi status
+
+| Status | Deskripsi |
+|---|---|
+| Draf | Dibuat tetapi belum dikirim |
+| Menunggu Persetujuan | Dikirim dan menunggu persetujuan divisi |
+| Revisi | Dikembalikan untuk perubahan oleh persetujuan |
+| Menunggu Penerimaan IT | Disetujui dan menunggu penerimaan TI |
+| Menunggu Penugasan | Diterima, menunggu pengembang untuk ditugaskan |
+| Sedang Dikerjakan | Pekerjaan sedang aktif dilakukan |
+| Menunggu Verifikasi | Selesai, menunggu verifikasi peminta |
+| Selesai | Terverifikasi dan ditutup |
+
+## Mulai di sini
+
+- [Laporan Selesai](./done-report) — Lihat dan verifikasi permintaan yang selesai
+- [Masalah](./issues) — Buat dan kelola masalah
+- [Dashboard](./dashboard) — Lihat ringkasan permintaan Anda di dashboard

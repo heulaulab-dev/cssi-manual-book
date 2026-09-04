@@ -1,6 +1,15 @@
 {
   "title": "Daily Operation",
-  "description": "IT operational checklists, approvals, and daily reporting",
+  "description": "Ruang kerja daftar periksa operasional, persetujuan, dan pelaporan",
+  "root": true,
   "icon": "ClipboardCheck",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "today-checklist",
+    "approvals",
+    "history",
+    "it-config"
+  ]
 }

@@ -1,0 +1,141 @@
+---
+title: Pengumuman
+description: Jelajahi dan kelola pengumuman intranet.
+---
+
+# Pengumuman
+
+Bagian Pengumuman memungkinkan Anda membuat, melihat, mengedit, dan mengelola pengumuman perusahaan internal. Pengumuman dapat dijadwalkan dengan tanggal mulai dan akhir, ditandai sebagai penting, dan ditargetkan ke peran tertentu.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen Pengumuman menampilkan tabel dengan filter dan entri.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: Full announcements table with filters, search, and announcement entries
+Filename suggestion: intranet-announcements-list.png
+Purpose: Show the announcements management interface
+*/}
+
+## Melihat pengumuman
+
+Dari Dashboard, widget Pengumuman Intranet menampilkan pengumuman paling baru. Klik pada pengumuman apa pun untuk melihat konten lengkapnya.
+
+Dari bilah sisi, navigasi ke **Intranet** > **Pengumuman** untuk membuka halaman manajemen lengkap. Halaman ini menampilkan semua pengumuman dalam tabel yang dapat diurutkan.
+
+Setiap entri pengumuman menampilkan:
+
+- **Judul** — Kepala berita pengumuman (klik untuk melihat detail)
+- **Penting** — Badge merah **Penting** jika pengumuman ditandai penting
+- **Publikasi** — Status publikasi saat ini (Aktif, Nonaktif, Akan Datang, atau Kadaluarsa)
+- **Tanggal Mulai** — Kapan pengumuman mulai dipublikasikan
+- **Tanggal Berakhir** — Kapan pengumuman berhenti dipublikasikan
+- **Dibuat** — Kapan pengumuman dibuat
+- **Tindakan** — Tombol Edit atau Hapus
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel Pengumuman dengan kolom terlihat dan badge Penting ditampilkan.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: Table showing announcement rows with badges and action buttons
+Filename suggestion: intranet-announcements-table.png
+Purpose: Show the table layout and column structure
+*/}
+
+## Mencari dan memfilter pengumuman
+
+Gunakan bilah pencarian di bagian atas tabel untuk menemukan pengumuman berdasarkan judul. Pencarian diterapkan saat Anda mengetik atau ketika Anda menekan Enter.
+
+Untuk filter yang lebih rumit, gunakan opsi filter lanjutan:
+
+- **Status** — Filter berdasarkan status publikasi (Aktif, Nonaktif, Akan Datang, Kadaluarsa)
+- **Penting** — Filter berdasarkan level urgensi (Penting, Normal)
+
+Klik **Reset** untuk menghapus semua filter dan kembali ke tampilan default.
+
+## Membuat pengumuman baru
+
+Jika Anda memiliki izin, tombol **Pengumuman Baru** muncul di bagian atas halaman.
+
+1. Klik **Pengumuman Baru** untuk membuka dialog pembuatan
+2. Isi bidang yang diperlukan:
+   - **Judul** — Kepala berita pengumuman
+   - **Konten** — Teks pengumuman lengkap
+   - **Penting** — Aktifkan jika ini adalah pengumuman penting
+   - **Tanggal Mulai** — Kapan pengumuman harus mulai dipublikasikan (opsional)
+   - **Tanggal Berakhir** — Kapan pengumuman harus berhenti dipublikasikan (opsional)
+   - **Terlihat Ke** — Pilih peran tertentu yang harus melihat pengumuman ini (opsional — jika kosong, semua orang dapat melihatnya)
+3. Klik **Simpan** untuk membuat pengumuman
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog Pengumuman Baru dengan bidang formulir terlihat.
+
+{/* SCREENSHOT:
+Page: Announcements Management
+Capture: New Announcement dialog showing all form fields
+Filename suggestion: intranet-announcement-create.png
+Purpose: Show the announcement creation form
+*/}
+
+## Mengedit pengumuman
+
+1. Klik tombol **Edit** pada baris pengumuman apa pun di tabel
+2. Dialog edit terbuka dengan data pengumuman saat ini terisi sebelumnya
+3. Buat perubahan Anda
+4. Klik **Simpan** untuk menerapkan pembaruan
+
+## Melihat detail pengumuman
+
+Klik pada judul pengumuman di tabel untuk membuka tampilan detail. Halaman detail menampilkan:
+
+- **Konten pengumuman** — Teks lengkap pengumuman
+- **Detail rekam** — Urgensi, status publikasi, periode penerbitan, terakhir diperbarui, dibuat oleh, dan terlihat ke peran
+- **Aktivitas** — Timestamp pembuatan dan pembaruan
+
+Dari tampilan detail, Anda dapat:
+
+- Klik **Edit** untuk memodifikasi pengumuman
+- Klik **Hapus** untuk menghapus pengumuman (dengan konfirmasi)
+- Klik **Kembali ke Manajemen** untuk kembali ke daftar
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman detail Pengumuman menampilkan konten, detail rekam, dan aktivitas.
+
+{/* SCREENSHOT:
+Page: Announcement Detail
+Capture: Full announcement detail page with content, sidebar details, and activity
+Filename suggestion: intranet-announcement-detail.png
+Purpose: Show the complete announcement detail layout
+*/}
+
+## Menghapus pengumuman
+
+1. Klik tombol **Hapus** pada baris pengumuman (atau di halaman detail)
+2. Dialog konfirmasi muncul bertanya "Apakah Anda yakin ingin menghapus pengumuman ini?"
+3. Klik **Hapus** untuk mengonfirmasi, atau **Batal** untuk membatalkan
+
+<Callout type="warning">
+  Menghapus pengumuman tidak dapat dibatalkan.
+</Callout>
+
+## Status publikasi
+
+Pengumuman memiliki status publikasi yang menentukan visibilitas mereka:
+
+| Status | Deskripsi |
+|---|---|
+| **Aktif** | Saat ini dipublikasikan dan terlihat oleh pengguna |
+| **Akan Datang** | Dijadwalkan untuk mulai mempublikasikan di masa depan |
+| **Kadaluarsa** | Lewat tanggal berakhirnya, tidak lagi terlihat |
+| **Nonaktif** | Dimatikan secara manual, tidak terlihat oleh pengguna |
+
+## Persyaratan izin
+
+- **Melihat pengumuman** memerlukan izin baca modul Pengumuman
+- **Membuat, mengedit, dan menghapus** pengumuman memerlukan izin buat, update, dan delete modul Pengumuman masing-masing
+- Jika Anda tidak memiliki izin yang diperlukan, tombol **Pengumuman Baru** dan tombol tindakan tidak akan terlihat

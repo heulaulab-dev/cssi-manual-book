@@ -1,0 +1,207 @@
+---
+title: 대시보드
+description: ITQM 대시보드 위젯, KPI 및 활동 뷰를 이해합니다.
+---
+
+# 대시보드
+
+ITQM 대시보드에는 개발 작업량, 대기 중인 작업 및 팀 활동에 대한 개인화된 개요가 표시됩니다. ITQM을 열었을 때 처음 보는 페이지입니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full ITQM Dashboard showing all widgets and sections.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Full dashboard showing KPI cards, all major widgets, and charts
+Filename suggestion: itqm-dashboard-full.png
+Purpose: Show the complete dashboard layout
+*/}
+
+## 인사말
+
+대시보드를 로드할 때, 현재 시간대에 따른 개인화된 인사말을 봅니다. **새로 고침** 버튼을 사용하여 위젯 데이터를 새로 로드할 수 있습니다.
+
+## KPI 카드
+
+대시보드 상단에 상태별 개발 요청에 대한 빠른 요약을 제공하는 KPI 카드 행이 있습니다. 각 카드는 특정 상태의 수와 레이블을 표시합니다.
+
+| 카드 | 설명 |
+|---|---|
+| 초안 | 아직 제출되지 않고 준비 중인 요청 |
+| 승인 대기 | 요청자나 사업 부서로부터 승인을 기다리고 있는 요청 |
+| 수정 | 피드백에 따라 수정 중인 요청 |
+| IT 승인 대기 | 완료 후 IT 승인을 기다리고 있는 요청 |
+| 할당 대기 | IT 개발자가 할당되기를 기다리고 있는 요청 |
+| 진행 중 | 작업이 활발히 진행 중인 요청 |
+| 검증 대기 | 요청자의 검증을 기다리고 있는 요청 |
+| 완료 | 완료되어 종료된 요청 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: KPI cards row showing status counts.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: KPI cards showing status counts
+Filename suggestion: itqm-dashboard-kpi-cards.png
+Purpose: Show the summary metrics at the top of the dashboard
+*/}
+
+## 개발 수명 주기
+
+개발 수명 주기 위젯은 모든 워크플로우 단계에 걸쳐 요청의 파이프라인을 시각화합니다. 초안부터 완료까지 수평 흐름을 보여주며, 각 단계의 요청 수를 표시합니다.
+
+어디에 요청이 집중되어 있는지, 그리고 어느 단계에 병목 현상이 있는지 빠르게 이해할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Development Lifecycle widget showing the workflow pipeline.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Development Lifecycle widget with stage counts
+Filename suggestion: itqm-dashboard-lifecycle.png
+Purpose: Show the development pipeline visualization
+*/}
+
+## 다가오는 마감일
+
+다가오는 마감일 위젯은 마감일이 다가오는 개발 요청을 나열합니다. 각 항목은 요청 제목, 할당된 사람 및 마감일을 표시합니다:
+
+- 항목은 마감일이 가까운 순으로 정렬됩니다
+- 지정일 초과 항목은 눈에 띄게 강조됩니다
+- 요청을 클릭하여 완전한 세부 정보를 봅니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Upcoming Due Dates widget showing approaching deadlines.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Upcoming Due Dates widget with representative entries
+Filename suggestion: itqm-dashboard-upcoming-dates.png
+Purpose: Show how upcoming deadlines are displayed
+*/}
+
+## 팀 작업량
+
+팀 작업량 위젯은 각 팀 구성원에게 할당된 작업의 분할을 보여줍니다. 현재 용량과 새 작업을 받을 수 있는 구성원을 파악하는 데 도움이 됩니다:
+
+- 각 행은 팀 구성원의 이름과 상태별 활성 요청 수를 표시합니다
+- 작업량은 상태별 색상 표시기로 시각화됩니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Team Workload widget showing team member assignments.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Team Workload widget showing member assignments
+Filename suggestion: itqm-dashboard-team-workload.png
+Purpose: Show how team workload is displayed
+*/}
+
+## Intranet 공지사항
+
+Intranet 공지사항 위젯은 담당 부서에 관련된 내부 공지사항을 표시합니다. 제목, 발췌문 및 날짜가 있는 가장 최근 공지사항을 보여줍니다:
+
+- 공지사항을 클릭하여 전체 내용을 읽습니다
+- **전체 보기** 링크를 사용하여 Intranet에서 완전한 공지사항 목록을 엽니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Intranet Announcements widget showing recent entries.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Intranet Announcements widget with announcement entries
+Filename suggestion: itqm-dashboard-announcements.png
+Purpose: Show how announcements appear on the ITQM dashboard
+*/}
+
+## 최근 완료
+
+최근 완료 위젯은 최근에 완료된 개발 요청을 나열합니다. 완료 보고를 방문하지 않고도 완료된 작업을 볼 수 있습니다:
+
+- 각 항목은 요청 제목, 시스템, 요청자 및 완료 날짜를 표시합니다
+- 요청을 클릭하여 완전한 세부 정보를 봅니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Recent Done widget showing completed requests.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Recent Done widget with completed request entries
+Filename suggestion: itqm-dashboard-recent-done.png
+Purpose: Show recently completed work
+*/}
+
+## 매일의 체크리스트
+
+매일의 체크리스트 위젯은 매일 운영 체크리스트 활동에 대한 요약을 제공합니다. 각 항목은 체크리스트 이름, 상태 및 제출 세부 정보를 표시합니다:
+
+- 상태별로 필터링하기 위한 카테고리 탭을 사용합니다: **전체**, **대기**, **승인**, **거부**
+- 체크리스트 항목을 클릭하여 Daily Operation에서 세부 정보를 봅니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Daily Checklists widget showing status categories.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Daily Checklists widget with status navigation
+Filename suggestion: itqm-dashboard-checklists.png
+Purpose: Show checklist activity on the ITQM dashboard
+*/}
+
+## 상태 분해 차트
+
+상태 분해 차트는 모든 워크플로우 상태에서 요청의 시각적 분포를 제공합니다. 파이 또는 도넛 차트 형식을 사용하여 각 상태에서 요청의 비율을 보여줍니다:
+
+요약이 대부분 진행 중인지, 대기 중인지 아니면 완료되었는지 빠르게 평가하는 데 도움이 됩니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Status Breakdown chart showing request distribution.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Status Breakdown chart with status distribution
+Filename suggestion: itqm-dashboard-status-chart.png
+Purpose: Show the visual breakdown of request statuses
+*/}
+
+## 활동 추세 차트
+
+활동 추세 차트는 시간 경과에 따른 개발 요청 활동을 보여줍니다. 선택한 기간 동안 생성되고 완료된 요청의 라인 또는 막대 차트를 표시합니다:
+
+- 시간 범위 선택기를 사용하여 다른 기간을 봅니다
+- 차트는 개발 활동의 추세를 식별하는 데 도움이 됩니다
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Activity Trend chart showing request activity over time.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Activity Trend chart with time range selector
+Filename suggestion: itqm-dashboard-activity-trend.png
+Purpose: Show development activity trends
+*/}
+
+## 대시보드에서 탐색하기
+
+어떤 위젯에서도 항목을 클릭하여 관련 세부 페이지로 직접 이동할 수 있습니���. 왼쪽 사이드바를 사용하여 ITQM 섹션 간에도 이동할 수 있습니다:
+
+- **요청 개발** — 요청 제출 및 관리
+- **요청 수락** — 요청 검토 및 할당(IT 승인자 역할)
+- **요청 승인** — 요청 승인 또는 거부(부서 승인자 역할)
+- **완료 보고** — 완료된 작업 보기 및 검증
+- **문제** — 목록 또는 칸반 뷰로 문제 추적
+
+<Callout type="info">
+  대시보드에 표시되는 위젯과 데이터는 역할과 부서에 따라 다를 수 있습니다.
+  추가 정보에 접근해야 하는 경우 관리자에게 문의하세요.
+</Callout>

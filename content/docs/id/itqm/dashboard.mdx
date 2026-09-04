@@ -1,0 +1,208 @@
+---
+title: Dashboard
+description: Pahami widget dashboard ITQM, KPI, dan tampilan aktivitas.
+---
+
+# Dashboard
+
+Dashboard ITQM memberikan Anda gambaran pribadi tentang beban kerja pengembangan, tindakan pending, dan aktivitas tim. Ini adalah halaman pertama yang Anda lihat ketika membuka ITQM.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full ITQM Dashboard showing all widgets and sections.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Full dashboard showing KPI cards, all major widgets, and charts
+Filename suggestion: itqm-dashboard-full.png
+Purpose: Show the complete dashboard layout
+*/}
+
+## Sambutan
+
+Ketika Anda memuat Dashboard, Anda akan melihat sambutan pribadi berdasarkan waktu saat ini. Tombol **Refresh** tersedia untuk memuat ulang data widget.
+
+## Kartu KPI
+
+Di bagian atas Dashboard, baris kartu KPI memberikan ringkasan cepat permintaan pengembangan berdasarkan status. Setiap kartu menampilkan hitungan dan label untuk status tertentu.
+
+| Kartu | Deskripsi |
+|---|---|
+| Draf | Permintaan masih disiapkan, belum dikirim |
+| Menunggu Persetujuan | Permintaan menunggu persetujuan dari peminta atau unit bisnis |
+| Revisi | Permintaan sedang direvisi berdasarkan umpan balik |
+| Menunggu Penerimaan IT | Permintaan menunggu penerimaan TI setelah penyelesaian |
+| Menunggu Penugasan | Menunggu pengembang TI untuk ditugaskan |
+| Sedang Dikerjakan | Pekerjaan sedang aktif dilakukan |
+| Menunggu Verifikasi | Menunggu verifikasi oleh peminta |
+| Selesai | Diselesaikan dan ditutup |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Baris kartu KPI menampilkan hitungan status.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: KPI cards showing status counts
+Filename suggestion: itqm-dashboard-kpi-cards.png
+Purpose: Show the summary metrics at the top of the dashboard
+*/}
+
+## Siklus Pengembangan
+
+Widget Siklus Pengembangan memvisualisasikan pipeline permintaan di seluruh tahap alur kerja. Ini menampilkan aliran horizontal dari Draf hingga Selesai, dengan hitungan permintaan di setiap tahap.
+
+Ini memberikan Anda pemahaman cepat tentang di mana permintaan terkonsentrasi dan apakah ada tahap yang memiliki bottleneck.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Siklus Pengembangan menampilkan pipeline alur kerja.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Development Lifecycle widget with stage counts
+Filename suggestion: itqm-dashboard-lifecycle.png
+Purpose: Show the development pipeline visualization
+*/}
+
+## Tenggat Waktu yang Akan Datang
+
+Widget Tenggat Waktu yang Akan Datang mencantumkan permintaan pengembangan yang mendekati tanggal jatuh tempo. Setiap entri menampilkan subjek permintaan, orang yang ditugaskan, dan tanggal jatuh tempo.
+
+- Item diurutkan berdasarkan tanggal jatuh tempo, dengan tenggat terdekat terlebih dahulu
+- Item yang melewati tenggat disorot untuk menarik perhatian
+- Klik pada permintaan untuk melihat detail lengkapnya
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Tenggat Waktu yang Akan Datang menampilkan tenggat yang mendekati.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Upcoming Due Dates widget with representative entries
+Filename suggestion: itqm-dashboard-upcoming-dates.png
+Purpose: Show how upcoming deadlines are displayed
+*/}
+
+## Beban Kerja Tim
+
+Widget Beban Kerja Tim menunjukkan pemecahan pekerjaan yang ditugaskan ke setiap anggota tim. Ini membantu Anda memahami kapasitas saat ini dan mengidentifikasi siapa yang memiliki ketersediaan untuk pekerjaan baru.
+
+- Setiap baris menampilkan nama anggota tim dan hitungan permintaan aktif mereka berdasarkan status
+- Beban kerja divisualisasikan dengan indikator berwarna status
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Beban Kerja Tim menampilkan penugasan anggota tim.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Team Workload widget showing member assignments
+Filename suggestion: itqm-dashboard-team-workload.png
+Purpose: Show how team workload is displayed
+*/}
+
+## Pengumuman Intranet
+
+Widget Pengumuman Intranet menampilkan pengumuman internal yang relevan dengan divisi Anda. Ini menampilkan pengumuman terbaru dengan judul, cuplikan, dan tanggal.
+
+- Klik pada pengumuman untuk membaca konten lengkap
+- Gunakan tautan **Lihat semua** untuk membuka daftar pengumuman lengkap di Intranet
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Pengumuman Intranet menampilkan entri pengumuman.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Intranet Announcements widget with announcement entries
+Filename suggestion: itqm-dashboard-announcements.png
+Purpose: Show how announcements appear on the ITQM dashboard
+*/}
+
+## Selesai Terbaru
+
+Widget Selesai Terbaru mencantumkan permintaan pengembangan yang baru saja selesai. Ini memungkinkan Anda melihat apa yang telah selesai tanpa menavigasi ke Laporan Selesai.
+
+- Setiap entri menampilkan subjek permintaan, sistem, peminta, dan tanggal penyelesaian
+- Klik pada permintaan untuk melihat detail lengkapnya
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Selesai Terbaru menampilkan entri permintaan yang selesai.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Recent Done widget with completed request entries
+Filename suggestion: itqm-dashboard-recent-done.png
+Purpose: Show recently completed work
+*/}
+
+## Daftar Periksa Harian
+
+Widget Daftar Periksa Harian memberikan ringkasan aktivitas daftar periksa operasional harian. Setiap entri menampilkan nama daftar periksa, status, dan detail pengiriman.
+
+- Gunakan tab kategori untuk memfilter berdasarkan status: **Semua**, **Pending**, **Disetujui**, atau **Ditolak**
+- Klik pada entri daftar periksa untuk melihat detail di Daily Operation
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Daftar Periksa Harian menampilkan kategori status.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Daily Checklists widget with status navigation
+Filename suggestion: itqm-dashboard-checklists.png
+Purpose: Show checklist activity on the ITQM dashboard
+*/}
+
+## Grafik Pemecahan Status
+
+Grafik Pemecahan Status memberikan distribusi visual permintaan Anda di seluruh semua status alur kerja. Ini menggunakan format pie atau donut chart untuk menunjukkan proporsi permintaan di setiap status.
+
+Ini membantu Anda menilai dengan cepat apakah sebagian besar permintaan Anda sedang berlangsung, pending, atau telah selesai.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Grafik Pemecahan Status menampilkan distribusi status permintaan.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Status Breakdown chart with status distribution
+Filename suggestion: itqm-dashboard-status-chart.png
+Purpose: Show the visual breakdown of request statuses
+*/}
+
+## Grafik Trend Aktivitas
+
+Grafik Trend Aktivitas menunjukkan aktivitas permintaan pengembangan dari waktu ke waktu. Ini menampilkan garis atau bar chart permintaan yang dibuat dan selesai selama periode yang dipilih.
+
+- Gunakan pemilih rentang waktu untuk melihat periode berbeda
+- Grafik membantu Anda mengidentifikasi trend dalam aktivitas pengembangan
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Grafik Trend Aktivitas menampilkan aktivitas permintaan dari waktu ke waktu.
+
+{/* SCREENSHOT:
+Page: ITQM Dashboard
+Capture: Activity Trend chart with time range selector
+Filename suggestion: itqm-dashboard-activity-trend.png
+Purpose: Show development activity trends
+*/}
+
+## Menavigasi dari Dashboard
+
+Dari widget apa pun, Anda dapat mengklik entri untuk menavigasi langsung ke halaman detail yang relevan. Anda juga dapat menggunakan bilah sisi kiri untuk berpindah antar bagian ITQM:
+
+- **Kembangkan Permintaan** — Submit dan kelola permintaan
+- **Terima Pengembangan** — Tinjau dan tugaskan permintaan (peran persetujuan TI)
+- **Setujui Pengembangan** — Setujui atau tolak permintaan (peran persetujuan divisi)
+- **Laporan Selesai** — Lihat dan verifikasi pekerjaan yang selesai
+- **Masalah** — Lacak masalah di tampilan daftar atau papan Kanban
+
+<Callout type="info">
+  Widget dan data yang ditampilkan di dashboard Anda dapat berbeda tergantung pada peran
+  dan divisi Anda. Jika Anda memerlukan akses ke informasi tambahan, hubungi
+  administrator Anda.
+</Callout>

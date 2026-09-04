@@ -1,0 +1,196 @@
+---
+title: Konfigurasi TI
+description: Konfigurasikan tugas, bagian, dan item daftar periksa untuk Divisi TI.
+---
+
+# Konfigurasi TI
+
+Halaman Konfigurasi TI memungkinkan pengguna berwenang mengelola konfigurasi daftar periksa untuk Divisi TI. Anda dapat membuat, memberi nama ulang, dan menghapus tugas, bagian, dan item daftar periksa yang muncul di halaman Daftar Periksa Hari Ini.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full halaman Konfigurasi TI menampilkan strip ringkasan, bilah pencarian, dan bagian tugas.
+
+{/* SCREENSHOT:
+Page: IT Config
+Capture: Complete configuration view with summary, search, expand/collapse controls, and task hierarchy
+Suggested filename: daily-operation-it-config.png
+Purpose: Show the IT Config workspace
+*/}
+
+## Strip ringkasan
+
+Strip ringkasan di bagian atas menampilkan tiga metrik:
+
+| Metrik | Deskripsi |
+|---|---|
+| **Tugas** | Jumlah total tugas dalam konfigurasi |
+| **Bagian** | Jumlah total bagian di seluruh tugas |
+| **Item Daftar Periksa** | Jumlah total item daftar periksa di seluruh bagian |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Strip ringkasan menampilkan hitungan Tugas, Bagian, dan Item Daftar Periksa.
+
+{/* SCREENSHOT:
+Page: IT Config — Summary Strip
+Capture: Three metric cards with counts
+Suggested filename: daily-operation-it-config-summary.png
+Purpose: Show configuration counts at a glance
+*/}
+
+## Kontrol pencarian dan ekspansi
+
+Di atas daftar tugas, Anda akan menemukan:
+
+- **Pencarian** — Ketik di kotak pencarian untuk memfilter tugas, bagian, atau item daftar periksa berdasarkan nama
+- **Perluas Semua** — Klik untuk memperluas semua bagian tugas dan bagian
+- **Collapse Semua** — Klik untuk menutup semua bagian tugas dan bagian
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Kotak pencarian dengan tombol Perluas Semua dan Collapse Semua.
+
+{/* SCREENSHOT:
+Page: IT Config — Controls
+Capture: Search input and Expand/Collapse buttons
+Suggested filename: daily-operation-it-config-controls.png
+Purpose: Show the search and expand/collapse controls
+*/}
+
+## Membuat tugas baru
+
+1. Klik tombol **Tugas Baru** (atau tombol **Buat Tugas** di status kosong)
+2. Masukkan nama tugas di bidang **Tugas**
+3. Klik **Buat Tugas**
+4. Tugas baru muncul di daftar tugas
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog Buat Tugas dengan bidang input nama tugas.
+
+{/* SCREENSHOT:
+Page: IT Config — Create Task
+Capture: Create Task dialog with input field and Create/Cancel buttons
+Suggested filename: daily-operation-create-task.png
+Purpose: Show the task creation dialog
+*/}
+
+## Bagian tugas
+
+Tugas ditampilkan sebagai bagian yang dapat dilipat. Setiap tugas menampilkan:
+
+- **Nama tugas**
+- **Jumlah bagian** — Jumlah bagian di dalam tugas
+- **Jumlah item** — Jumlah item daftar periksa di seluruh bagian
+
+### Memberi nama ulang tugas
+
+1. Klik tombol **Ubah Nama** (ikon pensil) di baris tugas
+2. Edit nama tugas di editor inline
+3. Tekan **Enter** atau klik **Simpan** untuk mengonfirmasi
+4. Tekan **Escape** atau klik **Batal** untuk membatalkan
+
+### Menghapus tugas
+
+1. Klik tombol **Hapus** (ikon tempat sampah) di baris tugas
+2. Dialog konfirmasi muncul menjelaskan konsekuensinya
+3. Klik **Hapus** untuk mengonfirmasi, atau **Batal** untuk membatalkan
+
+<Callout type="warning">
+  Menghapus tugas akan menghapus semua bagian dan item daftar periksa nya. Pengiriman yang ada
+  yang merujuk ke tugas mungkin terpengaruh.
+</Callout>
+
+## Bagian bagian
+
+Di dalam setiap tugas, bagian ditampilkan sebagai bagian nested yang dapat dilipat. Setiap bagian menampilkan:
+
+- **Nama bagian**
+- **Jumlah item daftar periksa**
+
+### Menambahkan bagian
+
+1. Perluas bagian tugas
+2. Klik formulir inline **Tambah Bagian** di bagian bawah tugas yang diperluas
+3. Masukkan nama bagian di bidang **Nama bagian**
+4. Klik **Tambah Bagian**
+
+### Memberi nama ulang bagian
+
+1. Klik tombol **Ubah Nama** (ikon pensil) di baris bagian
+2. Edit nama bagian di editor inline
+3. Tekan **Enter** atau klik **Simpan** untuk mengonfirmasi
+
+### Menghapus bagian
+
+1. Klik tombol **Hapus** (ikon tempat sampah) di baris bagian
+2. Dialog konfirmasi muncul
+3. Klik **Hapus** untuk mengonfirmasi, atau **Batal** untuk membatalkan
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian bagian menampilkan tombol ubah nama dan hapus, dan formulir Tambah Bagian.
+
+{/* SCREENSHOT:
+Page: IT Config — Parts
+Capture: Expanded task with part sections, rename/delete buttons, and Add Part form
+Suggested filename: daily-operation-it-config-parts.png
+Purpose: Show how to manage parts within a task
+*/}
+
+## Tabel item daftar periksa
+
+Di dalam setiap bagian yang diperluas, item daftar periksa ditampilkan dalam tabel:
+
+| Kolom | Deskripsi |
+|---|---|
+| **#** | Nomor item berurutan |
+| **Item Daftar Periksa** | Nama item daftar periksa |
+| **Urutan** | Nomor urutan pengurutan |
+| **Tindakan** | Tombol Ubah Nama dan Hapus |
+
+### Menambahkan item daftar periksa
+
+1. Perluas bagian bagian
+2. Gunakan formulir **Tambah Item** di bagian bawah bagian yang diperluas
+3. Masukkan nama item di bidang **Item daftar periksa**
+4. Klik **Tambah Item**
+
+### Memberi nama ulang item daftar periksa
+
+1. Klik tombol **Ubah Nama** (ikon pensil) di baris item
+2. Edit nama item di editor inline
+3. Tekan **Enter** atau klik **Simpan** untuk mengonfirmasi
+
+### Menghapus item daftar periksa
+
+1. Klik tombol **Hapus** (ikon tempat sampah) di baris item
+2. Dialog konfirmasi muncul
+3. Klik **Hapus** untuk mengonfirmasi, atau **Batal** untuk membatalkan
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel item daftar periksa dengan tombol ubah nama/hapus dan formulir Tambah Item.
+
+{/* SCREENSHOT:
+Page: IT Config — Checklist Items
+Capture: Items table with action buttons and Add Item form
+Suggested filename: daily-operation-it-config-items.png
+Purpose: Show how to manage checklist items within a part
+*/}
+
+## Status kosong
+
+Jika tidak ada tugas yang dikonfigurasiYet, Anda akan melihat status kosong dengan tombol **Tugas Baru** untuk memulai. Jika pencarian Anda tidak cocok dengan konfigurasi apa pun, Anda akan melihat pesan yang menyarankan Anda mencoba pencarian berbeda.
+
+<Callout type="info">
+  Perubahan yang dibuat di Konfigurasi TI berlaku secara langsung. Tugas dan
+  item yang baru dibuat akan muncul di halaman Daftar Periksa Hari Ini untuk tanggal
+  operasional yang relevan.
+</Callout>
+
+<Callout type="info">
+  Anda memerlukan izin Konfigurasi TI untuk mengakses halaman ini. Hubungi
+  administrator Anda jika Anda tidak melihat halaman Konfigurasi TI di bilah sisi.
+</Callout>

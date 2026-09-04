@@ -1,0 +1,160 @@
+---
+title: 구성
+description: 개발 요청에서 사용되는 요청 유형과 시스템 유형을 관리합니다.
+---
+
+# 구성
+
+구성 섹션은 개발 요청 폼에서 표시되는 요청 유형과 시스템 유형을 권한 있는 사용자가 관리할 수 있습니다. 이러한 구성은 요청을 생성하거나 편집할 때 사용 가능한 옵션을 결정합니다.
+
+<Callout type="warning">
+  구성 관리는 권한 있는 사용자만 가능합니다. 사이드바에 이 섹션이 보이지 않는다면,
+  접근 권한이 없는 것입니다.
+</Callout>
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Configuration page showing the available configuration sections.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Configuration page with Request Type and System Type sections
+Filename suggestion: itqm-config-overview.png
+Purpose: Show the configuration management workspace
+*/}
+
+## 요청 유형
+
+요청 유형은 개발 요청을 생성할 때 사용 가능한 카테고리를 정의합니다. 예로는 기능 요청, 버그 수정, 시스템 개선 또는 데이터 변경이 있습니다.
+
+### 요청 유형 테이블
+
+테이블은 구성된 모든 요청 유형을 표시합니다. 각 행은 다음을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 이름 | 요청 유형 이름 |
+| 설명 | 유형의 간략한 설명 |
+| 상태 | 유형이 활성화되어 있는지 비활성화되어 있는지 |
+| 작업 | 유형에 대한 사용 가능한 작업 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Request Type table with representative entries.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Request Type table showing all columns
+Filename suggestion: itqm-config-request-types.png
+Purpose: Show the list of configured request types
+*/}
+
+### 새 요청 유형 추가
+
+1. 요청 유형 섹션의 **추가** 버튼 클릭
+2. 새 유형의 **이름** 입력
+3. 선택적으로 **설명** 입력
+4. 유형을 생성하려면 **저장** 클릭
+
+### 요청 유형 편집
+
+1. 요청 유형 행에서 **편집** 클릭
+2. 이름 또는 설명 수정
+3. 변경 사항을 적용하려면 **저장** 클릭
+
+### 요청 유형 활성화 및 비활성화
+
+요청 폼에서 요청 유형을 숨기려면 삭제하지 않고 비활성화할 수 있습니다:
+
+1. 요청 유형 행에서 **활성화** 또는 **비활성화** 클릭
+2. 비활성화된 유형은 새 요청을 생성할 때 사용 가능하지 않음
+3. 해당 유형을 사용하는 기존 요청에는 영향 없음
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Request Type actions showing Edit, Enable/Disable options.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: Request Type actions visible on a row
+Filename suggestion: itqm-config-request-type-actions.png
+Purpose: Show available actions for request types
+*/}
+
+---
+
+## 시스템 유형
+
+시스템 유형은 개발 요청을 생성할 때 사용 가능한 대상 시스템 또는 애플리케이션을 정의합니다. 예로는 CRM, FLOWRA, Intranet 또는 Daily Operation이 있습니다.
+
+### 시스템 유형 테이블
+
+테이블은 구성된 모든 시스템 유형을 표시합니다. 각 행은 다음을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 이름 | 시스템 유형 이름 |
+| 설명 | 시스템에 대한 간략한 설명 |
+| 상태 | 유형이 활성화되어 있는지 비활성화되어 있는지 |
+| 작업 | 유형에 대한 사용 가능한 작업 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: System Type table with representative entries.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: System Type table showing all columns
+Filename suggestion: itqm-config-system-types.png
+Purpose: Show the list of configured system types
+*/}
+
+### 새 시스템 유형 추가
+
+1. 시스템 유형 섹션의 **추가** 버튼 클릭
+2. 새 시스템의 **이름** 입력
+3. 선택적으로 **설명** 입력
+4. 유형을 생성하려면 **저장** 클릭
+
+### 시스템 유형 편집
+
+1. 시스템 유형 행에서 **편집** 클릭
+2. 이름 또는 설명 수정
+3. 변경 사항을 적용하려면 **저장** 클릭
+
+### 시스템 유형 활성화 및 비활성화
+
+요청 폼에서 시스템 유형을 숨기려면 삭제하지 않고 비활성화할 수 있습니다:
+
+1. 시스템 유형 행에서 **활성화** 또는 **비활성화** 클릭
+2. 비활성화된 유형은 새 요청을 생성할 때 사용 가능하지 않음
+3. 해당 유형을 사용하는 기존 요청에는 영향 없음
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: System Type actions showing Edit, Enable/Disable options.
+
+{/* SCREENSHOT:
+Page: Configuration
+Capture: System Type actions visible on a row
+Filename suggestion: itqm-config-system-type-actions.png
+Purpose: Show available actions for system types
+*/}
+
+## 구성이 요청에 미치는 영향
+
+사용자가 개발 요청을 생성하거나 편집할 때, **유형**과 **시스템** 드롭다운은 현재 활성화된 요청 유형과 시스템 유형만 표시합니다. 이를 통해:
+
+- 승인된 카테고리만 선택 가능
+- 구버전 유형을 비활성화해도 기존 요청에 영향 없음
+- 조직의 필요에 따라 새 유형 추가 가능
+
+<Callout type="info">
+  요청 유형과 시스템 유형 변경은 새 요청에 즉시 적용됩니다. 기존 요청은 유형 활성화 또는
+  비활성화에 영향을 받지 않습니다.
+</Callout>
+
+## 시작하기
+
+- [개발 요청](./development-requests) — 구성된 유형을 요청 폼에서 사용
+- [대시보드](./dashboard) — 대시보드에서 개요 보기

@@ -1,0 +1,125 @@
+---
+title: 트렌드 캐치
+description: 날짜, 세그먼트 및 유형별로 필터링된 이익/손실 순위 및 거래 활동 순서를 검토합니다.
+---
+
+# 트렌드 캐치
+
+트렌드 캐치 섹션은 주식 성과를 분석하는 데 도움이 되는 두 가지 순위 페이지를 제공합니다. 두 페이지 모두 **트렌드 캐치** 그룹 아래의 사이드바에서 접근할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Trend Catch section overview showing sidebar with P/L Rank and Trading Rank.
+
+{/* SCREENSHOT:
+Page: Trend Catch Overview
+Capture: Sidebar showing Trend Catch group with P/L Rank and Trading Rank
+Filename suggestion: crm-trend-catch-overview.png
+Purpose: Show the Trend Catch navigation structure
+*/}
+
+## P/L 순위
+
+P/L 순위 페이지는 날짜, 세그먼트 및 P&L 유형별로 필터링된 주식의 이익 및 손실 순위를 보여줍니다. 이 페이지를 사용하여 가장 좋거나 가장 나쁜 성과를 내는 주식을 분석합니다.
+
+### 필터
+
+상단의 도구 모음은 결과를 자동으로 업데이트하는 세 가지 필터를 제공합니다:
+
+| 필터 | 설명 |
+|---|---|
+| **날짜** | 날짜 피커를 사용하여 순위 날짜 선택 |
+| **세그먼트** | 필터링할 시장 세그먼트 선택 |
+| **P&L 유형** | 이익/손실 계산 유형 선택 |
+
+### 검색
+
+**검색 상자**를 사용하여 주식 이름이나 코드로 결과를 필터링합니다. 이는 이미 로드된 순위 데이터를 좁히는 클라이언트 측 필터입니다.
+
+### 순위 테이블
+
+결과 테이블은 다음 열을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 순위 | 배지(뱃지)로 표시된 순위 위치 |
+| 주식 | 주식 코드(모노스페이스) 및 전체 이름 |
+| 평균 가격 | 평균 거래 가격 |
+| 종가 | 최신 마감 가격 |
+| 일일 P/L 금액 | 당일 이익 또는 손실(손실은 빨간색) |
+| 주식 가치 | 총 시장 가치 |
+| 총 잔액 | 계정 잔액 |
+| P/L 비율 | 백분율 수익률(색상 코드 배지: 상승은 녹색, 하락은 빨간색) |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: P/L Rank page showing filters and ranking table with data.
+
+{/* SCREENSHOT:
+Page: P/L Rank
+Capture: P/L Rank table with date, segment, and P&L type filters visible
+Filename suggestion: crm-pnl-rank.png
+Purpose: Show the P/L ranking interface
+*/}
+
+### 필터 초기화
+
+검색 상자의 **지우기 버튼**을 클릭하여 클라이언트 측 검색을 재설정합니다. 서버 측 필터를 재설정하려면 필터 컨트롤을 사용하세요.
+
+## 거래 순위
+
+거래 순위 페이지는 날짜, 세그먼트 및 거래 유형별로 필터링된 매수 및 매도 거래 가치로 순위 매겨진 주식 Equity를 보여줍니다. 이 페이지를 사용하여 주식 전반의 거래 활동을 분석합니다.
+
+### 필터
+
+상단의 도구 모음은 결과를 자동으로 업데이트하는 세 가지 필터를 제공합니다:
+
+| 필터 | 설명 |
+|---|---|
+| **날짜** | 날짜 피커를 사용하여 순위 날짜 선택 |
+| **세그먼트** | 필터링할 시장 세그먼트 선택 |
+| **거래 유형** | 순위 매길 거래 활동 유형 선택 |
+
+### 검색
+
+**검색 상자**를 사용하여 주식 이름이나 코드로 결과를 필터링합니다. 이는 이미 로드된 순위 데이터를 좁히는 클라이언트 측 필터입니다.
+
+### 순위 테이블
+
+결과 테이블은 다음 열을 표시합니다:
+
+| 열 | 설명 |
+|---|---|
+| 순위 | 배지로 표시된 순위 위치 |
+| 주식 | 주식 코드(모노스페이스) 및 전체 이름 |
+| 시가 | 기간의 시작 가격 |
+| 종가 | 기간의 마감 가격 |
+| 가격 변동 | 절대 가격 변동(음수는 빨간색) |
+| 총 수량 | 거래된 주식 수 |
+| 총 가치 | 총 거래 가치 |
+| 총 거래량 | 거래량 |
+| 변동률 % | 백분율 변동(색상 코드 배지: 상승은 녹색, 하락은 빨간색) |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Trading Rank page showing filters and ranking table with data.
+
+{/* SCREENSHOT:
+Page: Trading Rank
+Capture: Trading Rank table with date, segment, and trade type filters visible
+Filename suggestion: crm-trading-rank.png
+Purpose: Show the trading ranking interface
+*/}
+
+### 필터 초기화
+
+검색 상자의 **지우기 버튼**을 클릭하여 클라이언트 측 검색을 재설정합니다. 서버 측 필터를 재설정하려면 필터 컨트롤을 사용하세요.
+
+## 데이터 사용 가능성
+
+순위 데이터는 선택한 날짜에 대한 게시된 데이터에 의존합니다. 특정 날짜에 데이터가 아직 사용 가능하지 않은 경우, 데이터가 준비되지 않았음을 나타내는 메시지가 표시됩니다. 다른 날짜를 선택하거나 도움을 받기 위해 관리자에게 문의하세요.
+
+<Callout type="info">
+  순위 데이터는 정기적인 일정에 따라 게시됩니다. "데이터 준비 안 됨" 메시지를 보게 되면,
+  해당 날짜의 데이터가 아직 게시되지 않았을 수 있습니다.
+</Callout>

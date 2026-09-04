@@ -1,0 +1,6 @@
+{
+  "title": "Autentikasi",
+  "description": "Masuk, kata sandi, dan verifikasi identitas untuk CSSI",
+  "icon": "ShieldCheck",
+  "pages": ["index", "sign-in", "first-time-password", "forgot-password"]
+}

@@ -1,0 +1,147 @@
+---
+title: Dashboard
+description: Pahami dasbor CRM dan widget-widgetnya untuk metrik penjualan, data saham, dan peringkat kinerja.
+---
+
+# Dashboard
+
+Dashboard CRM memberikan Anda gambaran tentang aktivitas penjualan, data pasar saham, dan kinerja perdagangan. Ini adalah halaman pertama yang Anda lihat ketika membuka CRM.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full CRM Dashboard showing all widget areas.
+
+{/* SCREENSHOT:
+Page: CRM Dashboard
+Capture: Full dashboard showing Sales Workflow, Stock, Rankings, and other widgets
+Filename suggestion: crm-dashboard-overview.png
+Purpose: Show the complete dashboard layout
+*/}
+
+## Header dashboard
+
+Bagian atas Dashboard menampilkan sambutan dan judul halaman. Tombol **Refresh** di pojok kanan atas memuat ulang data semua widget. Timestamp menunjukkan kapan data terakhir diperbarui.
+
+## Alur Kerja Penjualan
+
+Widget Alur Kerja Penjualan adalah gambaran utama pipeline penjualan Anda. Ini menampilkan empat metrik kunci dan grafik batang.
+
+### Tile metrik
+
+Empat tile yang dapat diklik menampilkan hitungan saat ini untuk setiap tahap penjualan:
+
+| Tile | Deskripsi |
+|---|---|
+| **Prospek** | Jumlah prospek aktif di sistem |
+| **Calon** | Jumlah calon yang memenuhi syarat |
+| **Peluang** | Jumlah kesepakatan di pipeline |
+| **Akun** | Jumlah akun yang dikelola |
+
+Klik tile apa pun untuk menavigasi langsung ke bagian tersebut. Tombol **Peluang baru** di header widget membuka formulir pembuatan peluang.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Alur Kerja Penjualan menampilkan tile metrik dan grafik.
+
+{/* SCREENSHOT:
+Page: CRM Dashboard
+Capture: Sales Workflow widget with metric tiles and Records by Module chart
+Filename suggestion: crm-sales-workflow-widget.png
+Purpose: Show the sales pipeline overview
+*/}
+
+### Grafik Rekam oleh Modul
+
+Grafik batang di sisi kanan widget menampilkan distribusi rekam di seluruh modul penjualan. Ini membantu Anda melihat di mana aktivitas terpusat.
+
+### Tautan footer
+
+Klik **Buka ruang kerja penjualan** di bagian bawah widget untuk menavigasi ke halaman Prospek.
+
+## Saham
+
+Widget Saham menyediakan ringkasan pasar langsung di Dashboard CRM.
+
+- Gunakan **kotak pencarian** di bagian atas widget untuk menemukan dan memilih saham berdasarkan nama atau kode
+- Widget menampilkan harga saat ini, perubahan harga, dan grafik yang menunjukkan riwayat harga
+- Gunakan **pemilih rentang waktu** untuk melihat periode berbeda (1H, 5H, 1B, 3B, 1T)
+- Klik **Buka saham** untuk melihat antarmuka manajemen saham lengkap
+
+Elemen yang terlihat:
+
+- Pengidentifikasi saham dan nama (dipilih melalui pencarian)
+- Harga saat ini dalam Rupiah Indonesia
+- Perubahan harga (absolut dan persentase) dengan indikator berwarna (hijau untuk positif, merah untuk negatif)
+- Harga penutupan sebelumnya
+- Grafik harga dengan tooltip interaktif yang menampilkan tanggal dan harga
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget saham menampilkan pencarian, harga, grafik, dan opsi rentang waktu.
+
+{/* SCREENSHOT:
+Page: CRM Dashboard
+Capture: Stock widget showing stock name, price, movement, chart, and period selector
+Filename suggestion: crm-stock-widget.png
+Purpose: Show how stock information appears on the CRM dashboard
+*/}
+
+## Peringkat
+
+Widget Peringkat memberikan pandangan ringkasan peringkat portofolio dan kinerja perdagangan.
+
+- Beralih antara **Peringkat P/L** dan **Peringkat Perdagangan** menggunakan pemilih di header widget
+- 5 entri teratas ditampilkan untuk setiap jenis peringkat
+
+### Kolom Peringkat P/L
+
+| Kolom | Deskripsi |
+|---|---|
+| Peringkat | Posisi dalamperingkat |
+| Saham | Kode saham dan nama |
+| Harga rata-rata | Harga transaksi rata-rata |
+| Harga penutupan | Harga penutupan terbaru |
+| Jumlah P/L harian | Profit atau loss untuk hari ini |
+| Nilai saham | Total nilai pasar |
+| Total saldo | Saldo akun |
+| Tingkat P/L | Pengembalian persentase (berwarna) |
+
+### Kolom Peringkat Perdagangan
+
+| Kolom | Deskripsi |
+|---|---|
+| Peringkat | Posisi dalamperingkat |
+| Saham | Kode saham dan nama |
+| Harga pembukaan | Harga pembukaan untuk periode |
+| Harga penutupan | Harga penutupan untuk periode |
+| Perubahan harga | Perubahan harga absolut |
+| Total lot | Jumlah saham yang diperdagangkan |
+| Total nilai | Total nilai yang diperdagangkan |
+| Total volume | Volume perdagangan |
+| Tingkat perubahan % | Perubahan persentase (berwarna) |
+
+Klik **Lihat semua peringkat P/L** atau **Lihat semua peringkat perdagangan** untuk membuka halaman peringkat lengkap di bagian Trend Catch.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Peringkat menampilkan tabel Peringkat P/L dan Perdagangan.
+
+{/* SCREENSHOT:
+Page: CRM Dashboard
+Capture: Rankings widget showing P/L and Trading rank tables
+Filename suggestion: crm-rankings-widget.png
+Purpose: Show how rankings appear on the CRM dashboard
+*/}
+
+## Widget tambahan
+
+Tergantung pada peran dan izin Anda, Anda juga mungkin melihat:
+
+- **Pengembangan** — Ringkasan aktivitas permintaan pengembangan TI
+- **Daftar Periksa Harian** — Tampilan aktivitas daftar periksa operasional yang relevan dengan divisi Anda
+
+<Callout type="info">
+  Widget yang ditampilkan di Dashboard Anda dapat berbeda tergantung pada peran,
+  divisi, dan data yang tersedia. Jika Anda tidak melihat widget yang Anda harapkan, hubungi
+  administrator Anda.
+</Callout>

@@ -1,6 +1,6 @@
 {
   "title": "Portal",
-  "description": "Central access and cross-application dashboard for CSSI",
+  "description": "Akses pusat dan dasbor lintas aplikasi untuk CSSI",
   "root": true,
   "icon": "LayoutDashboard",
   "pages": [

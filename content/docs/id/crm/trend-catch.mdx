@@ -1,0 +1,125 @@
+---
+title: Trend Catch
+description: Tinjau peringkat profit/loss dan peringkat aktivitas perdagangan yang difilter berdasarkan tanggal, segmen, dan jenis.
+---
+
+# Trend Catch
+
+Bagian Trend Catch menyediakan dua halaman peringkat yang membantu Anda menganalisis kinerja saham. Kedua halaman dapat diakses dari bilah sisi di bawah kelompok **Trend Catch**.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Gambaran bagian Trend Catch menampilkan bilah sisi dengan Peringkat P/L dan Peringkat Perdagangan.
+
+{/* SCREENSHOT:
+Page: Trend Catch Overview
+Capture: Sidebar showing Trend Catch group with P/L Rank and Trading Rank
+Filename suggestion: crm-trend-catch-overview.png
+Purpose: Show the Trend Catch navigation structure
+*/}
+
+## Peringkat P/L
+
+Halaman Peringkat P/L menampilkan peringkat profit dan loss untuk saham, difilter berdasarkan tanggal, segmen, dan jenis P&L. Gunakan halaman ini untuk menganalisis saham mana yang berkinerja terbaik atau terburuk.
+
+### Filter
+
+Toolbar di bagian atas menyediakan tiga filter yang memperbarui hasil secara otomatis:
+
+| Filter | Deskripsi |
+|---|---|
+| **Tanggal** | Pilih tanggal peringkat menggunakan date picker |
+| **Segmen** | Pilih segmen pasar untuk difilter |
+| **Jenis P&L** | Pilih jenis perhitungan profit/loss |
+
+### Pencarian
+
+Gunakan **kotak pencarian** untuk memfilter hasil berdasarkan nama atau kode saham. Ini adalah filter client-side yang mempersempit data peringkat yang sudah dimuat.
+
+### Tabel peringkat
+
+Tabel hasil menampilkan kolom berikut:
+
+| Kolom | Deskripsi |
+|---|---|
+| Peringkat | Posisi dalamperingkat (ditampilkan dalam badge) |
+| Saham | Kode saham (monospace) dan nama lengkap |
+| Harga rata-rata | Harga transaksi rata-rata |
+| Harga penutupan | Harga penutupan terbaru |
+| Jumlah P/L harian | Profit atau loss untuk hari ini (merah untuk loss) |
+| Nilai saham | Total nilai pasar |
+| Total saldo | Saldo akun |
+| Tingkat P/L | Pengembalian persentase (badge berwarna: hijau untuk positif, merah untuk negatif) |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Peringkat P/L menampilkan filter dan tabel peringkat dengan data.
+
+{/* SCREENSHOT:
+Page: P/L Rank
+Capture: P/L Rank table with date, segment, and P&L type filters visible
+Filename suggestion: crm-pnl-rank.png
+Purpose: Show the P/L ranking interface
+*/}
+
+### Membersihkan filter
+
+Klik **tombol clear** di kotak pencarian untuk mereset pencarian client-side. Gunakan kontrol filter untuk mereset filter server-side.
+
+## Peringkat Perdagangan
+
+Halaman Peringkat Perdagangan menampilkan ekuitas yang diurutkan berdasarkan nilai transaksi beli dan jual, difilter berdasarkan tanggal, segmen, dan jenis perdagangan. Gunakan halaman ini untuk menganalisis aktivitas perdagangan di seluruh saham.
+
+### Filter
+
+Toolbar di bagian atas menyediakan tiga filter yang memperbarui hasil secara otomatis:
+
+| Filter | Deskripsi |
+|---|---|
+| **Tanggal** | Pilih tanggal peringkat menggunakan date picker |
+| **Segmen** | Pilih segmen pasar untuk difilter |
+| **Jenis perdagangan** | Pilih jenis aktivitas perdagangan untuk diurutkan |
+
+### Pencarian
+
+Gunakan **kotak pencarian** untuk memfilter hasil berdasarkan nama atau kode saham. Ini adalah filter client-side yang mempersempit data peringkat yang sudah dimuat.
+
+### Tabel peringkat
+
+Tabel hasil menampilkan kolom berikut:
+
+| Kolom | Deskripsi |
+|---|---|
+| Peringkat | Posisi dalamperingkat (ditampilkan dalam badge) |
+| Saham | Kode saham (monospace) dan nama lengkap |
+| Harga pembukaan | Harga pembukaan untuk periode |
+| Harga penutupan | Harga penutupan untuk periode |
+| Perubahan harga | Perubahan harga absolut (merah untuk negatif) |
+| Total lot | Jumlah saham yang diperdagangkan |
+| Total nilai | Total nilai yang diperdagangkan |
+| Total volume | Volume perdagangan |
+| Tingkat perubahan % | Perubahan persentase (badge berwarna: hijau untuk positif, merah untuk negatif) |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Peringkat Perdagangan menampilkan filter dan tabel peringkat dengan data.
+
+{/* SCREENSHOT:
+Page: Trading Rank
+Capture: Trading Rank table with date, segment, and trade type filters visible
+Filename suggestion: crm-trading-rank.png
+Purpose: Show the trading ranking interface
+*/}
+
+### Membersihkan filter
+
+Klik **tombol clear** di kotak pencarian untuk mereset pencarian client-side. Gunakan kontrol filter untuk mereset filter server-side.
+
+## Ketersediaan data
+
+Data peringkat bergantung pada data yang dipublikasikan untuk tanggal yang dipilih. Jika data belum tersedia untuk tanggal tertentu, Anda akan melihat pesan yang menunjukkan bahwa data belum siap. Coba pilih tanggal berbeda atau hubungi administrator Anda untuk bantuan.
+
+<Callout type="info">
+  Data peringkat dipublikasikan sesuai jadwal reguler. Jika Anda melihat "data belum
+  tersedia", data untuk tanggal tersebut mungkin belum dipublikasikan.
+</Callout>

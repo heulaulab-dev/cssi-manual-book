@@ -1,6 +1,14 @@
 {
   "title": "CRM",
-  "description": "Customer, account, sales, and relationship management",
+  "description": "영업, 거래 및 고객 관계 작업 공간",
+  "root": true,
   "icon": "Users",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "sales",
+    "stock",
+    "trend-catch"
+  ]
 }

@@ -1,6 +1,15 @@
 {
   "title": "ITQM",
-  "description": "IT quality management and development request workflows",
+  "description": "IT 품질 관리 및 개발 요청 워크플로우",
+  "root": true,
   "icon": "CircleGauge",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "development-requests",
+    "done-report",
+    "issues",
+    "config"
+  ]
 }

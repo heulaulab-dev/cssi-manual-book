@@ -1,0 +1,236 @@
+---
+title: 관리자 패널
+description: 사용자, 역할, 권한, 감사 로그 및 시스템 공지사항 관리를 위한 관리 도구.
+---
+
+# 관리자 패널
+
+관리자 패널은 사용자, 역할, 권한, 감사 로그, 시스템 공지사항 및 규정 부서를 관리하기 위한 관리 도구를 제공합니다. 관리자 권한이 있는 사용자만 접근할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Admin Dashboard showing overview cards and quick actions.
+
+{/* SCREENSHOT:
+Page: Admin Dashboard
+Capture: Full admin dashboard with overview cards, quick actions, and recent activity
+Filename suggestion: intranet-admin-dashboard.png
+Purpose: Show the admin dashboard layout
+*/}
+
+## 관리자 패널 접근하기
+
+관리자 패널은 관리자 권한이 있는 경우 사이드바에서 접근할 수 있습니다. 관리 작업 공간에 접근하려면 사이드바에서 **관리**로 이동합니다.
+
+관리 접근 권한이 없으면 사이드바에 관리 섹션이 표시되지 않습니다.
+
+## 관리자 대시보드
+
+관리자 대���보드에는 시스템의 운영 개요가 표시됩니다:
+
+### 사용자 개요
+
+사용자 계정 요약 지표를 표시합니다:
+
+- **총계** — 시스템의 모든 사용자 계정
+- **활성** — 현재 활성인 사용자 계정(녹색 표시와 함께)
+- **비활성** — 비활성 사용자 계정
+
+### 활동 개요
+
+지난 24시간에 기록된 감사 이벤트 수를 표시하여 최근 관리 활동에 대한 빠른 뷰를 제공합니다.
+
+### 빠른 작업
+
+일반적인 관리 작업에 대한 버튼:
+
+- **사용자 생성** — 새 사용자를 추가하기 위해 사용자 페이지 열기
+- **역할 및 권한** — 역할 할당 관리 열기
+- **새 공지사항** — 시스템 공지사항 페이지 열기
+- **감사 로그 보기** — 활동 검토를 위해 감사 로그 페이지 열기
+
+### 최근 활동
+
+가장 최근의 관리 작업 피드를 표시합니다:
+
+- 수행된 작업
+- 엔터티 유형(사용자, 역할, 권한, 로그인, 공지사항)
+- 작업을 수행한 사람
+- 발생 시각(상대적 시간 표시와 함께)
+
+**전체 보기**를 클릭하여 완전한 감사 로그 페이지를 엽니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Admin Dashboard showing the Recent Activity section with action entries.
+
+{/* SCREENSHOT:
+Page: Admin Dashboard
+Capture: Recent Activity section showing action entries
+Filename suggestion: intranet-admin-recent-activity.png
+Purpose: Show the recent activity feed
+*/}
+
+## 사용자
+
+사용자 페이지에서는 시스템의 사용자 계정을 관리합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Users management page showing the user table.
+
+{/* SCREENSHOT:
+Page: Admin — Users
+Capture: Full users management page with user table and filters
+Filename suggestion: intranet-admin-users.png
+Purpose: Show the users management interface
+*/}
+
+### 사용자 보기
+
+사용자 테이블은 관련 정보와 함께 모든 사용자 계정을 표시합니다. 검색바와 필터를 사용하여 특정 사용자를 찾습니다.
+
+### 새 사용자 생성
+
+1. **관리 > 사용자**로 이동
+2. 새 사용자 생성 버튼 클릭
+3. 필수 사용자 정보 채우기
+4. 새 사용자 계정 저장
+
+### 사용자 계정 관리
+
+사용자 페이지에서 다음을 수행할 수 있습니다:
+
+- 사용자 세부 정보 보기
+- 사용자 정보 편집
+- 사용자 계정 활성화 또는 비활성화
+- 사용자에게 역할 할당
+
+## 역할
+
+역할 페이지에서는 역할 정의와 해당 권한을 관리합니다.
+
+> **스��린샷 플레이스홀더**
+>
+> Add screenshot: Roles management page showing role list and permissions.
+
+{/* SCREENSHOT:
+Page: Admin — Roles
+Capture: Roles management page with role entries
+Filename suggestion: intranet-admin-roles.png
+Purpose: Show the roles management interface
+*/}
+
+### 역할 보기
+
+역할 테이블은 이름과 설명이 있는 모든 정의된 역할을 표시합니다.
+
+### 역할 관리
+
+역할 페이지에서 다음을 수행할 수 있습니다:
+
+- 역할 세부 정보와 할당된 권한 보기
+- 역할 이름과 설명 편집
+- 역할에서 권한 할당 또는 제거
+- 새 역할 생성
+
+### 권한 이해하기
+
+각 역할은 사용자가 해당 역할로 수행할 수 있는 작업을 결정하는 모듈 권한 집합을 가지고 있습니다. 권한은 모듈별로 조직되며, 생성, 읽기, 업데이트, 삭제, 승인, 거부, 내보내기, 가져오기 및 인쇄와 같은 작업을 포함합니다.
+
+## 감사 로그
+
+감사 로그 페이지는 시스템에서 수행된 모든 관리 작업의 완전한 기록을 제공합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Audit Logs page showing log entries with timestamps and actions.
+
+{/* SCREENSHOT:
+Page: Admin — Audit Logs
+Capture: Audit logs table with log entries showing actions, users, and timestamps
+Filename suggestion: intranet-admin-audit-logs.png
+Purpose: Show the audit logs interface
+*/}
+
+### 감사 로그 보기
+
+감사 로그 테이블은 다음 정보와 함께 기록된 모든 작업을 표시합니다:
+
+- **작업** — 수행된 작업 유형
+- **엔터티** — 영향을 받은 엔터티 유형(사용자, 역할, 권한 등)
+- **사용자** — 작업을 수행한 사람
+- **타임스탬프** — 작업이 발생한 시각
+
+### 감사 로그 필터링
+
+검색바와 필터를 사용하여 특정 감사 항목을 찾습니다. 작업 유형, 엔터티 유형, 사용자 및 날짜 범위로 필터링할 수 있습니다.
+
+## 시스템 공지사항
+
+시스템 공지사항 페이지에서는 시스템 전반에 표시되는 공지사항을 관리합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: System Announcements management page.
+
+{/* SCREENSHOT:
+Page: Admin — System Announcements
+Capture: System announcements management page with announcement list
+Filename suggestion: intranet-admin-announcements.png
+Purpose: Show the system announcements management interface
+*/}
+
+### 시스템 공지사항 관리
+
+이 페이지에서 다음을 수행할 수 있습니다:
+
+- 모든 시스템 공지사항 보기
+- 새 시스템 공지사항 생성
+- 기존 공지사항 편집
+- 공지사항 삭제
+
+시스템 공지사항은 내부 공지사항과 달리 시스템 수준에서 관리되며 여러 애플리케이션에 걸쳐 표시될 수 있습니다.
+
+## 부문
+
+부문 페이지에서는 규정 등 콘텐츠에 사용되는 조직 부서를 관리합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Divisions management page showing division list.
+
+{/* SCREENSHOT:
+Page: Admin — Divisions
+Capture: Divisions management page with division entries
+Filename suggestion: intranet-admin-divisions.png
+Purpose: Show the divisions management interface
+*/}
+
+<Callout type="info">
+  부문 페이지는 시스템 관리자에게만 표시됩니다.
+</Callout>
+
+### 부문 관리
+
+이 페이지에서 다음을 수행할 수 있습니다:
+
+- 모든 조직 부서 보기
+- 새 부문 생성
+- 부문 이름과 코드 편집
+- 부문 활성화 또는 비활성화
+
+부문은 규정을 생성할 때 특정 조직 단위에 할당하는 데 사용됩니다.
+
+## 권한 요구 사항
+
+관리 패널과 섹션 접근은 적절한 관리 권한이 필요합니다:
+
+- **관리자 대시보드** — 관리 역할 필요
+- **사용자** — 사용자 관리 권한 필요
+- **��할** — 역할 관리 권한 필요
+- **감사 로그** — 감사 로그 읽기 권한 필요
+- **시스템 공지사항** — 시스템 공지사항 관리 권한 필요
+- **부문** — 시스템 관리자 접근 필요
+
+필요한 권한이 없으면 해당 섹션에 접근할 수 없습니다.

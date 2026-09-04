@@ -1,0 +1,167 @@
+---
+title: 관리자 패널
+description: CSSI 전반에서 사용자, 역할, 권한 및 시스템 공지사항을 관리합니다.
+---
+
+# 관리자 패널
+
+관리자 패널은 모든 CSSI 애플리케이션에서 사용 가능하며, 사용자, 역할, 권한, 공지사항 및 감사 로그를 관리하는 도구를 제공합니다. 사이드바에서 **관리**를 클릭하여 접근합니다(권한 있는 관리자만 사용 가능).
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Admin Panel dashboard showing overview cards and quick actions.
+
+{/* SCREENSHOT:
+Page: Admin Panel
+Capture: Admin dashboard with user overview, activity, and quick actions
+Filename suggestion: shared-admin-panel.png
+Purpose: Show the Admin Panel interface
+*/}
+
+## 관리자 대시보드
+
+관리자 대시보드에는 시스템에 대한 빠른 개요가 표시됩니다:
+
+### 사용자 개요
+
+전체 사용자 수와 **활성** 및 **비활성** 사용자 수를 표시합니다.
+
+### 활동 (24시간)
+
+지난 24시간에 기록된 감사 이벤트 수를 표시합니다.
+
+### 빠른 작업
+
+일반적인 관리 작업을 위한 네 가지 단축 버튼:
+
+| 작업 | 설명 |
+|---|---|
+| **사용자 생성** | 새 사용자를 추가하기 위해 사용자 페이지 열기 |
+| **역할 및 권한** | 역할과 접근 수준 관리 |
+| **새 공지사항** | 시스템 전체 공지사항 생성 |
+| **감사 로그 보기** | 최근 관리 활동 검토 |
+
+### 최근 활동
+
+최근 다섯 번의 관리 작업이 작업 유형, 영향을 받는 엔터티, 수행자 및 수행 시각과 함께 표시됩니다.
+
+## 사용자
+
+시스템의 모든 사용자를 관리합니다. 이 페이지에서 다음을 수행할 수 있습니다:
+
+- 역할, 상태, 마지막 로그인 및 생성일로 모든 사용자 목록 보기
+- 이름 또는 이메일로 사용자 검색
+- 역할 또는 상태(활성, 정지, 비활성)로 사용자 필터링
+- **새 사용자** 버튼으로 새 사용자 생성
+- **작업** 드롭다운에서 기존 사용자 편집 또는 비활성화
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Users list page showing user table with filters.
+
+{/* SCREENSHOT:
+Page: Admin — Users
+Capture: Users table with role and status badges
+Filename suggestion: shared-admin-users.png
+Purpose: Show the user management interface
+*/}
+
+## 역할 권한
+
+역할, 모듈 접근 및 사용자 할당을 관리합니다. 페이지는 두 패널로 나뉩니다:
+
+### 역할 선택기 (왼쪽 패널)
+
+- 이름으로 역할 검색
+- **역할 생성**을 클릭하여 새 역할 추가
+- 세부 정보를 보기 및 편집할 역할 선택
+
+### 역할 세부 정보 (오른쪽 패널)
+
+역할을 선택하면 다음을 봅니다:
+
+- 역할 이름, 코드, 카테고리 및 유형
+- 역할에 할당된 사용자 수
+- 두 개의 탭: **권한** 및 **사용자**
+
+#### 권한 탭
+
+모듈과 작업의 행렬입니다. 체크박스를 전환하여 역할에 대한 특정 권한을 부여하거나取り消します. 변경 사항을 적용하려면 **저장**을 클릭합니다.
+
+#### 사용자 탭
+
+이 역할에 할당된 사용자를 보고 관리합니다. **제거** 버튼으로 사용자를 제거하거나 **사용자 할당** 버튼으로 새 사용자를 할당합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Role Permissions page showing the permissions matrix.
+
+{/* SCREENSHOT:
+Page: Admin — Role Permissions
+Capture: Permissions matrix with module/action checkboxes
+Filename suggestion: shared-admin-roles.png
+Purpose: Show the role and permissions management interface
+*/}
+
+## 감사 로그
+
+관리 활동 및 보안 이벤트의 상세 기록을 봅니다. 로그에는 다음이 표시됩니다:
+
+- **작업** — 수행된 작업 (생성, 업데이트, 삭제)
+- **대상** — 영향을 받는 엔터티
+- **날짜** — 작업이 발생한 시각
+- **세부 정보** — 추가 정보를 보려면 **세부 정보 보기**를 클릭합니다
+
+### 감사 로그 필터링
+
+필터 컨트롤을 사용하여 결과를 좁힐 수 있습니다:
+
+- **작업** — 작업 유형으로 필터
+- **프로젝트별 필터** — 프로젝트 이름으로 검색
+- **시작일 / 종료일** — 날짜 범위로 필터
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Audit Logs page with filter controls and log entries.
+
+{/* SCREENSHOT:
+Page: Admin — Audit Logs
+Capture: Audit log table with filters
+Filename suggestion: shared-admin-audit-logs.png
+Purpose: Show the audit log interface
+*/}
+
+## 시스템 공지사항
+
+모든 CSSI 애플리케이션에 표시되는 공지사항을 생성하고 관리합니다.
+
+### 공지사항 생성
+
+1. **새 시스템 공지사항** 클릭
+2. **제목**과 **내용**( rich text editor 사용) 입력
+3. **상태**(활성 또는 비활성) 설정
+4. 즉시 주의가 필요한 경우 **긴급** 토글
+5. 게시 기간을 위한 **시작일**과 **종료일** 설정
+6. 필요한 경우 파일 드롭존을 사용하여 파일 첨부
+7. 게시하려면 **생성** 클릭
+
+### 공지사항 관리
+
+- **편집** — 기존 공지사항 수정을 위해 편집 버튼 클릭
+- **삭제** — 삭제 버튼 클릭 후 확인하여 공지사항을 영구히 제거
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: System Announcements page with announcement list.
+
+{/* SCREENSHOT:
+Page: Admin — System Announcements
+Capture: Announcements table with status and urgency badges
+Filename suggestion: shared-admin-announcements.png
+Purpose: Show the system announcements management interface
+*/}
+
+<Callout type="info">
+  관리자 패널은 모든 CSSI 애플리케이션에서 사용 가능합니다. 한 애플리케이션의
+  관리자 패널에서 변경한 내용은 전체 시스템에 적용됩니다.
+</Callout>

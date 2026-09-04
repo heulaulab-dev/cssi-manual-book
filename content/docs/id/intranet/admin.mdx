@@ -1,0 +1,236 @@
+---
+title: Panel Admin
+description: Alat administratif untuk mengelola pengguna, peran, izin, catatan audit, dan pengumuman sistem.
+---
+
+# Panel Admin
+
+Panel Admin menyediakan alat administratif untuk mengelola pengguna, peran, izin, catatan audit, pengumuman sistem, dan divisi regulasi. Akses ke Panel Admin terbatas untuk pengguna dengan peran administratif.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dasbor Admin menampilkan kartu ringkasan dan tindakan cepat.
+
+{/* SCREENSHOT:
+Page: Admin Dashboard
+Capture: Full admin dashboard with overview cards, quick actions, and recent activity
+Filename suggestion: intranet-admin-dashboard.png
+Purpose: Show the admin dashboard layout
+*/}
+
+## Mengakses Panel Admin
+
+Panel Admin dapat diakses dari bilah sisi ketika Anda memiliki izin administratif. Navigasi ke **Administrasi** di bilah sisi untuk mengakses workspace admin.
+
+Jika Anda tidak memiliki akses administratif, bagian Administrasi tidak akan muncul di bilah sisi Anda.
+
+## Dasbor Admin
+
+Dasbor Admin memberikan gambaran operasional sistem Anda:
+
+### Gambaran pengguna
+
+Menampilkan metrik ringkasan untuk akun pengguna:
+
+- **Total** — Semua akun pengguna di sistem
+- **Aktif** — Akun pengguna yang saat ini aktif (dengan indikator hijau)
+- **Nonaktif** — Akun pengguna nonaktif
+
+### Gambaran aktivitas
+
+Menampilkan jumlah peristiwa audit yang dicatat dalam 24 jam terakhir, memberikan Anda pandangan cepat tentang aktivitas administratif terbaru.
+
+### Tindakan cepat
+
+Tugas administratif umum yang tersedia sebagai tombol:
+
+- **Buat Pengguna** — Buka halaman Pengguna untuk menambahkan pengguna baru
+- **Peran & Izin** — Buka halaman Peran untuk mengelola penugasan peran
+- **Pengumuman Baru** — Buka halaman Pengumuman Sistem untuk membuat pengumuman baru
+- **Lihat Catatan Audit** — Buka halaman Catatan Audit untuk meninjau aktivitas
+
+### Aktivitas terbaru
+
+Umpan tindakan administratif terbaru, menampilkan:
+
+- Tindakan yang dilakukan
+- Jenis entitas (Pengguna, Peran, Izin, Login, Pengumuman)
+- Siapa yang melakukan tindakan
+- Kapan itu terjadi (dengan tampilan waktu relatif)
+
+Klik **Lihat semua** untuk membuka halaman Catatan Audit lengkap.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dasbor Admin menampilkan bagian Aktivitas Terbaru dengan entri tindakan.
+
+{/* SCREENSHOT:
+Page: Admin Dashboard
+Capture: Recent Activity section showing action entries
+Filename suggestion: intranet-admin-recent-activity.png
+Purpose: Show the recent activity feed
+*/}
+
+## Pengguna
+
+Halaman Pengguna memungkinkan Anda mengelola akun pengguna di sistem.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen Pengguna menampilkan tabel pengguna.
+
+{/* SCREENSHOT:
+Page: Admin — Users
+Capture: Full users management page with user table and filters
+Filename suggestion: intranet-admin-users.png
+Purpose: Show the users management interface
+*/}
+
+### Melihat pengguna
+
+Tabel pengguna menampilkan semua akun pengguna dengan informasi relevan. Gunakan bilah pencarian dan filter untuk menemukan pengguna tertentu.
+
+### Membuat pengguna baru
+
+1. Navigasi ke **Administrasi** > **Pengguna**
+2. Klik tombol untuk membuat pengguna baru
+3. Isi informasi pengguna yang diperlukan
+4. Simpan akun pengguna baru
+
+### Mengelola akun pengguna
+
+Dari halaman Pengguna, Anda dapat:
+
+- Melihat detail pengguna
+- Mengedit informasi pengguna
+- Mengaktifkan atau menonaktifkan akun pengguna
+- Menugaskan peran ke pengguna
+
+## Peran
+
+Halaman Peran memungkinkan Anda mengelola definisi peran dan izin yang terkait.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen Peran menampilkan daftar peran.
+
+{/* SCREENSHOT:
+Page: Admin — Roles
+Capture: Roles management page with role entries
+Filename suggestion: intranet-admin-roles.png
+Purpose: Show the roles management interface
+*/}
+
+### Melihat peran
+
+Tabel peran menampilkan semua peran yang didefinisikan dengan nama dan deskripsi mereka.
+
+### Mengelola peran
+
+Dari halaman Peran, Anda dapat:
+
+- Melihat detail peran dan izin yang ditugaskan
+- Mengedit nama dan deskripsi peran
+- Menugaskan atau mencabut izin dari peran
+- Membuat peran baru
+
+### Memahami izin
+
+Setiap peran memiliki serangkaian izin modul yang menentukan tindakan apa yang dapat dilakukan pengguna dengan peran tersebut. Izin diorganisasi berdasarkan modul dan mencakup tindakan seperti Buat, Baca, Update, Hapus, Setujui, Tolak, Ekspor, Impor, dan Cetak.
+
+## Catatan Audit
+
+Halaman Catatan Audit menyediakan catatan komprehensif dari semua tindakan administratif yang dilakukan di sistem.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman Catatan Audit menampilkan entri catatan dengan timestamp dan tindakan.
+
+{/* SCREENSHOT:
+Page: Admin — Audit Logs
+Capture: Audit logs table with log entries showing actions, users, and timestamps
+Filename suggestion: intranet-admin-audit-logs.png
+Purpose: Show the audit logs interface
+*/}
+
+### Melihat catatan audit
+
+Tabel catatan audit menampilkan semua tindakan yang dicatat dengan:
+
+- **Tindakan** — Jenis tindakan yang dilakukan
+- **Entitas** — Jenis entitas yang terkena dampak (Pengguna, Peran, Izin, dll.)
+- **Pengguna** — Siapa yang melakukan tindakan
+- **Timestamp** — Kapan tindakan terjadi
+
+### Memfilter catatan audit
+
+Gunakan bilah pencarian dan filter untuk menemukan entri audit tertentu. Anda dapat memfilter berdasarkan jenis tindakan, jenis entitas, pengguna, dan rentang tanggal.
+
+## Pengumuman Sistem
+
+Halaman Pengumuman Sistem memungkinkan Anda mengelola pengumuman yang ditampilkan di seluruh sistem.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen Pengumuman Sistem.
+
+{/* SCREENSHOT:
+Page: Admin — System Announcements
+Capture: System announcements management page with announcement list
+Filename suggestion: intranet-admin-announcements.png
+Purpose: Show the system announcements management interface
+*/}
+
+### Mengelola pengumuman sistem
+
+Dari halaman ini, Anda dapat:
+
+- Melihat semua pengumuman sistem
+- Membuat pengumuman sistem baru
+- Mengedit pengumuman yang ada
+- Menghapus pengumuman
+
+Pengumuman sistem berbeda dari pengumuman intranet dalam hal mereka dikelola di tingkat sistem dan dapat ditampilkan di beberapa aplikasi.
+
+## Divisi
+
+Halaman Divisi memungkinkan Anda mengelola divisi organisasi yang digunakan untuk mengklasifikasikan regulasi dan konten lainnya.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen Divisi menampilkan daftar divisi.
+
+{/* SCREENSHOT:
+Page: Admin — Divisions
+Capture: Divisions management page with division entries
+Filename suggestion: intranet-admin-divisions.png
+Purpose: Show the divisions management interface
+*/}
+
+<Callout type="info">
+  Halaman Divisi hanya terlihat untuk administrator sistem.
+</Callout>
+
+### Mengelola divisi
+
+Dari halaman ini, Anda dapat:
+
+- Melihat semua divisi organisasi
+- Membuat divisi baru
+- Mengedit nama dan kode divisi
+- Mengaktifkan atau menonaktifkan divisi
+
+Divisi digunakan ketika membuat regulasi untuk menugaskan mereka ke unit organisasi tertentu.
+
+## Persyaratan izin
+
+Akses ke Panel Admin dan bagiannya memerlukan izin administratif yang sesuai:
+
+- **Dasbor Admin** — Memerlukan peran administratif
+- **Pengguna** — Memerlukan izin manajemen pengguna
+- **Peran** — Memerlukan izin manajemen peran
+- **Catatan Audit** — Memerlukan izin baca catatan audit
+- **Pengumuman Sistem** — Memerlukan izin manajemen pengumuman sistem
+- **Divisi** — Memerlukan akses administrator sistem
+
+Jika Anda tidak memiliki izin yang diperlukan, bagian yang sesuai tidak akan dapat diakses.

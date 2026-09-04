@@ -1,6 +1,15 @@
 {
   "title": "Daily Operation",
-  "description": "IT operational checklists, approvals, and daily reporting",
+  "description": "운영 체크리스트, 승인 및 보고 작업 공간",
+  "root": true,
   "icon": "ClipboardCheck",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "today-checklist",
+    "approvals",
+    "history",
+    "it-config"
+  ]
 }

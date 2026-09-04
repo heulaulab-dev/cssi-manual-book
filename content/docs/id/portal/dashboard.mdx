@@ -1,0 +1,227 @@
+---
+title: Dashboard
+description: Pahami dasbor Portal dan widget-widgetnya.
+---
+
+# Dashboard
+
+Portal Dashboard memberikan Anda tampilan terpadu dari informasi di seluruh aplikasi CSSI. Widget yang ditampilkan dapat bervariasi tergantung pada divisi dan izin Anda.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Full Portal Dashboard showing all major widget areas.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Full dashboard after successful login showing all widget areas
+Filename suggestion: portal-dashboard-overview.png
+Purpose: Show the complete dashboard layout
+*/}
+
+## Sambutan dasbor
+
+Ketika Anda pertama kali memuat Dashboard, Anda akan melihat sambutan pribadi seperti "Selamat pagi, John" berdasarkan waktu saat ini. Sambutan muncul di bagian atas halaman. Tombol **Refresh** tersedia di pojok kanan atas untuk memuat ulang data widget.
+
+## Pengumuman Intranet
+
+Widget Pengumuman Intranet muncul di bagian atas Dashboard dan menyoroti informasi internal dan manajerial agar Anda dapat melihat pembaruan penting tanpa meninggalkan Portal.
+
+- Ini adalah tampilan ringkasan — hanya pengumuman paling baru yang ditampilkan
+- Setiap pengumuman menampilkan judul, cuplikan singkat, tanggal, dan badge untuk item **Baru** atau **Penting**
+- Klik pada pengumuman untuk membaca konten lengkap di dalam Portal
+- Gunakan tautan **Lihat semua pengumuman intranet** di bagian bawah untuk membuka daftar lengkap di Intranet
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Pengumuman Intranet menampilkan entri pengumuman dengan badge Baru/Penting.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Intranet Announcements widget with representative content visible
+Filename suggestion: portal-intranet-announcements-widget.png
+Purpose: Show how announcements appear in Portal
+*/}
+
+## Pengembangan
+
+Widget Pengembangan memberikan Anda pandangan cepat tentang permintaan pengembangan TI dan status mereka saat ini.
+
+- Anda dapat memfilter berdasarkan status menggunakan tab kategori di bagian atas widget
+- Setiap entri menampilkan subjek permintaan, deskripsi singkat, badge status, dan nama peminta
+- Klik pada permintaan untuk melihat detail lebih lanjut di ITQM
+
+Kategori status yang terlihat:
+
+| Status | Deskripsi |
+|---|---|
+| Sedang Dikerjakan | Pekerjaan sedang aktif dilakukan |
+| Menunggu Persetujuan | Menunggu persetujuan dari peminta atau unit bisnis |
+| Menunggu Penugasan | Menunggu pengembang TI untuk ditugaskan |
+| Menunggu Penerimaan IT | Menunggu penerimaan IT setelah penyelesaian |
+| Menunggu Verifikasi | Menunggu verifikasi oleh peminta |
+| Revisi | Perubahan sedang dilakukan berdasarkan umpan balik |
+| Draf | Masih disiapkan, belum dikirim |
+| Selesai | Diselesaikan dan ditutup |
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Pengembangan menampilkan status permintaan dan entri.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Development widget with request status navigation visible
+Filename suggestion: portal-development-widget.png
+Purpose: Show how development activity appears in Portal
+*/}
+
+<Callout type="info">
+  Alur kerja permintaan pengembangan detail didokumentasikan di ITQM.
+</Callout>
+
+## Daftar Periksa Harian
+
+Widget Daftar Periksa Harian memberikan pengguna pandangan cepat tentang aktivitas daftar periksa operasional yang relevan dengan divisi mereka.
+
+- Setiap entri menampilkan nama tugas, nama bagian/tim, jumlah item yang dicentang, badge status, dan siapa yang mengirimkannya
+- Gunakan tab kategori untuk memfilter berdasarkan status: **Semua**, **Pending**, **Disetujui**, atau **Ditolak**
+- Klik pada entri daftar periksa untuk melihat detail dan melakukan tindakan di Daily Operation
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Daftar Periksa Harian menampilkan kategori status daftar periksa.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Daily Checklists widget with status navigation visible
+Filename suggestion: portal-daily-checklists-widget.png
+Purpose: Show how checklist activity appears in Portal
+*/}
+
+<Callout type="info">
+  Alur kerja pengumpulan dan persetujuan daftar periksa detail didokumentasikan di Daily
+  Operation.
+</Callout>
+
+## Saham
+
+Widget Saham menyediakan ringkasan pasar langsung di Portal Dashboard.
+
+- Gunakan kotak pencarian di bagian atas widget untuk menemukan dan memilih saham berdasarkan nama atau kode
+- Widget menampilkan harga saat ini, perubahan harga, dan grafik yang menunjukkan riwayat harga
+- Gunakan pemilih rentang waktu untuk melihat periode berbeda (misalnya, 1H, 5H, 1B, 3B, 1T)
+- Klik **Buka saham** untuk melihat antarmuka manajemen saham lengkap di CRM
+
+Elemen yang terlihat:
+
+- Pengidentifikasi saham dan nama (dipilih melalui pencarian)
+- Harga saat ini dalam Rupiah Indonesia
+- Perubahan harga (absolut dan persentase) dengan indikator berwarna (hijau untuk positif, merah untuk negatif)
+- Grafik harga dengan tooltip interaktif yang menampilkan tanggal dan harga
+- Pemilih rentang waktu
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget saham menampilkan pencarian, harga, grafik, dan opsi rentang waktu.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Stock widget showing stock name, price, movement, chart, and period selector
+Filename suggestion: portal-stock-widget.png
+Purpose: Show how stock information appears in Portal
+*/}
+
+## Peringkat
+
+Widget Peringkat memberikan pandangan ringkasan peringkat portofolio dan kinerja perdagangan.
+
+- Beralih antara **Peringkat P/L** dan **Peringkat Perdagangan** menggunakan pemilih di header widget
+- **Peringkat P/L** menampilkan 5 saham teratas yang diurutkan berdasarkan kinerja profit dan loss
+- **Peringkat Perdagangan** menampilkan 5 saham teratas yang diurutkan berdasarkan aktivitas perdagangan
+
+### Kolom Peringkat P/L
+
+| Kolom | Deskripsi |
+|---|---|
+| Peringkat | Posisi dalamperingkat |
+| Saham | Kode saham dan nama |
+| Harga rata-rata | Harga transaksi rata-rata |
+| Harga penutupan | Harga penutupan terbaru |
+| Jumlah P/L harian | Profit atau loss untuk hari ini |
+| Nilai saham | Total nilai pasar |
+| Total saldo | Saldo akun |
+| Tingkat P/L | Pengembalian persentase (berwarna) |
+
+### Kolom Peringkat Perdagangan
+
+| Kolom | Deskripsi |
+|---|---|
+| Peringkat | Posisi dalamperingkat |
+| Saham | Kode saham dan nama |
+| Harga pembukaan | Harga pembukaan untuk periode |
+| Harga penutupan | Harga penutupan untuk periode |
+| Perubahan harga | Perubahan harga absolut |
+| Total lot | Jumlah saham yang diperdagangkan |
+| Total nilai | Total nilai yang diperdagangkan |
+| Total volume | Volume perdagangan |
+| Tingkat perubahan % | Perubahan persentase (berwarna) |
+
+Klik **Lihat semua peringkat P/L** atau **Lihat semua peringkat perdagangan** untuk membuka halaman peringkat lengkap di CRM.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Widget Peringkat menampilkan kedua tabel peringkat P/L dan Perdagangan.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Rankings widget showing ranking content and mode selector
+Filename suggestion: portal-rankings-widget.png
+Purpose: Show how rankings appear in Portal
+*/}
+
+## Aplikasi
+
+Bagian Aplikasi di bagian bawah Dashboard memberikan Anda akses cepat ke aplikasi CSSI lainnya. Setiap kartu menampilkan nama aplikasi, deskripsi singkat, dan tombol **Buka**.
+
+<Cards>
+  <Card
+    title="CRM"
+    description="Operasi penjualan dan perdagangan."
+    href="/docs/id/crm"
+  />
+  <Card
+    title="Intranet"
+    description="Komunikasi internal dan informasi perusahaan."
+    href="/docs/id/intranet"
+  />
+  <Card
+    title="FLOWRA"
+    description="Otomatisasi alur kerja keuangan."
+    href="/docs/id/flowra"
+  />
+  <Card
+    title="ITQM"
+    description="Manajemen kualitas TI dan alur kerja pengembangan."
+    href="/docs/id/itqm"
+  />
+  <Card
+    title="Daily Operation"
+    description="Ruang kerja daftar periksa operasional harian."
+    href="/docs/id/daily-operation"
+  />
+</Cards>
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Bagian Aplikasi menampilkan kartu aplikasi CSSI yang tersedia.
+
+{/* SCREENSHOT:
+Page: Portal Dashboard
+Capture: Applications section with CSSI application cards
+Filename suggestion: portal-applications.png
+Purpose: Show the application shortcuts available in Portal
+*/}
+
+<Callout type="info">
+  Aplikasi yang tersedia untuk Anda dapat bergantung pada akses dan peran Anda. Jika
+  aplikasi tidak muncul, silakan hubungi administrator Anda.
+</Callout>

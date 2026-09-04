@@ -1,0 +1,65 @@
+---
+title: Gambaran Umum
+description: Autentikasi untuk ekosistem aplikasi CSSI.
+---
+
+# Autentikasi
+
+Autentikasi menyediakan pengalaman masuk bersama untuk ekosistem aplikasi CSSI. Pengguna melakukan autentikasi sebelum memasuki Portal dan mengakses aplikasi yang tersedia untuk mereka.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman masuk CSSI menampilkan bidang ID Karyawan dan kata sandi.
+
+{/* SCREENSHOT:
+Page: Authentication Overview
+Capture: CSSI sign-in page with Employee ID and password fields
+Suggested filename: authentication-sign-in.png
+*/}
+
+## Alur autentikasi
+
+<Cards>
+  <Card
+    title="Masuk"
+    description="Gunakan ID Karyawan dan kata sandi Anda untuk masuk ke CSSI."
+    href="/docs/id/authentication/sign-in"
+  />
+  <Card
+    title="Pengaturan Ulang Kata Sandi Pertama Kali"
+    description="Ganti kata sandi default sebelum melanjutkan ke CSSI."
+    href="/docs/id/authentication/first-time-password"
+  />
+  <Card
+    title="Lupa Kata Sandi"
+    description="Verifikasi identitas Anda menggunakan OTP email dan buat kata sandi baru."
+    href="/docs/id/authentication/forgot-password"
+  />
+</Cards>
+
+## Cara kerja autentikasi
+
+**Pengguna yang sudah pernah masuk:**
+
+```
+Masuk → Portal
+```
+
+**Pengguna baru:**
+
+```
+Masuk dengan kata sandi default
+→ Atur ulang kata sandi
+→ Masuk kembali
+→ Portal
+```
+
+**Lupa kata sandi:**
+
+```
+Lupa Kata Sandi
+→ OTP Email
+→ Atur kata sandi baru
+→ Masuk kembali
+→ Portal
+```

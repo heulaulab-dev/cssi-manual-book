@@ -1,6 +1,6 @@
 {
   "title": "Portal",
-  "description": "Central access and cross-application dashboard for CSSI",
+  "description": "CSSI의 중앙 접근 및 크로스 애플리케이션 대시보드",
   "root": true,
   "icon": "LayoutDashboard",
   "pages": [

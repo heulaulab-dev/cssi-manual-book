@@ -1,8 +1,10 @@
 {
-  "title": "CSSI API Docs",
+  "title": "Dokumentasi CSSI",
   "pages": [
     "index",
     "getting-started",
+    "authentication",
+    "guides",
     "portal",
     "crm",
     "flowra",

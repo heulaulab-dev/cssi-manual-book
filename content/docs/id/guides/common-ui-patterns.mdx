@@ -1,0 +1,141 @@
+---
+title: Pola UI Umum
+description: Pola antarmuka bersama, status error, dan perilaku pemuatan di seluruh aplikasi CSSI.
+---
+
+# Pola UI Umum
+
+Semua aplikasi CSSI berbagi pola antarmuka yang konsisten. Panduan ini mencakup elemen umum yang akan Anda temui di seluruh sistem.
+
+## Status pemuatan
+
+Ketika aplikasi sedang memuat data, Anda akan melihat:
+
+- **Placeholder skeleton** — Placeholder abu-abu animasi yang menunjukkan tata letak perkiraan konten sebelum dimuat
+- **Spinner** — Indikator berputar yang ditampilkan saat tindakan tertentu sedang berlangsung (seperti menyimpan atau mengirim)
+
+Pola ini memastikan Anda selalu tahu sistem sedang bekerja, bahkan ketika data belum muncul.
+
+## Status error
+
+Ketika terjadi kesalahan, aplikasi CSSI menampilkan pola error yang konsisten:
+
+- **Alert error** — Banner merah dengan pesan yang menggambarkan apa yang gagal
+- **Tombol Coba Lagi** — Klik **Coba Lagi** untuk mencoba operasi lagi
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Status error menampilkan banner alert dengan tombol Coba Lagi.
+
+{/* SCREENSHOT:
+Page: Error State
+Capture: Error alert with retry button
+Filename suggestion: shared-error-state.png
+Purpose: Show the standard error handling pattern
+*/}
+
+## Status kosong
+
+Ketika halaman atau bagian tidak memiliki data untuk ditampilkan, Anda akan melihat status kosong dengan:
+
+- Ikon yang mewakili jenis konten
+- Judul yang menjelaskan bahwa tidak ada data yang tersedia
+- Deskripsi opsional dengan saran (seperti "Coba filter berbeda")
+- Tombol aksi opsional untuk membuat atau menambahkan item baru
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Status kosong dengan ikon, judul, dan deskripsi.
+
+{/* SCREENSHOT:
+Page: Empty State
+Capture: Empty state showing icon, title, and description
+Filename suggestion: shared-empty-state.png
+Purpose: Show the standard empty state pattern
+*/}
+
+## 404 Tidak Ditemukan
+
+Jika Anda menavigasi ke halaman yang tidak ada, Anda akan melihat halaman 404 yang ramah:
+
+- **Heading** — "(404) Sepertinya halaman yang Anda cari tersesat."
+- **Subteks** — "Tapi hey — di KB Valbury, bahkan detour yang tidak terduga membawa ke suatu tempat."
+- Tombol **Kembali ke Dasbor** — Mengembalikan Anda ke dasbor aplikasi
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman 404 dengan pesan ramah dan tombol kembali.
+
+{/* SCREENSHOT:
+Page: 404 Not Found
+Capture: 404 page with KB Valbury branding
+Filename suggestion: shared-404-page.png
+Purpose: Show the standard 404 page
+*/}
+
+## Notifikasi toast
+
+Notifikasi toast muncul di pojok kanan atas layar untuk mengonfirmasi tindakan atau melaporkan hasil:
+
+| Jenis | Tampilan | Kapan muncul |
+|---|---|---|
+| **Sukses** | Latar belakang hijau | Operasi selesai dengan sukses |
+| **Error** | Latar belakang merah | Operasi gagal |
+| **Info** | Latar belakang biru | Pesan informatif |
+| **Peringatan** | Latar belakang kuning | Perhatian atau perlu diperhatikan |
+
+Notifikasi toast menghilang secara otomatis setelah beberapa detik.
+
+## Tabel dan daftar data
+
+Data ditampilkan dalam tabel dengan fitur umum berikut:
+
+- **Pencarian** — Ketik di kotak pencarian untuk memfilter baris berdasarkan teks
+- **Filter** — Gunakan dropdown selector untuk mempersempit hasil berdasarkan status, jenis, rentang tanggal, atau kriteria lainnya
+- **Urutkan** — Klik header kolom untuk mengurutkan data secara ascending atau descending
+- **Paginasi** — Gunakan tombol **Sebelumnya** dan **Selanjutnya** untuk menavigasi antar halaman hasil
+- **Pencarian kosong** — Jika tidak ada hasil yang cocok dengan filter Anda, pesan status kosong akan muncul
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Tabel data dengan pencarian, filter, dan paginasi terlihat.
+
+{/* SCREENSHOT:
+Page: Data Table
+Capture: Table with search input, filter dropdowns, and pagination
+Filename suggestion: shared-data-table.png
+Purpose: Show the standard table pattern
+*/}
+
+## Dialog konfirmasi
+
+Ketika Anda melakukan tindakan destruktif (seperti menghapus data), dialog konfirmasi muncul dengan:
+
+- Judul jelas yang menjelaskan apa yang akan terjadi
+- Deskripsi konsekuensinya
+- Tombol **Batal** untuk membatalkan
+- Tombol **Konfirmasi** (sering kali merah/destruktif) untuk melanjutkan
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Dialog konfirmasi dengan tombol batal dan konfirmasi.
+
+{/* SCREENSHOT:
+Page: Confirmation Dialog
+Capture: Delete confirmation dialog
+Filename suggestion: shared-confirmation-dialog.png
+Purpose: Show the standard confirmation pattern
+*/}
+
+## Visibilitas berbasis izin
+
+Beberapa fitur, item navigasi, dan tombol hanya terlihat jika Anda memiliki izin yang diperlukan. Jika Anda tidak melihat fitur yang Anda harapkan:
+
+1. Hubungi administrator Anda untuk mengonfirmasi peran dan izin Anda
+2. Beberapa fitur mungkin memerlukan peran atau penugasan divisi tertentu
+3. Panel Admin menampilkan izin mana yang ditugaskan ke setiap peran
+
+<Callout type="info">
+  Pola-pola ini konsisten di seluruh aplikasi CSSI. Setelah Anda mempelajarinya
+  di satu aplikasi, pola yang sama berlaku di semua tempat.
+</Callout>

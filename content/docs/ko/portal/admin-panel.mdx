@@ -1,0 +1,133 @@
+---
+title: 관리자 패널
+description: 사용자, 역할, 권한 및 시스템 공지사항을 관리하기 위한 관리 도구.
+---
+
+# 관리자 패널
+
+> **접근 제한.** 관리자 패널은 관리자 권한이 있는 사용자만 사용할 수 있습니다. 사이드바에 관리 옵션이 보이지 않는다면, 이 기능에 접근할 권한이 없는 것입니다. 접근 권한을 요청하려면 시스템 관리자에게 문의하세요.
+
+관리자 패널은 사용자, 역할, 권한, 시스템 공지사항 관리 및 관리 활동 검토를 위한 도구를 제공합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Admin Panel overview showing user metrics, quick actions, and recent activity.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Overview
+Capture: Admin dashboard with overview cards and quick action buttons
+Filename suggestion: portal-admin-overview.png
+Purpose: Show the admin overview page
+*/}
+
+## 관리자 개요
+
+개요 페이지는 주요 지표와 빠른 작업을 표시합니다:
+
+### 사용자 개요
+
+전체 사용자 수와 함께 활성 및 비활성 계정 수를 표시합니다.
+
+### 활동 (24시간)
+
+지난 24시간의 감사 이벤트 수를 표시합니다.
+
+### 빠른 작업
+
+| 버튼 | 기능 |
+|---|---|
+| **사용자 생성** | 새 사용자를 추가하기 위해 사용자 관리 페이지 열기 |
+| **역할 및 권한** | 역할 정의 및 권한 관리 |
+| **새 공지사항** | 새 시스템 공지사항 생성 |
+| **감사 로그 보기** | 완전한 감사 로그 이력 탐색 |
+
+### 최근 활동
+
+시스템 전반의 다섯 가지 최근 관리 작업을 표시합니다. 누가 작업을 수행했는지, 무엇이 변경되었는지, 언제 발생했는지. **모두 보기**를 클릭하여 완전한 이력을 봅니다.
+
+## 사용자
+
+사용자 페이지에서는 관리자가 사용자 계정을 보고 관리할 수 있습니다:
+
+- 이름, 이메일 또는 상태로 사용자를 검색하고 필터링합니다
+- 역할과 접근 수준을 포함한 사용자 세부 정보 보기
+- 새 사용자 계정 생성
+- 기존 사용자 정보 업데이트
+- 계정 비활성화 또는 활성화
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Users list page.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Users
+Capture: User listing with search and actions
+Filename suggestion: portal-admin-users.png
+Purpose: Show the user management interface
+*/}
+
+## 역할 및 권한
+
+역할 및 권한 페이지에서는 관리자가 각 역할이 시스템에서 수행할 수 있는 작업을 정의할 수 있습니다:
+
+- 기존 역할과 할당된 권한 보기
+- 사용자 정의 권한 세트가 있는 새 역할 생성
+- 접근 수준을 조정하기 위해 기존 역할 편집
+- 사용자를 특정 역할에 할당
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Roles & Permissions management page.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Roles & Permissions
+Capture: Role definition and permission matrix
+Filename suggestion: portal-admin-roles.png
+Purpose: Show role and permission management
+*/}
+
+## 감사 로그
+
+감사 로그 페이지는 시스템에서 수행된 관리 작업의 완전한 기록을 제공합니다:
+
+- 각 작업을 수행한 사람과 시각 검토
+- 작업 유형, 엔터티 또는 날짜 범위로 로그 필터링
+- 사용자, 역할 및 시스템 설정 변경 추적
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Audit logs listing page.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Audit Logs
+Capture: Audit log entries with filtering options
+Filename suggestion: portal-admin-audit-logs.png
+Purpose: Show the audit log interface
+*/}
+
+## 시스템 공지사항
+
+시스템 공지사항 페이지에서는 관리자가 모든 사용자에게 표시되는 공지사항을 생성, 편집 및 관리할 수 있습니다:
+
+- 제목, 내용 및 긴급 수준이 있는 새 공지사항 생성
+- 기존 공지사항 편집 또는 제거
+- 긴급으로 표시하여 눈에 띄게 하기
+- 공지사항에 지원 문서 첨부
+
+여기서 생성된 공지사항은 사용자가 로그인할 때 보이는 공지사항 모달과 대시보드의 시스템 공지사항 위젯에 나타납니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Announcements management page.
+
+{/* SCREENSHOT:
+Page: Admin Panel — System Announcements
+Capture: Announcement list and creation form
+Filename suggestion: portal-admin-announcements.png
+Purpose: Show the announcement management interface
+*/}
+
+<Callout type="info">
+  관리 작업은 규정 준수 및 책임성을 위해 감사 로그에 기록됩니다.
+  관리자 패널을 통해 수행된 모든 변경 사항은 기록됩니다.
+</Callout>

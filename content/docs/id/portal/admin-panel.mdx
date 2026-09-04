@@ -1,0 +1,133 @@
+---
+title: Panel Admin
+description: Alat administratif untuk mengelola pengguna, peran, izin, dan pengumuman sistem.
+---
+
+# Panel Admin
+
+> **Akses terbatas.** Panel Admin hanya tersedia untuk pengguna dengan hak istimewa administrator. Jika Anda tidak melihat opsi Admin di bilah sisi, Anda tidak memiliki izin untuk mengakses fitur-fitur ini. Hubungi administrator sistem Anda untuk meminta akses.
+
+Panel Admin menyediakan alat untuk mengelola pengguna, peran, izin, pengumuman sistem, dan meninjau aktivitas administratif.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Gambaran Panel Admin menampilkan metrik pengguna, tindakan cepat, dan aktivitas terbaru.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Overview
+Capture: Admin dashboard with overview cards and quick action buttons
+Filename suggestion: portal-admin-overview.png
+Purpose: Show the admin overview page
+*/}
+
+## Gambaran Admin
+
+Halaman gambaran menampilkan metrik kunci dan tindakan cepat:
+
+### Gambaran Pengguna
+
+Menampilkan jumlah total pengguna, bersama dengan hitungan akun aktif dan nonaktif.
+
+### Aktivitas (24 jam)
+
+Menampilkan jumlah peristiwa audit dalam 24 jam terakhir.
+
+### Tindakan Cepat
+
+| Tombol | Apa yang dilakukannya |
+|---|---|
+| **Buat Pengguna** | Buka halaman manajemen pengguna untuk menambahkan pengguna baru |
+| **Peran & Izin** | Kelola definisi peran dan izin mereka |
+| **Pengumuman Baru** | Buat pengumuman sistem baru |
+| **Lihat Catatan Audit** | Telusuri riwayat catatan audit lengkap |
+
+### Aktivitas Terbaru
+
+Menampilkan lima tindakan administratif terbaru di seluruh sistem, termasuk siapa yang melakukan tindakan, apa yang diubah, dan kapan. Klik **Lihat semua** untuk melihat riwayat lengkap.
+
+## Pengguna
+
+Halaman Pengguna memungkinkan administrator melihat dan mengelola akun pengguna.
+
+- Cari dan filter pengguna berdasarkan nama, email, atau status
+- Lihat detail pengguna termasuk peran dan level akses mereka
+- Buat akun pengguna baru
+- Perbarui informasi pengguna yang ada
+- Nonaktifkan atau aktifkan kembali akun
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman daftar pengguna.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Users
+Capture: User listing with search and actions
+Filename suggestion: portal-admin-users.png
+Purpose: Show the user management interface
+*/}
+
+## Peran & Izin
+
+Halaman Peran & Izin memungkinkan administrator menentukan apa yang dapat dilakukan oleh setiap peran di dalam sistem.
+
+- Lihat peran yang ada dan izin yang ditugaskan
+- Buat peran baru dengan set izin kustom
+- Edit peran yang ada untuk menyesuaikan level akses
+- Tugaskan pengguna ke peran tertentu
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen Peran & Izin.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Roles & Permissions
+Capture: Role definition and permission matrix
+Filename suggestion: portal-admin-roles.png
+Purpose: Show role and permission management
+*/}
+
+## Catatan Audit
+
+Halaman Catatan Audit menyediakan catatan lengkap dari tindakan administratif yang diambil di dalam sistem.
+
+- Tinjau siapa yang melakukan setiap tindakan dan kapan
+- Filter catatan berdasarkan jenis tindakan, entitas, atau rentang tanggal
+- Lacak perubahan pada pengguna, peran, dan pengaturan sistem
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman daftar catatan audit.
+
+{/* SCREENSHOT:
+Page: Admin Panel — Audit Logs
+Capture: Audit log entries with filtering options
+Filename suggestion: portal-admin-audit-logs.png
+Purpose: Show the audit log interface
+*/}
+
+## Pengumuman Sistem
+
+Halaman Pengumuman Sistem memungkinkan administrator membuat, mengedit, dan mengelola pengumuman yang muncul kepada semua pengguna.
+
+- Buat pengumuman baru dengan judul, konten, dan level urgensi
+- Edit atau hapus pengumuman yang ada
+- Tandai pengumuman sebagai penting untuk memastikan tampilan menonjol
+- Lampirkan dokumen pendukung ke pengumuman
+
+Pengumuman yang dibuat di sini akan muncul di modal pengumuman yang dilihat pengguna saat mereka masuk, dan di widget Pengumuman Sistem di Dasbor.
+
+> **Placeholder screenshot**
+>
+> Add screenshot: Halaman manajemen pengumuman.
+
+{/* SCREENSHOT:
+Page: Admin Panel — System Announcements
+Capture: Announcement list and creation form
+Filename suggestion: portal-admin-announcements.png
+Purpose: Show the announcement management interface
+*/}
+
+<Callout type="info">
+  Tindakan administratif dicatat dalam Catatan Audit untuk kepatuhan dan
+  akuntabilitas. Semua perubahan yang dibuat melalui Panel Admin dicatat.
+</Callout>

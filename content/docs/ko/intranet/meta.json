@@ -1,6 +1,14 @@
 {
   "title": "Intranet",
-  "description": "Internal regulations, information, and company resources",
+  "description": "내부 규정, 정보 및 회사 자원",
+  "root": true,
   "icon": "Building2",
-  "root": true
+  "pages": [
+    "index",
+    "getting-started",
+    "dashboard",
+    "announcements",
+    "regulations",
+    "admin"
+  ]
 }

@@ -1,0 +1,118 @@
+---
+title: 대시보드
+description: Daily Operation 대시보드, 지표 위젯 및 운영 개요를 이해합니다.
+---
+
+# 대시보드
+
+대시보드에는 매일의 운영 활동에 대한 통합 뷰가 표시됩니다. 주요 지표를 한눈에 보여 주어 즉시 주의가 필요한 항목을 파악할 수 있습니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Full Daily Operation Dashboard showing all metric cards and sections.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard
+Capture: Complete dashboard with metric cards, Today's Operations, Approvals, and Status Context
+Suggested filename: daily-operation-dashboard-full.png
+Purpose: Show the full Dashboard layout and all visible sections
+*/}
+
+## 사업 날짜
+
+대시보드에는 페이지 상단 도구 모음에 현재 사업 날짜가 표시됩니다. 이 날짜는 표시되는 체크리스트 데이터와 제출을 결정합니다.
+
+## 지표 카드
+
+대시보드 상단에는 오늘의 운영 상태를 요약하는 다섯 개의 지표 카드가 표시됩니다:
+
+| 카드 | 설명 |
+|---|---|
+| **오늘의 작업** | 오늘의 체크리스트에 구성된 작업의 총 수 |
+| **작업이 필요한 파트** | 초안, 거부 또는 미완료인 파트 수 |
+| **승인 대기** | 검토를 기다리는 체크리스트 제출 수 |
+| **거부 / 수정** | 거부되어 수정이 필요한 파트 수 |
+| **완료 / 승인** | 승인된 파트 수 |
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Close-up of the five metric cards at the top of the Dashboard.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Metric Cards
+Capture: The five metric cards with representative values
+Suggested filename: daily-operation-metric-cards.png
+Purpose: Show the key metrics at a glance
+*/}
+
+## 오늘의 운영
+
+오늘의 운영 섹션은 주의가 필요한 체크리스트 파트를 나열하며, 상태 우선순위로 정렬됩니다(거부 먼저, 다음 초안, 대기, 승인).
+
+각 행은 다음을 표시합니다:
+
+- **작업 / 파트 이름** — 이 체크리스트가 속한 작업과 파트
+- **상태 배지** — 현재 상태(초안, 대기, 승인 또는 거부)
+- **진행률** — 완료된 항목 수 대 총 수, 진행률 바와 함께
+- **맥락** — 수정 사유나 제출 시간과 같은 추가 세부 정보
+
+**오늘 열기**를 클릭하여 완전한 오늘의 체크리스트 페이지로 이동합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Today's Operations section showing checklist rows with status badges and progress.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Today's Operations
+Capture: List of operational rows with task names, status badges, and progress bars
+Suggested filename: daily-operation-today-operations.png
+Purpose: Show how operational items appear in the Dashboard
+*/}
+
+## 승인
+
+승인 권한이 있는 경우, 대시보드의 승인 섹션에는 세 가지 요약 카드가 표시됩니다:
+
+- **검토 대기** — 귀하의 작업을 기다리는 대기 중인 제출
+- **오늘 승인됨** — 오늘까지 승인된 제출
+- **오늘 거부됨** — 오늘까지 거부된 제출
+
+**승인 보기**를 클릭하여 완전한 승인 페이지를 엽니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Approvals section showing the three summary cards.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Approvals
+Capture: Approvals summary cards with pending, approved, and rejected counts
+Suggested filename: daily-operation-approvals-summary.png
+Purpose: Show approval activity at a glance
+*/}
+
+## 상태 맥락
+
+대시보드 하단의 상태 맥락 섹션에는 오늘의 구성된 체크리스트 전반의 완료 진행률을 보여줍니다. 총 항목 대비 완료된 항목 수와 백분율, 진행��� 바를 표시합니다.
+
+> **스크린샷 플레이스홀더**
+>
+> Add screenshot: Status Context section showing completion progress.
+
+{/* SCREENSHOT:
+Page: Daily Operation Dashboard — Status Context
+Capture: Completion progress bar with item counts and percentage
+Suggested filename: daily-operation-status-context.png
+Purpose: Show overall checklist completion progress
+*/}
+
+## Intranet 공지사항
+
+Intranet 공지사항 위젯은 대시보드 상단에 나타나며,internal updates를 강조하여 Daily Operation을 떠나지 않고도 중요한 정보를 확인할 수 있습니다:
+
+- 각 공지사항은 제목, 간략한 발췌문 및 날짜를 표시합니다
+- 공지사항을 클릭하여 전체 내용을 읽습니다
+
+<Callout type="info">
+  대시보드 데이터는 현재 사업 날짜를 기준으로 합니다. 다른 날짜의 데이터를 보려면
+  오늘의 체크리스트 페이지의 사업 날짜 선택기를 사용하세요.
+</Callout>
